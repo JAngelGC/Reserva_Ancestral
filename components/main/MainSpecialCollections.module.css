@@ -5,6 +5,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  background-color: #f8f6f2;
 }
 
 .section-special-collections .left {
