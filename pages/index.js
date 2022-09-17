@@ -1,7 +1,13 @@
+import MainHeader from "../components/main/MainHeader";
+import MainHistory from "../components/main/MainHistory";
+import MainSliderBottles from "../components/main/sliderBottles/MainSliderBottles";
+
 const HomePage = () => {
   return (
     <>
-      <h1>This is the home page</h1>
+      <MainHeader />
+      <MainHistory />
+      <MainSliderBottles />
     </>
   );
 };

@@ -1,0 +1,39 @@
+.main-header {
+  /* width: 100vw; */
+  color: #fff;
+  text-transform: uppercase;
+  padding-left: 8rem;
+
+  height: 88vh;
+  /* height: 100vh; */
+  background-color: yellowgreen;
+  background-image: url("../../public/static/images/Mezcal_Ancestral_Botellas_4.png");
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-position: right bottom; /* Center the image */
+  /* background-position: right bottom;  */
+  /* background-position: right; */
+
+  background-size: cover;
+}
+
+.main-header h2 {
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 6rem;
+  letter-spacing: 0.1rem;
+
+  padding-top: 6rem;
+
+  width: 40rem;
+}
+
+.main-header h3 {
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 3.8rem;
+  letter-spacing: 0.1rem;
+
+  padding-top: 2rem;
+
+  width: 35rem;
+}

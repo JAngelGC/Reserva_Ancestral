@@ -1,0 +1,194 @@
+.section-slider--bottles {
+  height: 100vh;
+  /* padding: 2.5% 0; */
+  padding-bottom: 2rem;
+
+  background-color: #e5e5e5;
+  /* background: #000; */
+}
+
+.section-slider--bottles h2 {
+  height: 20%;
+  font-size: 4rem;
+  text-align: center;
+  font-weight: 200;
+  text-transform: uppercase;
+  color: #654729;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  background-color: #e5e5e5;
+}
+
+.my-swiper {
+  height: 80%;
+  width: 100%;
+
+  /* background-color: tomato; */
+}
+
+.my-swiper .my-swiper--slide {
+  margin: auto 0;
+  height: 60%;
+
+  background-color: #f8f6f2;
+  border-radius: 1.2rem;
+}
+
+.my-swiper .my-swiper--slide .container-slide {
+  height: 100%;
+  width: 100%;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-swiper .my-swiper--slide .active {
+  transition: all 0.5s ease-out;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  /* background-color: yellowgreen; */
+}
+.my-swiper .my-swiper--slide .noactive {
+  transition: all 0.5s ease-out;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  /* background-color: yellowgreen; */
+}
+
+.my-swiper .my-swiper--slide .noactive .img-bottle {
+  filter: drop-shadow(0px 4px 30px rgba(0, 0, 0, 0.25));
+}
+
+.my-swiper .my-swiper--slide .img-bottle {
+  height: 120%;
+
+  position: absolute;
+  top: -4rem;
+  left: -14rem;
+
+  transition: all 0.3s ease-out;
+}
+
+.my-swiper .my-swiper--slide h3 {
+  color: #2d2d2d;
+  font-size: 2.8rem;
+  font-weight: 100;
+}
+
+.my-swiper .my-swiper--slide h4 {
+  color: #2d2d2d;
+  font-size: 2.2rem;
+  font-weight: 100;
+
+  position: relative;
+
+  border-bottom: 2px;
+}
+
+.my-swiper .my-swiper--slide h4::after {
+  display: block;
+  content: "";
+  width: 12rem;
+  background-color: #654729;
+  height: 0.2rem;
+
+  position: absolute;
+  bottom: -50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.my-swiper .arroqueno h4::after {
+  background-color: #75bd42;
+}
+
+.my-swiper .espadin h4::after {
+  background-color: #749dd5;
+}
+
+.my-swiper .cuixe h4::after {
+  background-color: #570700;
+}
+
+.my-swiper .tobala h4::after {
+  background-color: #303133;
+}
+
+.my-swiper .my-swiper--slide button {
+  color: #2d2d2d;
+  width: 12rem;
+
+  margin-top: 3rem;
+  font-size: 1.6rem;
+  padding: 1rem 1.5rem;
+  border-radius: 1.2rem;
+  background-color: #f8f6f2;
+  cursor: pointer;
+
+  transition: all 0.3s ease-out;
+}
+
+.my-swiper .my-swiper--slide .arroqueno {
+  border: 2px solid #75bd42;
+}
+
+.my-swiper .my-swiper--slide .arroqueno:hover {
+  color: #fff;
+  background-color: #75bd42;
+  border: 2px solid transparent;
+}
+
+.my-swiper .my-swiper--slide .espadin {
+  border: 2px solid #749dd5;
+}
+
+.my-swiper .my-swiper--slide .espadin:hover {
+  color: #fff;
+  background-color: #749dd5;
+  border: 2px solid transparent;
+}
+
+.my-swiper .my-swiper--slide .cuixe {
+  border: 2px solid #570700;
+}
+
+.my-swiper .my-swiper--slide .cuixe:hover {
+  color: #fff;
+  background-color: #570700;
+  border: 2px solid transparent;
+}
+
+.my-swiper .my-swiper--slide .tobala {
+  border: 2px solid #303133;
+}
+
+.my-swiper .my-swiper--slide .tobala:hover {
+  color: #fff;
+  background-color: #303133;
+  border: 2px solid transparent;
+}
+
+/* .my-swiper .swiper-pagination {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: auto !important;
+  left: auto !important;
+  margin: 0;
+} */
+.mybullet {
+  background: #000;
+  width: 1.5rem;
+  height: 1.5rem;
+  /* margin-left: 2rem; */
+}
+
+.bullet--active {
+  opacity: 1;
+  /* color: yellow; */
+  background: #b27e49;
+}
