@@ -1,27 +1,28 @@
 .header {
   width: 100%;
-  /* height: 5rem; */
   height: 12vh;
+  padding: 0 2.5%;
+
+  background-color: var(--main-bg-color);
+  color: var(--black-color);
+
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 1000;
+
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* justify-content: space-around; */
-  background-color: #f8f6f2;
-  color: #2d2d2d;
-  padding: 0 2.5%;
-
-  /* top: 0;
-    left: 0;
-    position: fixed; */
-
-  /* background-color: turquoise; */
 }
 
 .logo {
   width: 20%;
   height: 100%;
+
   font-size: 2rem;
-  color: white;
   font-weight: bold;
 
   display: flex;
@@ -57,6 +58,7 @@
 .header li {
   font-size: 1.6rem;
   text-transform: uppercase;
+  cursor: pointer;
 
   display: flex;
   justify-content: center;
@@ -75,6 +77,28 @@
 
 .header .pages li {
   margin: 0 2rem;
+
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+
+.header .pages li::after {
+  content: "";
+  position: absolute;
+  bottom: -20%;
+  width: 100%;
+  height: 3px;
+  background-color: var(--black-color);
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.header .pages li:hover {
+  color: var(--black-color);
+}
+
+.header .pages li:hover::after {
+  transform: scaleX(1);
 }
 
 .header .social-networks {
@@ -89,7 +113,13 @@
   margin-right: 2rem;
 }
 
-.header .social-networks img {
+.header .social-networks li .icon {
+  cursor: pointer;
   width: 2rem;
-  justify-self: flex-end;
+
+  transition: all 0.2s ease-in-out;
+}
+
+.header .social-networks li .icon:hover {
+  fill: var(--main-brown-color);
 }

@@ -3,12 +3,15 @@
 /**************************/
 /* GENERAL */
 /**************************/
-/* :root {
-  --main-bg-color: #f3f3f3;
+:root {
+  --black-color: #2d2d2d;
+  --main-bg-color: #f8f6f2;
+  --main-brown-color: #654729;
+
   --red-color: #ff0022;
   --secundary-color: #004b66;
   --secundary-color-light: #006e96;
-} */
+}
 
 * {
   padding: 0;
