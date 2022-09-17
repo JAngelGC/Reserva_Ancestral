@@ -38,12 +38,20 @@ const MainSliderCocktails = () => {
             <ul>
               <h4>Ingredientes</h4>
               <li>Mango macerado</li>
+              <li>1 oz de jugo de limón</li>
+              <li>1 oz de jarabe de maracuyá</li>
+              <li>3/4 oz de licor de chiles</li>
+              <li>11/2oz de Mezcal Reserva</li>
             </ul>
             <ol>
               <h4>Preparación</h4>
               <li>
                 Poner todos los ingredientes en una licuadora hasta que se
                 deshaga el mango y se vuelva tipo frappe con el hielo.
+              </li>
+              <li>
+                Escarchar la copa con chile piquín y decorar con un trozo de
+                mango.
               </li>
             </ol>
           </div>
@@ -57,12 +65,20 @@ const MainSliderCocktails = () => {
             <ul>
               <h4>Ingredientes</h4>
               <li>Mango macerado</li>
+              <li>1 oz de jugo de limón</li>
+              <li>1 oz de jarabe de maracuyá</li>
+              <li>3/4 oz de licor de chiles</li>
+              <li>11/2oz de Mezcal Reserva</li>
             </ul>
             <ol>
               <h4>Preparación</h4>
               <li>
                 Poner todos los ingredientes en una licuadora hasta que se
                 deshaga el mango y se vuelva tipo frappe con el hielo.
+              </li>
+              <li>
+                Escarchar la copa con chile piquín y decorar con un trozo de
+                mango.
               </li>
             </ol>
           </div>
@@ -76,12 +92,20 @@ const MainSliderCocktails = () => {
             <ul>
               <h4>Ingredientes</h4>
               <li>Mango macerado</li>
+              <li>1 oz de jugo de limón</li>
+              <li>1 oz de jarabe de maracuyá</li>
+              <li>3/4 oz de licor de chiles</li>
+              <li>11/2oz de Mezcal Reserva</li>
             </ul>
             <ol>
               <h4>Preparación</h4>
               <li>
                 Poner todos los ingredientes en una licuadora hasta que se
                 deshaga el mango y se vuelva tipo frappe con el hielo.
+              </li>
+              <li>
+                Escarchar la copa con chile piquín y decorar con un trozo de
+                mango.
               </li>
             </ol>
           </div>

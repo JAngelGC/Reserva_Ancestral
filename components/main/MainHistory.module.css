@@ -1,30 +1,28 @@
 .section-history {
   height: 50vh;
-  text-transform: uppercase;
   text-align: center;
+
+  color: var(--black-color);
+  background-color: var(--main-bg-color);
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  color: #2d2d2d;
-  background-color: #f8f6f2;
 }
 
 .section-history h2 {
-  font-size: 3.6rem;
+  font-size: var(--fs-sub-title);
   font-weight: 500;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .section-history h3 {
-  font-size: 2.4rem;
+  font-size: var(--fs-big-text);
   font-weight: 300;
 }
 
 .section-history h3:last-child {
-  /* font-size: 8rem; */
-  /* font-weight: 300; */
-  color: #654729;
+  font-weight: 500;
+  color: var(--main-brown-color);
 }

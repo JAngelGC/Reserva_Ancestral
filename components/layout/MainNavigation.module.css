@@ -56,8 +56,8 @@
 }
 
 .header li {
-  font-size: 1.6rem;
-  text-transform: uppercase;
+  font-size: var(--fs-small-text);
+  font-weight: 500;
   cursor: pointer;
 
   display: flex;

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
 
 /**************************/
 /* GENERAL */
@@ -6,11 +7,22 @@
 :root {
   --black-color: #2d2d2d;
   --main-bg-color: #f8f6f2;
+  --sec-bg-color: #e5e5e5;
   --main-brown-color: #654729;
+  --sec-brown-color: #b27e49;
+  --arroqueno-color: #75bd42;
+  --espadin-color: #749dd5;
+  --cuixe-color: #570700;
+  --tobala-color: #303133;
 
-  --red-color: #ff0022;
-  --secundary-color: #004b66;
-  --secundary-color-light: #006e96;
+  --fs-title: 4.4rem;
+  --fs-sub-title: 4rem;
+  --fs-sub-sub-title: 2.8rem;
+
+  --fs-big-text: 2.4rem;
+  --fs-mid-text: 2rem;
+  --fs-mid-small-text: 1.8rem;
+  --fs-small-text: 1.6rem;
 }
 
 * {
@@ -25,4 +37,6 @@ html {
   /* Percentage of user's browser font-size setting */
   font-size: 62.5%;
   overflow-x: hidden;
+  font-family: "Cinzel", serif;
+  color: var(--black-color);
 }

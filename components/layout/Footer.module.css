@@ -12,24 +12,28 @@
   align-items: flex-start;
   gap: 1rem;
 
-  background-color: #f8f6f2;
+  background-color: var(--main-bg-color);
   /* background-color: yellowgreen; */
 }
 
 .contacto {
   display: inline;
-  margin-right: 5rem;
-  /* background: #000; */
+  font-size: var(--fs-mid-small-text);
   font-weight: 300;
+  margin-right: 5rem;
 }
 
 .aviso {
   display: inline;
+  font-size: var(--fs-mid-small-text);
   font-weight: 300;
 }
 
+.derechos {
+  font-size: var(--fs-small-text);
+}
+
 .footer img {
-  /* height: 20vh; */
   height: 100%;
   position: absolute;
   right: 0;

@@ -1,9 +1,8 @@
 .section-slider--bottles {
-  height: 100vh;
-  /* padding: 2.5% 0; */
+  height: 88vh;
   padding-bottom: 2rem;
 
-  background-color: #e5e5e5;
+  background-color: var(--sec-bg-color);
   /* background: #000; */
 
   z-index: 1;
@@ -11,32 +10,28 @@
 
 .section-slider--bottles h2 {
   height: 20%;
-  font-size: 4rem;
+  font-size: var(--fs-sub-title);
+  font-weight: 500;
   text-align: center;
-  font-weight: 200;
-  text-transform: uppercase;
-  color: #654729;
+  color: var(--main-brown-color);
 
   display: flex;
   justify-content: center;
   align-items: flex-end;
-
-  background-color: #e5e5e5;
 }
 
 .my-swiper {
   height: 80%;
   width: 100%;
-
   /* background-color: tomato; */
 }
 
 .my-swiper .my-swiper--slide {
+  height: 70%;
   margin: auto 0;
-  height: 60%;
-
-  background-color: #f8f6f2;
   border-radius: 1.2rem;
+
+  background-color: var(--main-bg-color);
 }
 
 .my-swiper .my-swiper--slide .container-slide {
@@ -53,12 +48,11 @@
 .my-swiper .my-swiper--slide .active {
   transition: all 0.5s ease-out;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  /* background-color: yellowgreen; */
 }
+
 .my-swiper .my-swiper--slide .noactive {
   transition: all 0.5s ease-out;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  /* background-color: yellowgreen; */
 }
 
 .my-swiper .my-swiper--slide .noactive .img-bottle {
@@ -69,25 +63,23 @@
   height: 120%;
 
   position: absolute;
-  top: -4rem;
-  left: -14rem;
+  /* top: -4rem; */
+  top: -14%;
+  /* left: -14rem; */
+  left: -30%;
 
   transition: all 0.3s ease-out;
 }
 
 .my-swiper .my-swiper--slide h3 {
-  color: #2d2d2d;
-  font-size: 2.8rem;
+  font-size: var(--fs-big-text);
   font-weight: 100;
 }
 
 .my-swiper .my-swiper--slide h4 {
-  color: #2d2d2d;
-  font-size: 2.2rem;
+  font-size: var(--fs-mid-text);
   font-weight: 100;
-
   position: relative;
-
   border-bottom: 2px;
 }
 
@@ -95,7 +87,6 @@
   display: block;
   content: "";
   width: 12rem;
-  background-color: #654729;
   height: 0.2rem;
 
   position: absolute;
@@ -105,22 +96,23 @@
 }
 
 .my-swiper .arroqueno h4::after {
-  background-color: #75bd42;
+  background-color: var(--arroqueno-color);
 }
 
 .my-swiper .espadin h4::after {
-  background-color: #749dd5;
+  background-color: var(--espadin-color);
 }
 
 .my-swiper .cuixe h4::after {
-  background-color: #570700;
+  background-color: var(--cuixe-color);
 }
 
 .my-swiper .tobala h4::after {
-  background-color: #303133;
+  background-color: var(--tobala-color);
 }
 
 .my-swiper .my-swiper--slide button {
+  font-family: Lora;
   color: #2d2d2d;
   width: 12rem;
 
@@ -128,69 +120,58 @@
   font-size: 1.6rem;
   padding: 1rem 1.5rem;
   border-radius: 1.2rem;
-  background-color: #f8f6f2;
+  background-color: var(--main-bg-color);
   cursor: pointer;
 
   transition: all 0.3s ease-out;
 }
 
 .my-swiper .my-swiper--slide .arroqueno {
-  border: 2px solid #75bd42;
+  border: 2px solid var(--arroqueno-color);
 }
 
 .my-swiper .my-swiper--slide .arroqueno:hover {
   color: #fff;
-  background-color: #75bd42;
+  background-color: var(--arroqueno-color);
   border: 2px solid transparent;
 }
 
 .my-swiper .my-swiper--slide .espadin {
-  border: 2px solid #749dd5;
+  border: 2px solid var(--espadin-color);
 }
 
 .my-swiper .my-swiper--slide .espadin:hover {
   color: #fff;
-  background-color: #749dd5;
+  background-color: var(--espadin-color);
   border: 2px solid transparent;
 }
 
 .my-swiper .my-swiper--slide .cuixe {
-  border: 2px solid #570700;
+  border: 2px solid var(--cuixe-color);
 }
 
 .my-swiper .my-swiper--slide .cuixe:hover {
   color: #fff;
-  background-color: #570700;
+  background-color: var(--cuixe-color);
   border: 2px solid transparent;
 }
 
 .my-swiper .my-swiper--slide .tobala {
-  border: 2px solid #303133;
+  border: 2px solid var(--tobala-color);
 }
 
 .my-swiper .my-swiper--slide .tobala:hover {
   color: #fff;
-  background-color: #303133;
+  background-color: var(--tobala-color);
   border: 2px solid transparent;
 }
 
-/* .my-swiper .swiper-pagination {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  width: auto !important;
-  left: auto !important;
-  margin: 0;
-} */
 .mybullet {
-  background: #000;
   width: 1.5rem;
   height: 1.5rem;
-  /* margin-left: 2rem; */
 }
 
 .bullet--active {
   opacity: 1;
-  /* color: yellow; */
-  background: #b27e49;
+  background: var(--main-brown-color);
 }

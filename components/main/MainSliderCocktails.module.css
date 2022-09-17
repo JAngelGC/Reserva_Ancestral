@@ -1,23 +1,22 @@
 .section-slider-cocktails {
-  height: 100vh;
+  height: 88vh;
+  padding: 0 12rem;
 
-  /* padding-right: 10rem; */
-  padding: 0 12.5rem;
-  /* background-color: teal; */
-  /* background-color: #f8f6f2; */
-  background-color: #e5e5e5;
-
-  /* margin-bottom: 20rem; */
+  background-color: var(--sec-bg-color);
 }
 
 .section-slider-cocktails h2 {
-  font-size: 3rem;
   height: 20%;
-  color: #654729;
+  font-size: var(--fs-sub-title);
+  color: var(--main-brown-color);
+  font-weight: 500;
+  padding-top: 3rem;
 
   display: flex;
   justify-content: center;
   align-items: center;
+
+  /* background-color: yellowgreen; */
 }
 
 .my-swiper {
@@ -32,79 +31,64 @@
 .my-swiper .my-swiper--slide {
   margin: auto 0;
   height: 50%;
-  /* width: 50%; */
 
-  background-color: #f8f6f2;
   border-radius: 1.2rem;
-
   display: flex;
 }
 
 .my-swiper--slide .container-img {
-  width: 50%;
+  width: 40%;
   height: 100%;
-
-  /* background-color: violet; */
 
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  /* background-color: violet; */
 }
 
 .my-swiper--slide .container-img img {
-  /* height: 100%; */
-  /* border-radius: 1.2rem; */
-  /* width: 100%; */
   height: 100%;
 }
 
 .my-swiper--slide .container-text {
-  width: 50%;
+  width: 60%;
+
+  padding: 0 4rem;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  gap: 3rem;
-  padding: 0 3rem;
-  background-color: #f8f6f2;
+  gap: 1.5rem;
 
-  /* background-color: wheat; */
+  background-color: var(--main-bg-color);
 }
 .my-swiper--slide .container-text h3 {
-  font-size: 2.4rem;
-  color: #654729;
-  font-weight: 300;
+  font-size: var(--fs-big-text);
+  color: var(--main-brown-color);
+  font-weight: 500;
 }
 
-.my-swiper--slide .container-text ul h4 {
-  color: #654729;
-  font-weight: 300;
-  font-size: 2rem;
-}
-
-.my-swiper--slide .container-text ul li {
-  font-size: 1.6rem;
-}
-
+.my-swiper--slide .container-text ul h4,
 .my-swiper--slide .container-text ol h4 {
-  color: #654729;
-  font-weight: 300;
-  font-size: 2rem;
+  font-family: Lora;
+  font-size: var(--fs-mid-text);
+  color: var(--main-brown-color);
+  font-weight: 500;
 }
 
+.my-swiper--slide .container-text ul li,
 .my-swiper--slide .container-text ol li {
-  font-size: 1.6rem;
+  font-family: Lora;
+  font-size: var(--fs-small-text);
+  padding-bottom: 0.2rem;
 }
 
 .mybullet {
-  background: #000;
   width: 1.5rem;
   height: 1.5rem;
-  /* margin-left: 2rem; */
 }
 
 .bullet--active {
   opacity: 1;
-  /* color: yellow; */
-  background: #b27e49;
+  background: var(--main-brown-color);
 }
