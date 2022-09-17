@@ -1,6 +1,7 @@
 import MainHeader from "../components/main/MainHeader";
 import MainHistory from "../components/main/MainHistory";
-import MainSliderBottles from "../components/main/sliderBottles/MainSliderBottles";
+import MainSliderBottles from "../components/main/MainSliderBottles";
+import MainSpecialCollections from "../components/main/MainSpecialCollections";
 
 const HomePage = () => {
   return (
@@ -8,6 +9,7 @@ const HomePage = () => {
       <MainHeader />
       <MainHistory />
       <MainSliderBottles />
+      <MainSpecialCollections />
     </>
   );
 };

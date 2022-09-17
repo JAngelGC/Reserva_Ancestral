@@ -1,0 +1,58 @@
+.section-special-collections {
+  height: 70vh;
+  padding: 7.5rem 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-special-collections .left {
+  width: 40%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 10rem;
+
+  /* background-color: violet; */
+}
+
+.section-special-collections .left h2 {
+  font-size: 3rem;
+  width: 80%;
+}
+
+.section-special-collections .left button {
+  color: #2d2d2d;
+  width: 12rem;
+
+  margin-top: 3rem;
+  font-size: 1.6rem;
+  padding: 1rem 1.5rem;
+  border-radius: 1.2rem;
+  background-color: transparent;
+  cursor: pointer;
+
+  transition: all 0.3s ease-out;
+}
+
+.section-special-collections .right {
+  width: 60%;
+  height: 100%;
+
+  padding-left: 5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  /* background-color: yellowgreen; */
+}
+
+.section-special-collections .right img {
+  height: 100%;
+  border-radius: 1.2rem;
+  /* width: 100%; */
+}

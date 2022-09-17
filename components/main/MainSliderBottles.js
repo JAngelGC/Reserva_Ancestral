@@ -60,7 +60,7 @@ const MainSliderBottles = () => {
               />
               <h3>Reserva Arroqueño</h3>
               <h4>Arroqueño</h4>
-              <button className={classes.arroqueno}>Ver más</button>
+              <button className={classes.arroqueno}>Descúbrelo</button>
             </div>
           )}
         </SwiperSlide>
@@ -80,7 +80,7 @@ const MainSliderBottles = () => {
               />
               <h3>Reserva Espadín</h3>
               <h4>Espadín</h4>
-              <button className={classes.espadin}>Ver más</button>
+              <button className={classes.espadin}>Descúbrelo</button>
             </div>
           )}
         </SwiperSlide>
@@ -100,7 +100,7 @@ const MainSliderBottles = () => {
               />
               <h3>Reserva Cuixe</h3>
               <h4>Cuixe</h4>
-              <button className={classes.cuixe}>Ver más</button>
+              <button className={classes.cuixe}>Descúbrelo</button>
             </div>
           )}
         </SwiperSlide>
@@ -120,7 +120,7 @@ const MainSliderBottles = () => {
               />
               <h3>Reserva Tobalá</h3>
               <h4>Tobalá</h4>
-              <button className={classes.tobala}>Ver más</button>
+              <button className={classes.tobala}>Descúbrelo</button>
             </div>
           )}
         </SwiperSlide>
