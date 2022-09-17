@@ -1,0 +1,36 @@
+.footer {
+  height: 20vh;
+  width: 100%;
+  padding: 0 5rem;
+  position: relative;
+
+  font-size: 1.4rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+
+  background-color: #f8f6f2;
+  /* background-color: yellowgreen; */
+}
+
+.contacto {
+  display: inline;
+  margin-right: 5rem;
+  /* background: #000; */
+  font-weight: 300;
+}
+
+.aviso {
+  display: inline;
+  font-weight: 300;
+}
+
+.footer img {
+  /* height: 20vh; */
+  height: 100%;
+  position: absolute;
+  right: 0;
+}
