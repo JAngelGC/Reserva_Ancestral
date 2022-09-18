@@ -1,0 +1,21 @@
+.section--welcome {
+  height: 69vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--main-bg-color);
+}
+
+.section--welcome h3 {
+  font-size: var(--fs-sub-sub-title);
+  font-weight: 500;
+}
+
+.section--welcome img {
+  height: 50%;
+  padding-top: 3rem;
+  /* background: #000; */
+}

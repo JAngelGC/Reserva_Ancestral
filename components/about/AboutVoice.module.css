@@ -1,0 +1,43 @@
+.header {
+  height: 88vh;
+  position: relative;
+
+  background-image: url("../../public/static/images/Reserva_Ancestral_Persona_2.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: cover;
+}
+
+.header h2 {
+  color: var(--main-bg-color);
+  font-size: var(--fs-title);
+
+  position: absolute;
+  bottom: 20%;
+  left: 5%;
+}
+
+.header p {
+  font-family: Lora;
+  color: var(--main-bg-color);
+  font-size: var(--fs-small-text);
+  line-height: 1.5;
+  text-align: right;
+
+  width: 30%;
+  position: absolute;
+  top: 20%;
+  right: 5%;
+}
+
+.header hr {
+  width: 30%;
+  height: 0.25rem;
+
+  border: none;
+  background-color: var(--sec-brown-color);
+
+  position: absolute;
+  right: 0;
+  top: 15%;
+}
