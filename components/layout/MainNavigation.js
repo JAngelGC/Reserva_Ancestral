@@ -1,15 +1,30 @@
+import Link from "next/link";
+import { useRouter } from "next/router";
+
 import classes from "./MainNavigation.module.css";
 
 const MainNavigation = () => {
+  const router = useRouter();
+
+  const linkSelected = (path) => {
+    if (router.route.includes(path)) {
+      return true;
+    } else {
+      return false;
+    }
+  };
+
   return (
     <header className={classes.header}>
       <div className={classes.logo}>
-        <img src="./static/images/logo_ra_1.png" alt="" />
+        <Link href="/">
+          <img src="./static/images/logo_ra_1.png" alt="" />
+        </Link>
       </div>
       <nav>
         <ul className={classes.pages}>
-          <li>
-            <p>Nosotros</p>
+          <li className={linkSelected("/about") ? classes.active : ""}>
+            <Link href="/about-us">Nosotros</Link>
           </li>
           <li>
             <p>Proceso</p>

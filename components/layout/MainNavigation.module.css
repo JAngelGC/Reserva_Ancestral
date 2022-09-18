@@ -35,6 +35,7 @@
 .logo img {
   margin-left: 2rem;
   height: 100%;
+  cursor: pointer;
 }
 
 .header nav {
@@ -63,6 +64,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.header li > * {
+  color: var(--black-color);
+  text-decoration: none;
+}
+
+.header li .link:visited,
+.header li .link:focus {
+  color: var(--black-color);
+}
+
+.header .active {
+  font-weight: 800;
 }
 
 .header .pages {
