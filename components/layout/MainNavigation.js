@@ -29,8 +29,8 @@ const MainNavigation = () => {
           <li>
             <p>Proceso</p>
           </li>
-          <li>
-            <p>Familia reserva</p>
+          <li className={linkSelected("/family") ? classes.active : ""}>
+            <Link href="/family">Familia Reserva</Link>
           </li>
           <li>
             <p>Coctelería</p>

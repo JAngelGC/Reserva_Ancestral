@@ -113,7 +113,7 @@
 
 .my-swiper .my-swiper--slide button {
   font-family: Lora;
-  color: #2d2d2d;
+  color: var(--black-color);
   width: 12rem;
 
   margin-top: 3rem;
