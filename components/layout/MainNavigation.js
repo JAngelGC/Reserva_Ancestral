@@ -18,7 +18,7 @@ const MainNavigation = () => {
     <header className={classes.header}>
       <div className={classes.logo}>
         <Link href="/">
-          <img src="./static/images/logo_ra_1.png" alt="" />
+          <img src="/static/images/logo_ra_1.png" alt="" />
         </Link>
       </div>
       <nav>

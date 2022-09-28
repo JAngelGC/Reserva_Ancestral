@@ -1,0 +1,53 @@
+.header {
+  margin-top: 16vh;
+  /* background-color: yellowgreen; */
+
+  width: 100%;
+  height: 84vh;
+}
+
+.section-title {
+  height: 20%;
+  width: 80%;
+  margin: 0 auto;
+  /* margin-top: 100%rem; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  color: var(--main-brown-color);
+  background: #eec5414d;
+
+  /* background-color: violet; */
+}
+
+.section-title h1 {
+  font-size: var(--fs-sub-title);
+  text-align: center;
+}
+
+.section-title h2 {
+  font-size: var(--fs-big-text);
+  text-align: center;
+}
+
+.section-title hr {
+  width: 50%;
+  height: 0.2rem;
+  transform: translate(50%, 0);
+  border: none;
+  background-color: var(--main-brown-color);
+}
+
+.section-img {
+  height: 80%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-img img {
+  height: 90%;
+}
