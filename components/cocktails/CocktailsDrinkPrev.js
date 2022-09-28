@@ -1,6 +1,7 @@
 import classes from "./CocktailsDrinkPrev.module.css";
 
 const CocktailsDrinkPrev = (props) => {
+  console.log(`./static/images/${props.imgPrev}`);
   return (
     <section className={classes["container-drink"]}>
       <div className={classes["container-img"]}>

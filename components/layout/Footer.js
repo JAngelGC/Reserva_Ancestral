@@ -10,7 +10,7 @@ const Footer = () => {
       <p className={classes.derechos}>
         © 2022 Reserva Ancestral, Derechos reservados.
       </p>
-      <img src="./static/images/Sello_Reserva_Ancestral.png" alt="" />
+      <img src="/static/images/Sello_Reserva_Ancestral.png" alt="" />
     </footer>
   );
 };
