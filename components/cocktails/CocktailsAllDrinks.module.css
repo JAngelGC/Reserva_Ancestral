@@ -1,0 +1,32 @@
+.header {
+  margin-top: 12vh;
+
+  width: 100%;
+  height: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* background-color: violet; */
+}
+
+.header h1 {
+  font-size: var(--fs-sub-title);
+  text-align: center;
+  /* background-color: yellowgreen; */
+}
+
+.section-all-drinks {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+
+  padding: 0 10rem;
+  margin-bottom: 5rem;
+  gap: 5rem;
+
+  flex-wrap: wrap;
+
+  /* background-color: violet; */
+}

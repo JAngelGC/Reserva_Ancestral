@@ -32,8 +32,8 @@ const MainNavigation = () => {
           <li className={linkSelected("/family") ? classes.active : ""}>
             <Link href="/family">Familia Reserva</Link>
           </li>
-          <li>
-            <p>Coctelería</p>
+          <li className={linkSelected("/cocktails") ? classes.active : ""}>
+            <Link href="/cocktails">Coctelería</Link>
           </li>
         </ul>
         <ul className={classes["social-networks"]}>
