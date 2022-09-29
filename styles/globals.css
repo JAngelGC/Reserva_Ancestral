@@ -5,6 +5,9 @@
 /* GENERAL */
 /**************************/
 :root {
+  --ff-main: "Cinzel";
+  --ff-sec: "Lora";
+
   --black-color: #2d2d2d;
   --main-bg-color: #f8f6f2;
   --sec-bg-color: #e5e5e5;
