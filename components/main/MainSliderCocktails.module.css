@@ -15,17 +15,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  /* background-color: yellowgreen; */
 }
 
 .my-swiper {
   height: 70%;
   width: 100%;
   border-radius: 1.2rem;
-  /* padding: 0 10rem;   */
-
-  /* background-color: tomato; */
 }
 
 .my-swiper .my-swiper--slide {
@@ -43,7 +38,6 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  /* background-color: violet; */
 }
 
 .my-swiper--slide .container-img img {
@@ -52,8 +46,8 @@
 
 .my-swiper--slide .container-text {
   width: 60%;
-
   padding: 0 4rem;
+
   display: flex;
   justify-content: center;
   align-items: flex-start;

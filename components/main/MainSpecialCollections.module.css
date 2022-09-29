@@ -29,9 +29,10 @@
 }
 
 .section-special-collections .left button {
+  width: 12rem;
+
   font-family: Lora;
   color: var(--black-color);
-  width: 12rem;
 
   margin-top: 3rem;
   font-size: 1.6rem;
@@ -58,8 +59,6 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-
-  /* background-color: yellowgreen; */
 }
 
 .section-special-collections .right img {

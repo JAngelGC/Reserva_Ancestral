@@ -34,10 +34,10 @@
   width: 30%;
   height: 0.25rem;
 
-  border: none;
-  background-color: var(--sec-brown-color);
-
   position: absolute;
   right: 0;
   top: 15%;
+
+  border: none;
+  background-color: var(--sec-brown-color);
 }
