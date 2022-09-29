@@ -16,7 +16,6 @@ import { EffectCoverflow, Pagination } from "swiper";
 import classes from "./MainSliderBottles.module.css";
 
 const MainSliderBottles = (props) => {
-  console.log(props);
   return (
     <section className={classes["section-slider--bottles"]}>
       <h2>Nuestra familia reserva</h2>
@@ -47,6 +46,7 @@ const MainSliderBottles = (props) => {
         {props.allBottles.map((bottle) => {
           return (
             <SwiperSlide
+              key={bottle.id}
               className={`${classes["my-swiper--slide"]} ${
                 classes[bottle.color]
               }`}
