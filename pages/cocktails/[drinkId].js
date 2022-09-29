@@ -1,38 +1,60 @@
+import { doc, getDoc } from "firebase/firestore";
+import db from "../../firebase/config";
+
 import DrinkHeader from "../../components/drink/DrinkHeader";
 import DrinkIngredients from "../../components/drink/DrinkIngredients";
 import DrinkPreparation from "../../components/drink/DrinkPreparation";
 
-const bebida = {
-  title: "Sorbete de Mango 333",
-  subtitle: "Reserva Espadín Joven",
-  imgPrev: "img_prueba.jpg",
-  ingredients: [
-    { ing: "Mango macerado", imgP: "mango.png" },
-    { ing: "1 oz de jugo de limón", imgP: "mango.png" },
-    { ing: "1 oz de jarabe de maracuyá", imgP: "mango.png" },
-    { ing: "3/4 oz de licor de chiles", imgP: "mango.png" },
-    { ing: "11/2 oz de Mezcal Reserva Espadín", imgP: "mango.png" },
-  ],
-  steps: [
-    "Colocar todos los ingredientes en una licuadora hasta que se deshaga el mango.",
-    "Colocar todos los ingredientes en una licuadora hasta que se deshaga el mango.",
-    "Escarchar la copa con chile piquín y decorar con un trozo de mango.",
-  ],
-};
-
-// I will change bebida.title for props.title
-const DrinkPage = () => {
+const DrinkPage = (props) => {
   return (
     <>
       <DrinkHeader
-        title={bebida.title}
-        subtitle={bebida.subtitle}
-        imgPrev={bebida.imgPrev}
+        title={props.drink.title}
+        subtitle={props.drink.subtitle}
+        imgPrev={props.drink.imgPrev}
       />
-      <DrinkIngredients ingredients={bebida.ingredients} />
-      <DrinkPreparation embedId="7RREsx9lnNI" steps={bebida.steps} />
+      <DrinkIngredients ingredients={props.drink.ingredients} />
+      <DrinkPreparation embedId="7RREsx9lnNI" steps={props.drink.steps} />
     </>
   );
 };
+
+export async function getStaticPaths() {
+  // This should be dynamically
+
+  return {
+    fallback: false,
+    paths: [
+      {
+        params: {
+          drinkId: "mango",
+        },
+      },
+    ],
+  };
+}
+
+export async function getStaticProps(context) {
+  // fetch data for a single meetup
+
+  const drinkId = context.params.drinkId;
+  console.log("MY ID: ", drinkId);
+
+  const docRef = doc(db, "drinks", drinkId);
+  const docSnap = await getDoc(docRef);
+  const data = docSnap.data();
+
+  return {
+    props: {
+      drink: {
+        title: data.title,
+        subtitle: data.subtitle,
+        imgPrev: data.imgPrev,
+        ingredients: data.ingredients,
+        steps: data.steps,
+      },
+    },
+  };
+}
 
 export default DrinkPage;
