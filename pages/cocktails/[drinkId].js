@@ -1,4 +1,4 @@
-import { doc, getDoc } from "firebase/firestore";
+import { doc, getDoc, collection, getDocs } from "firebase/firestore";
 import db from "../../firebase/config";
 
 import DrinkHeader from "../../components/drink/DrinkHeader";
@@ -20,25 +20,27 @@ const DrinkPage = (props) => {
 };
 
 export async function getStaticPaths() {
-  // This should be dynamically
+  // This generate all the paths for this dynamic route
+  const colRef = collection(db, "drinks");
+  const snapshots = await getDocs(colRef);
+
+  const ids = snapshots.docs.map((doc) => {
+    return doc.id;
+  });
 
   return {
     fallback: false,
-    paths: [
-      {
-        params: {
-          drinkId: "mango",
-        },
+    paths: ids.map((id) => ({
+      params: {
+        drinkId: id,
       },
-    ],
+    })),
   };
 }
 
 export async function getStaticProps(context) {
   // fetch data for a single meetup
-
   const drinkId = context.params.drinkId;
-  console.log("MY ID: ", drinkId);
 
   const docRef = doc(db, "drinks", drinkId);
   const docSnap = await getDoc(docRef);

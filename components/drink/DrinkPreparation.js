@@ -1,7 +1,6 @@
 import classes from "./DrinkPreparation.module.css";
 
 const DrinkPreparation = (props) => {
-  console.log(props);
   return (
     <section className={classes["section-preparation"]}>
       <div className={classes["container-video"]}>
