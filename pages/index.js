@@ -14,26 +14,39 @@ const HomePage = (props) => {
       <MainHistory />
       <MainSliderBottles allBottles={props.allBottles} />
       <MainSpecialCollections />
-      <MainSliderCocktails />
+      <MainSliderCocktails allCocktails={props.allCocktails} />
     </>
   );
 };
 
 export async function getStaticProps() {
-  // fetch data from an API
-  const colRef = collection(db, "bottlesPreview");
-  const snapshots = await getDocs(colRef);
+  // fetch bottles preview from firestore
+  const colRefBottles = collection(db, "bottlesPreview");
+  const snapshotsBottles = await getDocs(colRefBottles);
 
-  const docs = snapshots.docs.map((doc) => {
+  const docsBottles = snapshotsBottles.docs.map((doc) => {
     const data = doc.data();
     data.id = doc.id;
 
     return data;
   });
 
+  // fetch cocktails previews from firestore
+  const colRefCocktails = collection(db, "drinks");
+  const snapshotsCocktails = await getDocs(colRefCocktails);
+
+  const docsCocktails = snapshotsCocktails.docs.map((doc) => {
+    const data = doc.data();
+    data.id = doc.id;
+
+    return data;
+  });
+  console.log("---------------", docsCocktails);
+
   return {
     props: {
-      allBottles: docs,
+      allBottles: docsBottles,
+      allCocktails: docsCocktails,
     },
     revalidate: 3600 * 24,
   };
