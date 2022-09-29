@@ -18,6 +18,7 @@
 }
 
 .contacto {
+  cursor: pointer;
   display: inline;
   font-size: var(--fs-mid-small-text);
   font-weight: 300;
