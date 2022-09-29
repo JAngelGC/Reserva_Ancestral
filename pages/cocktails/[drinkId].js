@@ -1,5 +1,6 @@
 import DrinkHeader from "../../components/drink/DrinkHeader";
 import DrinkIngredients from "../../components/drink/DrinkIngredients";
+import DrinkPreparation from "../../components/drink/DrinkPreparation";
 
 const bebida = {
   title: "Sorbete de Mango 333",
@@ -29,6 +30,7 @@ const DrinkPage = () => {
         imgPrev={bebida.imgPrev}
       />
       <DrinkIngredients ingredients={bebida.ingredients} />
+      <DrinkPreparation embedId="7RREsx9lnNI" steps={bebida.steps} />
     </>
   );
 };
