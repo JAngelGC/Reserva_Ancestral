@@ -21,14 +21,21 @@ const HomePage = (props) => {
 
 export async function getStaticProps() {
   // fetch bottles preview from firestore
-  const colRefBottles = collection(db, "bottlesPreview");
+  const colRefBottles = collection(db, "bottles");
   const snapshotsBottles = await getDocs(colRefBottles);
 
   const docsBottles = snapshotsBottles.docs.map((doc) => {
     const data = doc.data();
-    data.id = doc.id;
 
-    return data;
+    const newData = {
+      id: doc.id,
+      color: data.color,
+      nameImage: data.nameImage,
+      subtitle: data.subtitle,
+      title: data.title,
+    };
+
+    return newData;
   });
 
   // fetch cocktails previews from firestore
@@ -41,7 +48,6 @@ export async function getStaticProps() {
 
     return data;
   });
-  console.log("---------------", docsCocktails);
 
   return {
     props: {
