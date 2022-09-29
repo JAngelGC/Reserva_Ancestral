@@ -1,3 +1,7 @@
+import { collection, getDocs, getDosc } from "firebase/firestore";
+import db from "../../firebase/config";
+import { useEffect } from "react";
+
 import CocktailsAllDrinks from "../../components/cocktails/CocktailsAllDrinks";
 
 const ALL_DRINKS = [
@@ -100,16 +104,28 @@ const ALL_DRINKS = [
 ];
 
 const CocktailsPage = (props) => {
-  console.log(props);
+  // console.log(props);
   return <CocktailsAllDrinks allDrinks={props.allDrinks} />;
 };
 
 export async function getStaticProps() {
   // fetch data from an API
 
+  const colRef = collection(db, "drinksPreview");
+
+  const snapshots = await getDocs(colRef);
+
+  const docs = snapshots.docs.map((doc) => {
+    const data = doc.data();
+    data.id = doc.id;
+
+    return data;
+  });
+  console.log(docs);
+
   return {
     props: {
-      allDrinks: ALL_DRINKS,
+      allDrinks: docs,
     },
     revalidate: 3600 * 24,
   };
