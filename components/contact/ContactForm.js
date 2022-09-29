@@ -59,8 +59,8 @@ const ContactForm = () => {
     : `${classes["form-control"]}`;
 
   const msgInputClasses = msgInputHasError
-    ? `${classes["form-control"]} ${classes["invalid"]}`
-    : `${classes["form-control"]}`;
+    ? `${classes["form-control"]} ${classes["form-control--msg"]} ${classes["invalid"]}`
+    : `${classes["form-control"]} ${classes["form-control--msg"]}`;
 
   const btnClass = formIsValid
     ? `${classes["btn-valid"]}}`
@@ -109,8 +109,12 @@ const ContactForm = () => {
           />
           {msgInputHasError && <p className={classes["error-text"]}>Error </p>}
         </div>
+
         <div className={classes["form-actions"]}>
-          <button className={btnClass} disabled={!formIsValid}>
+          <button
+            className={`${classes.btn} ${btnClass}`}
+            disabled={!formIsValid}
+          >
             Submit
           </button>
         </div>
