@@ -1,9 +1,6 @@
 import classes from "./DrinkIngredients.module.css";
 
 const DrinkIngredients = (props) => {
-  //   props.ingredients.map((ing) => {
-  //     console.log(ing[0]);
-  //   });
   return (
     <section className={classes["section-ingredients"]}>
       <h2>Ingredientes</h2>

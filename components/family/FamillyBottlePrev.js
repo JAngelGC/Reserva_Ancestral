@@ -1,7 +1,6 @@
 import classes from "./FamillyBottlePrev.module.css";
 
 const FamillyBottlePrev = (props) => {
-  console.log(props.color);
   return (
     <section className={`${classes["bottle-prev"]}`}>
       <div className={classes["container-text"]}>
