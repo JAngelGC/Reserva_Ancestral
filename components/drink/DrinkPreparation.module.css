@@ -27,6 +27,8 @@
   width: 35%;
   height: 75%;
 
+  font-family: var(--ff-sec);
+
   padding: 0 2.5%;
 
   display: flex;
