@@ -1,0 +1,145 @@
+.section-contact {
+  margin: 0 auto;
+  margin-top: 12vh;
+  height: 88vh;
+  width: 90%;
+
+  /* height: 68vh; */
+
+  display: flex;
+  flex-direction: row-reverse;
+
+  /* background-color: rgb(255, 204, 195); */
+}
+
+.container-form {
+  height: 100%;
+  width: 50%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* background-color: aquamarine; */
+}
+
+.container-form h2 {
+  font-size: var(--fs-sub-title);
+  margin-bottom: 1.5rem;
+}
+
+.form-control {
+  margin: 2rem 0;
+  width: 75%;
+  height: 11%;
+}
+
+.form-control input,
+.form-control textarea,
+.form-control label {
+  display: block;
+}
+
+.form-control label {
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  font-size: var(--fs-mid-small-text);
+}
+
+.form-control input,
+.form-control textarea {
+  font-size: var(--fs-mid-small-text);
+}
+
+.form-control input,
+.form-control textarea,
+.form-control select {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.form-control textarea {
+  resize: no;
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  /* background-color: yellowgreen; */
+}
+
+.form-control input:focus,
+.form-control textarea:focus {
+  outline: none;
+  border-color: #240370;
+  background-color: #e0d4fd;
+}
+
+.invalid input,
+.invalid textarea {
+  border: 1px solid #b40e0e;
+  background-color: #fddddd;
+}
+
+.invalid input:focus,
+.invalid textarea:focus {
+  border-color: #ff8800;
+  background-color: #fbe8d2;
+}
+
+.error-text {
+  font-size: var(--fs-small-small-text);
+  color: #b40e0e;
+}
+
+.form-actions {
+  text-align: right;
+  width: 75%;
+}
+
+.form-actions button {
+  /* margin-left: 1rem; */
+
+  font-size: var(--fs-mid-small-text);
+  padding: 0.5rem 0;
+  cursor: pointer;
+
+  border-radius: 1.2rem;
+  border: none;
+  width: 100%;
+
+  margin-top: 4rem;
+
+  color: #f3f3f3;
+  background-color: var(--sec-brown-color);
+
+  transition: all 0.3s ease-out;
+}
+
+.form-actions .btn-valid {
+  opacity: 1;
+}
+
+.form-actions .btn-invalid {
+  opacity: 0.5;
+}
+
+/*  */
+/*  */
+/*  */
+.container-img {
+  width: 50%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* background-color: violet; */
+}
+
+.container-img img {
+  width: 100%;
+}
