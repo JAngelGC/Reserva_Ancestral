@@ -9,7 +9,10 @@ const ContactForm = () => {
     valueChangeHandler: nameChangeHandler,
     inputBlurHandler: nameBlurHandler,
     reset: resetNameInput,
-  } = useInput((value) => value.trim() !== "");
+  } = useInput((name) => {
+    const re = new RegExp(/^[a-zA-Z\u00C0-\u024F\u1E00-\u1EFF]/);
+    return re.test(name);
+  });
 
   const {
     value: enteredEmail,
@@ -18,7 +21,12 @@ const ContactForm = () => {
     valueChangeHandler: emailChangeHandler,
     inputBlurHandler: emailBlurHandler,
     reset: resetEmailInput,
-  } = useInput((value) => value.includes("@"));
+  } = useInput((mail) => {
+    const re = new RegExp(
+      /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    );
+    return re.test(mail);
+  });
 
   const {
     value: enteredMsg,
@@ -27,7 +35,20 @@ const ContactForm = () => {
     valueChangeHandler: msgChangeHandler,
     inputBlurHandler: msgBlurHandler,
     reset: resetMsgInput,
-  } = useInput((value) => value.trim() !== "");
+  } = useInput((msg) => {
+    const maxWords = 175;
+    const numWords = msg.trim().split(" ").length;
+
+    if (
+      numWords < maxWords &&
+      numWords >= 1 &&
+      msg.trim().split(" ")[0] !== ""
+    ) {
+      return true;
+    } else {
+      return false;
+    }
+  });
 
   let formIsValid = false;
   if (enteredNameIsValid && enteredEmailIsValid && enteredMsgIsValid) {
@@ -75,7 +96,7 @@ const ContactForm = () => {
       >
         <h2>Contacto</h2>
         <div className={nameInputClasses}>
-          <label htmlFor="name">First Name</label>
+          <label htmlFor="name">Nombre</label>
           <input
             type="text"
             id="name"
@@ -83,10 +104,14 @@ const ContactForm = () => {
             onBlur={nameBlurHandler}
             value={enteredName}
           />
-          {nameInputHasError && <p className={classes["error-text"]}>Error </p>}
+          {nameInputHasError && (
+            <p className={classes["error-text"]}>
+              Por favor, ingresa un nombre válido{" "}
+            </p>
+          )}
         </div>
         <div className={emailInputClasses}>
-          <label htmlFor="name">E-Mail Address</label>
+          <label htmlFor="name">Correo</label>
           <input
             type="text"
             id="name"
@@ -95,7 +120,9 @@ const ContactForm = () => {
             value={enteredEmail}
           />
           {emailInputHasError && (
-            <p className={classes["error-text"]}>Error </p>
+            <p className={classes["error-text"]}>
+              Por favor, ingresa un correo válido{" "}
+            </p>
           )}
         </div>
         <div className={msgInputClasses}>
@@ -107,7 +134,11 @@ const ContactForm = () => {
             onBlur={msgBlurHandler}
             value={enteredMsg}
           />
-          {msgInputHasError && <p className={classes["error-text"]}>Error </p>}
+          {msgInputHasError && (
+            <p className={classes["error-text"]}>
+              Por favor, ingresa un mensaje válido{" "}
+            </p>
+          )}
         </div>
 
         <div className={classes["form-actions"]}>
