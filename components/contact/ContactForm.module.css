@@ -25,6 +25,7 @@
 }
 
 .container-form h2 {
+  color: var(--main-brown-color);
   font-size: var(--fs-sub-title);
   margin-bottom: 1.5rem;
 }
@@ -45,6 +46,7 @@
 .form-control textarea,
 .form-control label {
   display: block;
+  font-family: var(--ff-sec);
 }
 
 .form-control label {
