@@ -62,9 +62,9 @@ const ContactForm = () => {
       return;
     }
 
-    console.log(enteredName);
-    console.log(enteredEmail);
-    console.log(enteredMsg);
+    // console.log(enteredName);
+    // console.log(enteredEmail);
+    // console.log(enteredMsg);
 
     resetNameInput();
     resetEmailInput();
@@ -126,7 +126,7 @@ const ContactForm = () => {
           )}
         </div>
         <div className={msgInputClasses}>
-          <label htmlFor="msg">Message</label>
+          <label htmlFor="msg">Mensaje</label>
           <textarea
             type="text"
             id="msg"

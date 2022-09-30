@@ -13,6 +13,8 @@
 .header h1 {
   font-size: var(--fs-sub-title);
   text-align: center;
+  font-weight: 500;
+  color: var(--main-brown-color);
   /* background-color: yellowgreen; */
 }
 

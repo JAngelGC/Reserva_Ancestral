@@ -10,6 +10,8 @@
 
 .section-ingredients h2 {
   font-size: var(--fs-sub-sub-title);
+  font-weight: 500;
+  color: var(--main-brown-color);
 
   width: 100%;
   height: 20%;
@@ -24,6 +26,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
   width: 90%;
   height: 80%;
   /* background-color: turquoise; */
@@ -37,6 +40,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  gap: 1%;
   padding-top: 2%;
 
   /* background-color: violet; */
@@ -48,6 +52,8 @@
 }
 
 .container-ingredient h3 {
+  font-family: var(--ff-sec);
   font-size: var(--fs-small-text);
+  font-weight: 500;
   text-align: center;
 }
