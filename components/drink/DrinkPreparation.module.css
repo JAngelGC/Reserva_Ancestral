@@ -41,6 +41,9 @@
 .container-steps h2 {
   text-align: center;
   font-size: var(--fs-sub-sub-title);
+  font-weight: 500;
+  color: var(--main-brown-color);
+  margin-bottom: 10%;
 }
 
 .container-steps .step {
@@ -48,7 +51,7 @@
 }
 
 .container-steps .step .step-number {
-  font-weight: 600;
+  font-weight: 500;
   font-size: var(--fs-mid-text);
 }
 

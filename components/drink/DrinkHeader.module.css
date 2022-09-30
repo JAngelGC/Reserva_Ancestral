@@ -17,7 +17,8 @@
   justify-content: center;
 
   color: var(--main-brown-color);
-  background: #eec5414d;
+  /* background: #eec5414d; */
+  background-color: var(--main-bg-color);
 
   /* background-color: violet; */
 }
@@ -25,11 +26,14 @@
 .section-title h1 {
   font-size: var(--fs-sub-title);
   text-align: center;
+
+  font-weight: 600;
 }
 
 .section-title h2 {
   font-size: var(--fs-big-text);
   text-align: center;
+  font-weight: 500;
 }
 
 .section-title hr {

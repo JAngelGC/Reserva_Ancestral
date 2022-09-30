@@ -27,6 +27,7 @@
 .container-form h2 {
   color: var(--main-brown-color);
   font-size: var(--fs-sub-title);
+  font-weight: 500;
   margin-bottom: 1.5rem;
 }
 
@@ -44,7 +45,8 @@
 
 .form-control input,
 .form-control textarea,
-.form-control label {
+.form-control label,
+.form-control p {
   display: block;
   font-family: var(--ff-sec);
 }
