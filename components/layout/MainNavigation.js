@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { useState, useEffect } from "react";
 
 import classes from "./MainNavigation.module.css";
 
@@ -14,25 +15,72 @@ const MainNavigation = () => {
     }
   };
 
+  const [toggleNav, setToggleNav] = useState(false);
+
+  const toggleNavHandler = () => {
+    setToggleNav((prevStateNav) => !prevStateNav);
+  };
+
+  const hiddeNavHandler = () => {
+    setToggleNav(false);
+    console.log("CLICCCK");
+  };
+
+  // useEffect(() => {
+  //   if (toggleNav) {
+  //     toggleNavHandler();
+  //   }
+  // }, [router.asPath]);
+
+  const classHeader = toggleNav ? `${classes["nav-open"]}` : "";
+
   return (
-    <header className={classes.header}>
+    <header className={`${classes.header} ${classHeader}`}>
       <div className={classes.logo}>
         <Link href="/">
           <img src="/static/images/logo_ra_1.png" alt="" />
         </Link>
       </div>
-      <nav>
+      <nav className={classes["main-nav"]}>
         <ul className={classes.pages}>
-          <li className={linkSelected("/about") ? classes.active : ""}>
+          {/*  */}
+          {/* {toggleNav && (
+            <li>
+              <div className={classes.logo}>
+                <Link href="/">
+                  <img src="/static/images/logo_ra_1.png" alt="" />
+                </Link>
+              </div>
+            </li>
+          )} */}
+          {/*  */}
+          <li className={classes.try}>
+            <div onClick={hiddeNavHandler} className={classes["logo-nav"]}>
+              <Link href="/">
+                <img src="/static/images/logo_ra_1.png" alt="" />
+              </Link>
+            </div>
+          </li>
+
+          <li
+            onClick={hiddeNavHandler}
+            className={linkSelected("/about") ? classes.active : ""}
+          >
             <Link href="/about-us">Nosotros</Link>
           </li>
           <li>
             <p>Proceso</p>
           </li>
-          <li className={linkSelected("/family") ? classes.active : ""}>
+          <li
+            onClick={hiddeNavHandler}
+            className={linkSelected("/family") ? classes.active : ""}
+          >
             <Link href="/family">Familia Reserva</Link>
           </li>
-          <li className={linkSelected("/cocktails") ? classes.active : ""}>
+          <li
+            onClick={hiddeNavHandler}
+            className={linkSelected("/cocktails") ? classes.active : ""}
+          >
             <Link href="/cocktails">Coctelería</Link>
           </li>
         </ul>
@@ -78,6 +126,24 @@ const MainNavigation = () => {
           </a>
         </ul>
       </nav>
+
+      <button className={classes["btn-mobile-nav"]} onClick={toggleNavHandler}>
+        <svg
+          className={`${classes["icon-mobile-nav"]} ${classes["menu-outline"]}`}
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 448 512"
+        >
+          <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+        </svg>
+
+        <svg
+          className={`${classes["icon-mobile-nav"]} ${classes["close-outline"]}`}
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 320 512"
+        >
+          <path d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z" />
+        </svg>
+      </button>
     </header>
   );
 };
