@@ -26,14 +26,14 @@
   font-weight: bold;
 
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 
   /* background-color: violet; */
 }
 
 .logo img {
-  margin-left: 2rem;
+  /* margin-left: 2rem; */
   height: 100%;
   cursor: pointer;
 }
@@ -54,6 +54,7 @@
   align-items: baseline;
 
   /* background-color: yellow; */
+  /* border: 2px solid black; */
 }
 
 .header li {
@@ -64,6 +65,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  /* background: #000; */
+}
+
+.header li .logo-nav {
+  /* background-color: saddlebrown; */
+  /* width: 33%; */
+  /* opacity: 0; */
+  display: none;
+}
+
+.header li .logo-nav img {
+  width: 100%;
+}
+
+.main-nav .pages li .logos img {
+  opacity: 0;
+  /* background-color: yellowgreen; */
 }
 
 .header li > * {
@@ -81,11 +100,12 @@
 }
 
 .header .pages {
-  width: 70%;
+  width: 80%;
 
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
 
   /* background-color: tomato; */
 }
@@ -117,11 +137,13 @@
 }
 
 .header .social-networks {
-  width: 30%;
+  width: 20%;
 
   display: flex;
   justify-content: flex-end;
   align-items: center;
+
+  /* background-color: yellowgreen; */
 }
 
 .header .social-networks li {
@@ -137,4 +159,173 @@
 
 .header .social-networks li .icon:hover {
   fill: var(--main-brown-color);
+}
+
+/**************************/
+/* MOBILE */
+/**************************/
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 3rem;
+  width: 3rem;
+  color: #333;
+}
+
+.icon-mobile-nav.close-outline {
+  display: none;
+}
+
+/* rem and em do NOT depend on html font-size in media queries
+Instead, 1rem = 1em = 16px   */
+
+/**************************/
+/* BELOW 1344px /smaller desktops */
+/**************************/
+@media (max-width: 84em) {
+}
+
+/**************************/
+/* BELOW 1200px /landscape tablets */
+/**************************/
+@media (max-width: 75em) {
+  .header {
+    /* 9px / 16px */
+    font-size: 56.25%;
+  }
+}
+
+/**************************/
+/* BELOW 940px /  tablets */
+/**************************/
+@media (max-width: 59em) {
+  .header {
+    /* 8px / 16px */
+    font-size: 50%;
+  }
+
+  .logo {
+    margin-left: 0.1%;
+    width: auto;
+    /* background-color: yellowgreen; */
+  }
+
+  /* MOBILE NAVIGATION */
+  .btn-mobile-nav {
+    display: block;
+    z-index: 100;
+  }
+
+  .header li {
+    font-size: var(--fs-mid-text);
+  }
+
+  .header .main-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10%;
+    transition: all 0.5s ease-in;
+
+    background-color: rgba(255, 255, 255, 0.96);
+
+    /* Hide navigation */
+    /* Allows NO transitions at all */
+    /* display: none; */
+
+    /* 1) Hide it visually */
+    opacity: 0;
+
+    /* 2) Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
+
+    transform: translateX(100%);
+  }
+
+  .try {
+    width: 30%;
+  }
+
+  .header li .logo-nav {
+    display: flex;
+
+    /* width: 50%; */
+  }
+
+  .main-nav .pages {
+    flex-direction: column;
+    gap: 5rem;
+    /* background-color: violet; */
+    width: 100%;
+  }
+
+  .main-nav .pages .logo {
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .main-nav .social-networks {
+    width: 100%;
+    justify-content: center;
+    /* background-color: yellowgreen; */
+  }
+
+  .header .social-networks li {
+    margin: 0 2.5rem;
+  }
+
+  .main-nav .social-networks li .icon {
+    width: 3.2rem;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+
+    transform: translateX(0%);
+  }
+
+  .nav-open .icon-mobile-nav.close-outline {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav.menu-outline {
+    display: none;
+  }
+}
+
+/**************************/
+/* BELOW 700px /  smaller tablets */
+/**************************/
+@media (max-width: 44em) {
+}
+
+/**************************/
+/* BELOW 544px /  phones */
+/**************************/
+@media (max-width: 34em) {
+}
+
+/**************************/
+/* BELOW 375px /  phones */
+/**************************/
+@media (max-width: 23em) {
 }
