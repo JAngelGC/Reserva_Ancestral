@@ -10,11 +10,37 @@
 }
 
 .section--welcome h3 {
+  width: 100%;
+  text-align: center;
   font-size: var(--fs-sub-sub-title);
   font-weight: 500;
 }
 
 .section--welcome img {
-  height: 50%;
+  /* background-color: yellowgreen; */
+  height: 48%;
   padding-top: 3rem;
+}
+
+/**************************/
+/* BELOW 940px /  tablets */
+/**************************/
+@media (max-width: 59em) {
+  .section--welcome img {
+    width: 85%;
+    height: auto;
+    padding-top: 3rem;
+  }
+}
+
+/**************************/
+/* BELOW 544px /  phones */
+/**************************/
+@media (max-width: 34em) {
+  .section--welcome {
+    height: 63vh;
+  }
+  .section--welcome h3 {
+    width: 85%;
+  }
 }

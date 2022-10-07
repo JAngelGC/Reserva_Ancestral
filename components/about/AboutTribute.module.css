@@ -26,7 +26,7 @@
   font-size: var(--fs-sub-title);
 
   position: absolute;
-  top: 15%;
+  top: 20%;
   left: 5%;
 }
 
@@ -40,4 +40,45 @@
   position: absolute;
   top: 35%;
   left: 5%;
+}
+
+/**************************/
+/* BELOW 940px /  tablets */
+/**************************/
+@media (max-width: 59em) {
+  .section-tribute .container-bg p {
+    width: 25%;
+  }
+}
+
+/**************************/
+/* BELOW 544px /  phones */
+/**************************/
+@media (max-width: 34em) {
+  .section-tribute .container-bg {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .section-tribute .container-bg h2 {
+    padding-top: 15%;
+    padding-bottom: 5%;
+    width: 80%;
+    text-align: center;
+    position: relative;
+    top: 0%;
+    left: 0%;
+  }
+
+  .section-tribute .container-bg p {
+    text-align: center;
+    width: 80%;
+    position: relative;
+    top: 0%;
+    left: 0%;
+  }
 }
