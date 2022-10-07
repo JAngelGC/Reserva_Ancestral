@@ -4,6 +4,8 @@
 
   background-color: var(--sec-bg-color);
   z-index: 1;
+
+  overflow: hidden;
 }
 
 .section-slider--bottles h2 {

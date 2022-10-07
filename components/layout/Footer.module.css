@@ -1,20 +1,22 @@
 .footer {
   height: 20vh;
   width: 100%;
-  padding: 0 5rem;
+  padding: 0 5%;
   position: relative;
 
   font-size: 1.4rem;
 
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 1rem;
+  justify-content: flex-start;
+  align-items: center;
 
   border-top: 1px solid var(--main-brown-color);
   background-color: var(--main-bg-color);
   /* background-color: yellowgreen; */
+}
+
+.container-text {
+  width: 80%;
 }
 
 .contacto {
@@ -22,21 +24,67 @@
   display: inline;
   font-size: var(--fs-mid-small-text);
   font-weight: 300;
-  margin-right: 5rem;
+  margin-right: 8%;
+  /* background-color: aqua; */
 }
 
 .aviso {
   display: inline;
   font-size: var(--fs-mid-small-text);
   font-weight: 300;
+
+  /* background-color: violet; */
 }
 
 .derechos {
+  margin-top: 1%;
   font-size: var(--fs-small-text);
+  width: 100%;
+
+  /* background-color: tomato; */
 }
 
 .footer img {
   height: 100%;
   position: absolute;
   right: 0;
+}
+
+/**************************/
+/* BELOW 544px /  phones */
+/**************************/
+@media (max-width: 34em) {
+  .footer {
+    height: 25vh;
+  }
+
+  .footer img {
+    height: 80%;
+    position: absolute;
+    right: 0;
+  }
+
+  .container-text {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  .contacto {
+    width: 100%;
+    margin-right: 0%;
+    /* background-color: aqua; */
+  }
+
+  .aviso {
+    width: 100%;
+
+    /* background-color: violet; */
+  }
+
+  .derechos {
+    width: 100%;
+    margin-top: 0;
+
+    /* background-color: tomato; */
+  }
 }
