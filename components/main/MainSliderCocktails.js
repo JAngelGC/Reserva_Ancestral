@@ -27,6 +27,14 @@ const MainSliderCocktails = (props) => {
           bulletClass: `swiper-pagination-bullet ${classes.mybullet}`,
           clickable: true,
         }}
+        breakpoints={{
+          700: {
+            direction: "vertical",
+          },
+          1: {
+            direction: "horizontal",
+          },
+        }}
         modules={[Pagination]}
         className={classes["my-swiper"]}
       >
@@ -53,6 +61,7 @@ const MainSliderCocktails = (props) => {
                     return <li key={Math.random()}>{step}</li>;
                   })}
                 </ol>
+                <button>Ver más</button>
               </div>
             </SwiperSlide>
           );
