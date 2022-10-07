@@ -1,6 +1,7 @@
 .container-drink {
-  width: 40%;
+  width: 35%;
   height: 30rem;
+  margin-bottom: 5%;
 
   border-radius: 1.2rem;
 
@@ -26,7 +27,9 @@
 }
 
 .container-drink .container-img img {
-  height: 100%;
+  height: 120%;
+  /* width: 120%; */
+  /* height: auto; */
 
   transition: all 0.2s ease-in-out;
 }
@@ -58,4 +61,32 @@
   transform: translate(0, -1%);
   /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px; */
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/**************************/
+/* BELOW 1200px /landscape tablets */
+/**************************/
+@media (max-width: 75em) {
+  .container-drink {
+    width: 40%;
+  }
+}
+
+/**************************/
+/* BELOW 700px /  smaller tablets */
+/**************************/
+@media (max-width: 44em) {
+  .container-drink {
+    width: 75%;
+    margin-bottom: 7.5%;
+  }
+}
+
+/**************************/
+/* BELOW 544px /  phones */
+/**************************/
+@media (max-width: 34em) {
+  .container-drink {
+    width: 80%;
+  }
 }
