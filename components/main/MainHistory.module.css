@@ -26,3 +26,21 @@
   font-weight: 500;
   color: var(--main-brown-color);
 }
+
+/**************************/
+/* BELOW 700px /  smaller tablets */
+/**************************/
+@media (max-width: 44em) {
+  .section-history {
+    height: 75vh;
+  }
+}
+
+/**************************/
+/* BELOW 375px /  phones */
+/**************************/
+@media (max-width: 23em) {
+  .section-history {
+    height: 100vh;
+  }
+}

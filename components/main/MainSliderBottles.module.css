@@ -29,7 +29,9 @@
   margin: auto 0;
 
   border-radius: 1.2rem;
+
   background-color: var(--main-bg-color);
+  /* background-color: yellowgreen; */
 }
 
 .my-swiper .my-swiper--slide .container-slide {
@@ -41,6 +43,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  /* background-color: violet; */
 }
 
 .my-swiper .my-swiper--slide .active {
@@ -58,7 +62,9 @@
 }
 
 .my-swiper .my-swiper--slide .img-bottle {
+  /* display: none; */
   height: 120%;
+  z-index: 100;
 
   position: absolute;
   top: -14%;
@@ -67,12 +73,23 @@
   transition: all 0.3s ease-out;
 }
 
+.my-swiper .my-swiper--slide .container-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  /* background-color: yellowgreen; */
+}
+
 .my-swiper .my-swiper--slide h3 {
+  text-align: center;
   font-size: var(--fs-big-text);
   font-weight: 100;
 }
 
 .my-swiper .my-swiper--slide h4 {
+  text-align: center;
   font-size: var(--fs-mid-text);
   font-weight: 100;
   position: relative;
@@ -170,4 +187,130 @@
 .bullet--active {
   opacity: 1;
   background: var(--main-brown-color);
+}
+
+/**************************/
+/* BELOW 1344px /smaller desktops */
+/**************************/
+@media (max-width: 84em) {
+  .my-swiper .my-swiper--slide .img-bottle {
+    left: -35%;
+  }
+
+  .container-text {
+    margin-left: 15%;
+  }
+}
+
+/**************************/
+/* BELOW 1200px /landscape tablets */
+/**************************/
+@media (max-width: 75em) {
+  .my-swiper .my-swiper--slide .img-bottle {
+    left: -45%;
+  }
+
+  .container-text {
+    margin-left: 15%;
+  }
+}
+
+/**************************/
+/* BELOW 940px /  tablets */
+/**************************/
+@media (max-width: 59em) {
+  .section-slider--bottles h2 {
+    height: 16%;
+  }
+
+  .my-swiper {
+    height: 84%;
+  }
+
+  .my-swiper .my-swiper--slide {
+    height: 80%;
+    margin: auto 0;
+
+    border-radius: 1.2rem;
+    background-color: var(--main-bg-color);
+    /* background-color: yellowgreen; */
+  }
+
+  .my-swiper .my-swiper--slide .container-slide {
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    /* background-color: violet; */
+  }
+
+  .my-swiper .my-swiper--slide .img-bottle {
+    position: relative;
+    height: 75%;
+    top: 0%;
+    left: 0%;
+
+    margin-right: 15%;
+
+    /* background-color: yellowgreen; */
+  }
+
+  .container-text {
+    margin-left: 0%;
+    /* background-color: violet; */
+    margin-bottom: 10%;
+    margin-top: 5%;
+  }
+}
+
+/**************************/
+/* BELOW 700px /  smaller tablets */
+/**************************/
+@media (max-width: 44em) {
+  /* .my-swiper .my-swiper--slide {
+    margin: 10rem 0;
+  } */
+
+  .my-swiper .my-swiper--slide .img-bottle {
+    margin-right: 25%;
+  }
+}
+
+/**************************/
+/* BELOW 544px /  phones */
+/**************************/
+@media (max-width: 34em) {
+  .my-swiper {
+    /* flex-shrink: 100 !important; */
+    width: 55%;
+    overflow: visible;
+    /* background-color: yellowgreen; */
+  }
+  .my-swiper .my-swiper--slide .img-bottle {
+    margin-right: 20%;
+  }
+
+  .mybullet {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+}
+
+/**************************/
+/* BELOW 375px /  phones */
+/**************************/
+@media (max-width: 23em) {
+  .my-swiper {
+    width: 75%;
+    /* background-color: yellowgreen; */
+  }
+
+  .my-swiper .my-swiper--slide .img-bottle {
+    margin-right: 20%;
+  }
 }

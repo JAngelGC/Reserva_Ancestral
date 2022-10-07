@@ -25,7 +25,7 @@
 
 .my-swiper .my-swiper--slide {
   margin: auto 0;
-  height: 50%;
+  /* height: 100%; */
 
   border-radius: 1.2rem;
   display: flex;
@@ -86,3 +86,18 @@
   opacity: 1;
   background: var(--main-brown-color);
 }
+
+/**************************/
+/* BELOW 940px /  tablets */
+/**************************/
+/* @media (max-width: 59em) {
+  .my-swiper .my-swiper--slide {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .my-swiper--slide .container-img {
+    height: 40%;
+    width: 100%;
+  }
+} */
