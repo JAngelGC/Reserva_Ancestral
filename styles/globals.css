@@ -4,6 +4,16 @@
 /**************************/
 /* GENERAL */
 /**************************/
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+  overflow-x: hidden;
+  font-family: "Cinzel", serif;
+  color: var(--black-color);
+}
+
 :root {
   --ff-main: "Cinzel";
   --ff-sec: "Lora";
@@ -36,12 +46,46 @@
   box-sizing: border-box;
 }
 
-html {
-  /* font-size: 10px; */
-  /* 10px / 16px = 0.625 = 62.5% */
-  /* Percentage of user's browser font-size setting */
-  font-size: 62.5%;
-  overflow-x: hidden;
-  font-family: "Cinzel", serif;
-  color: var(--black-color);
+/**************************/
+/* BELOW 1344px /smaller desktops */
+/**************************/
+@media (max-width: 84em) {
+}
+
+/**************************/
+/* BELOW 1200px /landscape tablets */
+/**************************/
+@media (max-width: 75em) {
+  html {
+    /* 9px / 16px */
+    font-size: 56.25%;
+  }
+}
+
+/**************************/
+/* BELOW 940px /  tablets */
+/**************************/
+@media (max-width: 59em) {
+  html {
+    /* 8px / 16px */
+    font-size: 50%;
+  }
+}
+
+/**************************/
+/* BELOW 700px /  smaller tablets */
+/**************************/
+@media (max-width: 44em) {
+}
+
+/**************************/
+/* BELOW 544px /  phones */
+/**************************/
+@media (max-width: 34em) {
+}
+
+/**************************/
+/* BELOW 375px /  phones */
+/**************************/
+@media (max-width: 23em) {
 }

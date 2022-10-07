@@ -20,7 +20,7 @@
   line-height: 6rem;
   letter-spacing: 0.1rem;
 
-  padding-top: 10%;
+  padding-top: 24vh;
 }
 
 .main-header h3 {
@@ -31,4 +31,43 @@
   font-weight: 500;
   line-height: 3.8rem;
   letter-spacing: 0.1rem;
+}
+
+/**************************/
+/* BELOW 1344px /smaller desktops */
+/**************************/
+@media (max-width: 84em) {
+}
+
+/**************************/
+/* BELOW 940px /  tablets */
+/**************************/
+@media (max-width: 59em) {
+  .main-header {
+    background-position: center; /* Center the image */
+  }
+}
+
+/**************************/
+/* BELOW 544px /  phones */
+/**************************/
+@media (max-width: 34em) {
+  .main-header h2 {
+    width: 90%;
+
+    padding-top: 15vh;
+  }
+
+  .main-header h3 {
+    width: 75%;
+    padding-top: 2%;
+
+    letter-spacing: 0.1rem;
+  }
+}
+
+/**************************/
+/* BELOW 375px /  phones */
+/**************************/
+@media (max-width: 23em) {
 }

@@ -34,6 +34,37 @@ const MainSliderBottles = (props) => {
           modifier: 1,
           slideShadows: false,
         }}
+        breakpoints={{
+          1344: {
+            slidesPerView: 2,
+            spaceBetween: 300,
+          },
+          1200: {
+            slidesPerView: 2,
+            spaceBetween: 300,
+          },
+          940: {
+            slidesPerView: 2,
+            spaceBetween: 250,
+          },
+          700: {
+            slidesPerView: 2,
+            spaceBetween: 150,
+          },
+          // when window width is >= 544px
+          544: {
+            slidesPerView: 2,
+            spaceBetween: 150,
+          },
+          375: {
+            slidesPerView: 1,
+            spaceBetween: 100,
+          },
+          1: {
+            slidesPerView: 1,
+            spaceBetween: 100,
+          },
+        }}
         pagination={{
           type: "bullets",
           bulletActiveClass: classes["bullet--active"],
@@ -62,9 +93,13 @@ const MainSliderBottles = (props) => {
                     alt=""
                     className={classes["img-bottle"]}
                   />
-                  <h3>{bottle.title}</h3>
-                  <h4>{bottle.subtitle}</h4>
-                  <button className={classes[bottle.color]}>Descúbrelo</button>
+                  <div className={classes["container-text"]}>
+                    <h3>{bottle.title}</h3>
+                    <h4>{bottle.subtitle}</h4>
+                    <button className={classes[bottle.color]}>
+                      Descúbrelo
+                    </button>
+                  </div>
                 </div>
               )}
             </SwiperSlide>

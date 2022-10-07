@@ -62,6 +62,40 @@
 }
 
 .section-special-collections .right img {
-  height: 100%;
+  width: 100%;
   border-radius: 1.2rem;
+}
+
+/**************************/
+/* BELOW 940px /  tablets */
+/**************************/
+@media (max-width: 59em) {
+  .section-special-collections {
+    flex-direction: column-reverse;
+  }
+
+  .section-special-collections .left {
+    padding-left: 0%;
+    align-items: center;
+  }
+
+  .section-special-collections .left h2 {
+    text-align: center;
+  }
+
+  .section-special-collections .right {
+    padding-left: 0%;
+  }
+}
+
+/**************************/
+/* BELOW 544px /  phones */
+/**************************/
+@media (max-width: 34em) {
+  .section-special-collections {
+    height: 88vh;
+  }
+  .section-special-collections .right {
+    display: none;
+  }
 }
