@@ -13,7 +13,7 @@
 }
 
 .main-header h2 {
-  width: 40rem;
+  width: 35%;
 
   font-size: var(--fs-title);
   font-weight: 600;
@@ -21,10 +21,12 @@
   letter-spacing: 0.1rem;
 
   padding-top: 24vh;
+
+  /* background-color: yellowgreen; */
 }
 
 .main-header h3 {
-  width: 35rem;
+  width: 25%;
   padding-top: 2%;
 
   font-size: var(--fs-sub-sub-title);
@@ -40,11 +42,44 @@
 }
 
 /**************************/
+/* BELOW 1200px /landscape tablets */
+/**************************/
+@media (max-width: 75em) {
+  .main-header h2 {
+    width: 50%;
+    /* font-size: var(--fs-big-title); */
+  }
+
+  .main-header h3 {
+    width: 40%;
+  }
+}
+
+/**************************/
 /* BELOW 940px /  tablets */
 /**************************/
 @media (max-width: 59em) {
   .main-header {
     background-position: center; /* Center the image */
+  }
+
+  /* .main-header h2 {
+    font-size: var(--fs-big-title);
+  } */
+
+  /* .main-header h3 {
+    font-size: var(--fs-big-title);
+  } */
+}
+
+/**************************/
+/* BELOW 700px /  smaller tablets */
+/**************************/
+@media (max-width: 44em) {
+  .main-header h2 {
+    width: 80%;
+
+    padding-top: 18vh;
   }
 }
 
@@ -53,9 +88,9 @@
 /**************************/
 @media (max-width: 34em) {
   .main-header h2 {
-    width: 90%;
+    width: 80%;
 
-    padding-top: 15vh;
+    padding-top: 16vh;
   }
 
   .main-header h3 {

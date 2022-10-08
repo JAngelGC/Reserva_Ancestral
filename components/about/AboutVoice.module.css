@@ -20,8 +20,9 @@
 .header p {
   font-family: Lora;
   color: var(--main-bg-color);
-  font-size: var(--fs-small-text);
-  line-height: 1.5;
+  /* font-size: var(--fs-small-text); */
+  font-size: var(--fs-mid-small-text);
+  line-height: 1.7;
   text-align: right;
 
   width: 30%;
@@ -47,7 +48,7 @@
 /**************************/
 @media (max-width: 59em) {
   .header p {
-    line-height: 1.7;
+    line-height: 1.8;
     width: 60%;
   }
 

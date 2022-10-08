@@ -10,6 +10,9 @@
 
 .section-slider--bottles h2 {
   height: 20%;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
 
   font-size: var(--fs-sub-title);
   font-weight: 500;
@@ -19,6 +22,10 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
+
+  /* padding-bottom: 1%; */
+
+  /* background-color: yellowgreen; */
 }
 
 .my-swiper {
@@ -132,7 +139,7 @@
 
   font-family: Lora;
   color: var(--black-color);
-  font-size: 1.6rem;
+  font-size: var(--fs-small-text);
   padding: 1rem 1.5rem;
 
   border-radius: 1.2rem;
@@ -235,7 +242,6 @@
 
     border-radius: 1.2rem;
     background-color: var(--main-bg-color);
-    /* background-color: yellowgreen; */
   }
 
   .my-swiper .my-swiper--slide .container-slide {
@@ -247,8 +253,6 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-
-    /* background-color: violet; */
   }
 
   .my-swiper .my-swiper--slide .img-bottle {
@@ -258,13 +262,10 @@
     left: 0%;
 
     margin-right: 15%;
-
-    /* background-color: yellowgreen; */
   }
 
   .container-text {
     margin-left: 0%;
-    /* background-color: violet; */
     margin-bottom: 10%;
     margin-top: 5%;
   }
@@ -274,10 +275,6 @@
 /* BELOW 700px /  smaller tablets */
 /**************************/
 @media (max-width: 44em) {
-  /* .my-swiper .my-swiper--slide {
-    margin: 10rem 0;
-  } */
-
   .my-swiper .my-swiper--slide .img-bottle {
     margin-right: 25%;
   }
@@ -287,11 +284,17 @@
 /* BELOW 544px /  phones */
 /**************************/
 @media (max-width: 34em) {
+  .section-slider--bottles h2 {
+    height: 18%;
+  }
+
   .my-swiper {
-    /* flex-shrink: 100 !important; */
+    height: 82%;
+  }
+
+  .my-swiper {
     width: 55%;
     overflow: visible;
-    /* background-color: yellowgreen; */
   }
   .my-swiper .my-swiper--slide .img-bottle {
     margin-right: 20%;
@@ -309,7 +312,6 @@
 @media (max-width: 23em) {
   .my-swiper {
     width: 75%;
-    /* background-color: yellowgreen; */
   }
 
   .my-swiper .my-swiper--slide .img-bottle {

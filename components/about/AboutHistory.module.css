@@ -20,8 +20,9 @@
 .header p {
   font-family: Lora;
   color: var(--main-bg-color);
-  font-size: var(--fs-small-text);
-  line-height: 1.5;
+  font-size: var(--fs-mid-small-text);
+
+  line-height: 1.7;
 
   width: 30%;
   position: absolute;
@@ -55,7 +56,8 @@
 
   .header p {
     width: 60%;
-    line-height: 1.7;
+    line-height: 1.8;
+
     position: absolute;
     bottom: 15%;
     left: 5%;
@@ -87,7 +89,6 @@
     top: 0%;
     right: 0%;
     position: relative;
-    /* background-color: yellowgreen; */
   }
 
   .header p {

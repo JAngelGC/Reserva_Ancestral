@@ -146,7 +146,7 @@ const ContactForm = () => {
             className={`${classes.btn} ${btnClass}`}
             disabled={!formIsValid}
           >
-            Submit
+            Enviar
           </button>
         </div>
       </form>

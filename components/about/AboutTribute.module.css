@@ -33,7 +33,7 @@
 .section-tribute .container-bg p {
   font-family: Lora;
   color: var(--main-bg-color);
-  font-size: var(--fs-small-text);
+  font-size: var(--fs-mid-small-text);
   line-height: 1.5;
 
   width: 20%;
@@ -65,8 +65,8 @@
   }
 
   .section-tribute .container-bg h2 {
-    padding-top: 15%;
-    padding-bottom: 5%;
+    padding-top: 12.5%;
+    padding-bottom: 2.5%;
     width: 80%;
     text-align: center;
     position: relative;
@@ -80,5 +80,6 @@
     position: relative;
     top: 0%;
     left: 0%;
+    line-height: 1.9;
   }
 }
