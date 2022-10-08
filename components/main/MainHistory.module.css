@@ -20,6 +20,7 @@
 .section-history h3 {
   font-size: var(--fs-big-text);
   font-weight: 300;
+  width: 85%;
 }
 
 .section-history h3:last-child {

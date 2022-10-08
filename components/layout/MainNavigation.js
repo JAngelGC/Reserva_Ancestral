@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 import classes from "./MainNavigation.module.css";
 
@@ -26,12 +26,6 @@ const MainNavigation = () => {
     console.log("CLICCCK");
   };
 
-  // useEffect(() => {
-  //   if (toggleNav) {
-  //     toggleNavHandler();
-  //   }
-  // }, [router.asPath]);
-
   const classHeader = toggleNav ? `${classes["nav-open"]}` : "";
 
   return (
@@ -42,20 +36,9 @@ const MainNavigation = () => {
         </Link>
       </div>
       <nav className={classes["main-nav"]}>
-        <ul className={classes.pages}>
-          {/*  */}
-          {/* {toggleNav && (
-            <li>
-              <div className={classes.logo}>
-                <Link href="/">
-                  <img src="/static/images/logo_ra_1.png" alt="" />
-                </Link>
-              </div>
-            </li>
-          )} */}
-          {/*  */}
-          <li className={classes.try}>
-            <div onClick={hiddeNavHandler} className={classes["logo-nav"]}>
+        <ul className={classes["pages-subnav"]}>
+          <li className={classes["logo-link-container"]}>
+            <div onClick={hiddeNavHandler} className={classes["logo-link"]}>
               <Link href="/">
                 <img src="/static/images/logo_ra_1.png" alt="" />
               </Link>
@@ -84,7 +67,7 @@ const MainNavigation = () => {
             <Link href="/cocktails">Coctelería</Link>
           </li>
         </ul>
-        <ul className={classes["social-networks"]}>
+        <ul className={classes["social-networks-subnav"]}>
           <a
             href="https://www.facebook.com/Reserva-Ancestral-103527632506232/"
             target="_blank"

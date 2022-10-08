@@ -28,8 +28,6 @@
 
 .container-drink .container-img img {
   height: 120%;
-  /* width: 120%; */
-  /* height: auto; */
 
   transition: all 0.2s ease-in-out;
 }
@@ -41,6 +39,7 @@
 
   width: 100%;
 
+  font-size: var(--fs-mid-text);
   font-weight: 600;
   color: var(--main-brown-color);
   font-family: var(--ff-sec);
