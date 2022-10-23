@@ -11,7 +11,6 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper";
 
 const MainSliderCocktails = (props) => {
-  console.log(props);
   return (
     <section className={classes["section-slider-cocktails"]}>
       <h2>Inspiración coctelera</h2>
