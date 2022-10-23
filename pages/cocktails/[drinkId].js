@@ -6,6 +6,7 @@ import DrinkIngredients from "../../components/drink/DrinkIngredients";
 import DrinkPreparation from "../../components/drink/DrinkPreparation";
 
 const DrinkPage = (props) => {
+  console.log(props);
   return (
     <>
       <DrinkHeader
@@ -14,7 +15,10 @@ const DrinkPage = (props) => {
         imgPrev={props.drink.imgPrev}
       />
       <DrinkIngredients ingredients={props.drink.ingredients} />
-      <DrinkPreparation embedId="7RREsx9lnNI" steps={props.drink.steps} />
+      <DrinkPreparation
+        embedId={props.drink.embedId}
+        steps={props.drink.steps}
+      />
     </>
   );
 };
@@ -54,6 +58,7 @@ export async function getStaticProps(context) {
         imgPrev: data.imgPrev,
         ingredients: data.ingredients,
         steps: data.steps,
+        embedId: data.video_id,
       },
     },
   };

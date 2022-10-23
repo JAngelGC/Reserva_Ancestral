@@ -8,7 +8,7 @@ const CocktailsAllDrinks = (props) => {
         <h1>Coctelería</h1>
       </header>
       <section className={classes["section-all-drinks"]}>
-        {props.allDrinks.concat(props.allDrinks).map((drink) => {
+        {props.allDrinks.map((drink) => {
           return (
             <CocktailsDrinkPrev
               title={drink.title}

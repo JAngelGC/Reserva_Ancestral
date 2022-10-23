@@ -8,7 +8,7 @@ const DrinkIngredients = (props) => {
         {props.ingredients.map((ing) => {
           return (
             <div className={classes["container-ingredient"]}>
-              <img src={`/static/images/${ing.imgP}`} alt="" />
+              <img src={`/static/images/drinks/${ing.imgP}`} alt="" />
               <h3>{ing.ing}</h3>
             </div>
           );

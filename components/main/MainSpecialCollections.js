@@ -8,7 +8,7 @@ const MainSpecialCollections = () => {
         <button>Ver más</button>
       </div>
       <div className={classes.right}>
-        <img src="./static/images/Colecciones_especiales.png" alt="" />
+        <img src="./static/images/photos/Colecciones_especiales.png" alt="" />
       </div>
     </section>
   );

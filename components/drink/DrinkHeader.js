@@ -9,7 +9,7 @@ const DrinkHeader = (props) => {
         <hr />
       </section>
       <section className={classes["section-img"]}>
-        <img src={`/static/images/${props.imgPrev}`} alt="" />
+        <img src={`/static/images/drinks/${props.imgPrev}`} alt="" />
       </section>
     </header>
   );

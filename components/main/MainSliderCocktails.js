@@ -45,7 +45,10 @@ const MainSliderCocktails = (props) => {
               key={cocktail.id}
             >
               <div className={classes["container-img"]}>
-                <img src={`./static/images/${cocktail.imgPrev}`} alt="" />
+                <img
+                  src={`./static/images/drinks/${cocktail.imgPrev}`}
+                  alt=""
+                />
               </div>
               <div className={classes["container-text"]}>
                 <h3>{cocktail.title}</h3>
