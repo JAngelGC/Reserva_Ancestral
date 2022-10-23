@@ -151,7 +151,7 @@ const ContactForm = () => {
         </div>
       </form>
       <div className={classes["container-img"]}>
-        <img src="/static/images/logo_ra_6.png" alt="" />
+        <img src="/static/images/logos/Reserva_Ancestral_Logo_06.png" alt="" />
       </div>
     </main>
   );

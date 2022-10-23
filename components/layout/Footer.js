@@ -14,7 +14,7 @@ const Footer = () => {
         </p>
       </div>
 
-      <img src="/static/images/Sello_Reserva_Ancestral.png" alt="" />
+      <img src="/static/images/logos/Reserva_Ancestral_Sello.png" alt="" />
     </footer>
   );
 };
