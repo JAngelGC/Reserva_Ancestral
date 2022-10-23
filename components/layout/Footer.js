@@ -8,7 +8,9 @@ const Footer = () => {
         <Link href="/contact">
           <h3 className={classes.contacto}>Contacto</h3>
         </Link>
-        <h3 className={classes.aviso}>Aviso de privacidad</h3>
+        <Link href="/privacy_policy">
+          <h3 className={classes.aviso}>Aviso de privacidad</h3>
+        </Link>
         <p className={classes.derechos}>
           © 2022 Reserva Ancestral, Derechos reservados.
         </p>
