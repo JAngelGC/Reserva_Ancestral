@@ -1,0 +1,32 @@
+.section-privacy {
+  margin: 0 auto;
+  margin-top: 12vh;
+  height: 88vh;
+  /* height: 68vh; */
+  width: 90%;
+
+  /* background-color: rgb(255, 204, 195); */
+}
+
+.section-privacy h2 {
+  font-size: var(--fs-sub-sub-title);
+  text-align: center;
+
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+}
+
+.section-privacy p {
+  font-size: var(--fs-small-text);
+  margin-bottom: 2rem;
+  line-height: 1.8;
+}
+
+/**************************/
+/* BELOW 700px /  smaller tablets */
+/**************************/
+@media (max-width: 44em) {
+  .section-privacy {
+    width: 80%;
+  }
+}
