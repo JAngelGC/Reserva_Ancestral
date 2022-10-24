@@ -135,6 +135,17 @@
 
 .header .social-networks-subnav li {
   margin-right: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .social-networks-subnav li a {
+  display: inline-block;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header .social-networks-subnav li .icon {

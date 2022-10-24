@@ -51,14 +51,14 @@ const MainSliderCocktails = (props) => {
               </div>
               <div className={classes["container-text"]}>
                 <h3>{cocktail.title}</h3>
+                <h4>Ingredientes</h4>
                 <ul>
-                  <h4>Ingredientes</h4>
                   {cocktail.ingredients.map((ing) => {
                     return <li key={Math.random()}>{ing.ing}</li>;
                   })}
                 </ul>
+                <h4>Preparación</h4>
                 <ol>
-                  <h4>Preparación</h4>
                   {cocktail.steps.map((step) => {
                     return <li key={Math.random()}>{step}</li>;
                   })}
