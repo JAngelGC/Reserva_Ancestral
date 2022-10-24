@@ -47,6 +47,10 @@
 /* BELOW 940px /  tablets */
 /**************************/
 @media (max-width: 59em) {
+  .header {
+    background-image: url("../../public/static/images/photos/Reserva_Ancestral_Nosotros_03_tablet.jpg");
+  }
+
   .header p {
     line-height: 1.8;
     width: 60%;
@@ -66,6 +70,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    background-image: url("../../public/static/images/photos/Reserva_Ancestral_Nosotros_03_phone.jpg");
   }
 
   .header h2 {
