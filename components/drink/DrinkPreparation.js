@@ -17,7 +17,7 @@ const DrinkPreparation = (props) => {
         <h2>Cómo preparar</h2>
         {props.steps.map((step, i) => {
           return (
-            <div className={classes.step}>
+            <div className={classes.step} key={step}>
               <p className={classes["step-number"]}>{`Paso ${i + 1}`}</p>
               <p className={classes["step-text"]}>{step}</p>
             </div>

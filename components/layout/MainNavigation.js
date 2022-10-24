@@ -43,7 +43,10 @@ const MainNavigation = () => {
           <li className={classes["logo-link-container"]}>
             <div onClick={hiddeNavHandler} className={classes["logo-link"]}>
               <Link href="/">
-                <img src="/static/images/logo_ra_1.png" alt="" />
+                <img
+                  src="/static/images/logos/Reserva_Ancestral_Logo_01.png"
+                  alt=""
+                />
               </Link>
             </div>
           </li>
@@ -74,6 +77,7 @@ const MainNavigation = () => {
           <a
             href="https://www.facebook.com/Reserva-Ancestral-103527632506232/"
             target="_blank"
+            rel="noreferrer"
           >
             <li>
               <svg
@@ -85,7 +89,11 @@ const MainNavigation = () => {
               </svg>
             </li>
           </a>
-          <a href="https://www.instagram.com/mezcalreserva/" target="_blank">
+          <a
+            href="https://www.instagram.com/mezcalreserva/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <li>
               <svg
                 className={classes.icon}
@@ -99,6 +107,7 @@ const MainNavigation = () => {
           <a
             href="https://www.youtube.com/channel/UCLxKRX3IcMKL4E1zG8IB88w/videos"
             target="_blank"
+            rel="noreferrer"
           >
             <li>
               <svg
