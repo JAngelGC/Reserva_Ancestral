@@ -68,10 +68,10 @@
   font-size: var(--fs-big-text);
   color: var(--main-brown-color);
   font-weight: 500;
+  margin-bottom: 1rem;
 }
 
-.my-swiper--slide .container-text ul h4,
-.my-swiper--slide .container-text ol h4 {
+.my-swiper--slide .container-text h4 {
   font-family: Lora;
   font-size: var(--fs-mid-text);
   color: var(--main-brown-color);
