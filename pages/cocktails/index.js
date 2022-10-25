@@ -37,6 +37,7 @@ export async function getStaticProps() {
       id: doc.id,
       imgPrev: data.imgPrev,
       title: data.title,
+      imgPrevPhone: data.imgPrevPhone,
     };
 
     return newData;
