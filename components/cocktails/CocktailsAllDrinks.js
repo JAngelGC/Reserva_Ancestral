@@ -13,6 +13,7 @@ const CocktailsAllDrinks = (props) => {
             <CocktailsDrinkPrev
               title={drink.title}
               imgPrev={drink.imgPrev}
+              imgPrevPhone={drink.imgPrevPhone}
               id={drink.id}
               key={drink.id}
             />
