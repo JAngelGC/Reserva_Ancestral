@@ -6,7 +6,8 @@ import classes from "./CocktailsDrinkPrev.module.css";
 const CocktailsDrinkPrev = (props) => {
   const isBreakpoint = useMediaQuery(544);
 
-  const selectedImage = isBreakpoint ? props.imgPrev : props.imgPrevPhone;
+  const selectedImage = isBreakpoint ? props.imgPrevPhone : props.imgPrev;
+  console.log(selectedImage);
 
   return (
     <Link href={`/cocktails/${props.id}`}>
