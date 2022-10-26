@@ -80,6 +80,12 @@
   left: -30%;
 
   transition: all 0.3s ease-out;
+
+  /* background-color: yellowgreen; */
+}
+
+.my-swiper .my-swiper--slide .img-bottle img {
+  height: 100%;
 }
 
 .my-swiper .my-swiper--slide .container-text {
