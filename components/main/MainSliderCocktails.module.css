@@ -46,6 +46,10 @@
   align-items: center;
 }
 
+.my-swiper--slide .container-img picture {
+  height: 100%;
+}
+
 .my-swiper--slide .container-img img {
   height: 100%;
 }

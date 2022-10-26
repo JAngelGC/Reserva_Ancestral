@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -16,96 +16,104 @@ import { EffectCoverflow, Pagination } from "swiper";
 import classes from "./MainSliderBottles.module.css";
 
 const MainSliderBottles = (props) => {
+  const [domLoaded, setDomLoaded] = useState(false);
+
+  useEffect(() => {
+    setDomLoaded(true);
+  }, []);
+
   return (
     <section className={classes["section-slider--bottles"]}>
       <h2>Nuestra familia reserva</h2>
 
-      <Swiper
-        effect={"coverflow"}
-        grabCursor={true}
-        centeredSlides={true}
-        slidesPerView={2}
-        spaceBetween={400}
-        loop={true}
-        coverflowEffect={{
-          rotate: 0,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: false,
-        }}
-        breakpoints={{
-          1344: {
-            slidesPerView: 2,
-            spaceBetween: 300,
-          },
-          1200: {
-            slidesPerView: 2,
-            spaceBetween: 300,
-          },
-          940: {
-            slidesPerView: 2,
-            spaceBetween: 250,
-          },
-          700: {
-            slidesPerView: 2,
-            spaceBetween: 150,
-          },
-          // when window width is >= 544px
-          544: {
-            slidesPerView: 2,
-            spaceBetween: 150,
-          },
-          375: {
-            slidesPerView: 1,
-            spaceBetween: 100,
-          },
-          1: {
-            slidesPerView: 1,
-            spaceBetween: 100,
-          },
-        }}
-        pagination={{
-          type: "bullets",
-          bulletActiveClass: classes["bullet--active"],
-          bulletClass: `swiper-pagination-bullet ${classes.mybullet}`,
-          clickable: true,
-        }}
-        modules={[EffectCoverflow, Pagination]}
-        className={`${classes["my-swiper"]}`}
-      >
-        {props.allBottles.map((bottle) => {
-          return (
-            <SwiperSlide
-              key={bottle.id}
-              className={`${classes["my-swiper--slide"]} ${
-                classes[bottle.color]
-              }`}
-            >
-              {({ isActive }) => (
-                <div
-                  className={`${classes["container-slide"]} ${
-                    isActive ? classes.active : classes.noactive
-                  }`}
-                >
-                  <img
-                    src={`./static/images/${bottle.nameImage}`}
-                    alt=""
-                    className={classes["img-bottle"]}
-                  />
-                  <div className={classes["container-text"]}>
-                    <h3>{bottle.title}</h3>
-                    <h4>{bottle.subtitle}</h4>
-                    <button className={classes[bottle.color]}>
-                      Descúbrelo
-                    </button>
+      {domLoaded && (
+        <Swiper
+          effect={"coverflow"}
+          grabCursor={true}
+          centeredSlides={true}
+          slidesPerView={2}
+          spaceBetween={400}
+          loop={true}
+          coverflowEffect={{
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: false,
+          }}
+          breakpoints={{
+            1344: {
+              slidesPerView: 2,
+              spaceBetween: 300,
+            },
+            1200: {
+              slidesPerView: 2,
+              spaceBetween: 300,
+            },
+            940: {
+              slidesPerView: 2,
+              spaceBetween: 250,
+            },
+            700: {
+              slidesPerView: 2,
+              spaceBetween: 150,
+            },
+            // when window width is >= 544px
+            544: {
+              slidesPerView: 2,
+              spaceBetween: 150,
+            },
+            375: {
+              slidesPerView: 1,
+              spaceBetween: 100,
+            },
+            1: {
+              slidesPerView: 1,
+              spaceBetween: 100,
+            },
+          }}
+          pagination={{
+            type: "bullets",
+            bulletActiveClass: classes["bullet--active"],
+            bulletClass: `swiper-pagination-bullet ${classes.mybullet}`,
+            clickable: true,
+          }}
+          modules={[EffectCoverflow, Pagination]}
+          className={`${classes["my-swiper"]}`}
+        >
+          {props.allBottles.map((bottle) => {
+            return (
+              <SwiperSlide
+                key={bottle.id}
+                className={`${classes["my-swiper--slide"]} ${
+                  classes[bottle.color]
+                }`}
+              >
+                {({ isActive }) => (
+                  <div
+                    className={`${classes["container-slide"]} ${
+                      isActive ? classes.active : classes.noactive
+                    }`}
+                  >
+                    <img
+                      src={`./static/images/${bottle.nameImage}`}
+                      alt=""
+                      className={classes["img-bottle"]}
+                    />
+                    <div className={classes["container-text"]}>
+                      <h3>{bottle.title}</h3>
+                      <h4>{bottle.subtitle}</h4>
+                      <button className={classes[bottle.color]}>
+                        Descúbrelo
+                      </button>
+                    </div>
                   </div>
-                </div>
-              )}
-            </SwiperSlide>
-          );
-        })}
-      </Swiper>
+                )}
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
+      )}
     </section>
   );
 };
