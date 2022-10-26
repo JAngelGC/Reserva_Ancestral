@@ -9,16 +9,24 @@ const CocktailsDrinkPrev = (props) => {
     <Link href={`/cocktails/${props.id}`}>
       <section className={classes["container-drink"]}>
         <div className={classes["container-img"]}>
-          <img
-            sizes="(min-width: 1366px) 916px,
-            (min-width: 1536px) 1030px,
-            100vw"
-            srcSet={`
-          ${`./static/images/drinks/${props.imgPrev}_607.jpg`} 607w,
-          ${`./static/images/drinks/${props.imgPrev}_879.jpg`} 879w,
-          ${`./static/images/drinks/${props.imgPrev}_1400.jpg`} 1400w`}
-            alt=""
-          />
+          <picture>
+            <source
+              srcSet={`./static/images/drinks/${props.imgPrev}_607.jpg`}
+              media="(max-width:544px)"
+            />
+            <source
+              srcSet={`./static/images/drinks/${props.imgPrev}_879.jpg`}
+              media="(max-width:940px)"
+            />
+            <source
+              srcSet={`./static/images/drinks/${props.imgPrev}_1400.jpg`}
+              media="(max-width:1400px)"
+            />
+            <img
+              src={`./static/images/drinks/${props.imgPrev}_1400.jpg`}
+              alt="Gabrielle Perfume"
+            />
+          </picture>
         </div>
         <h2>{props.title}</h2>
       </section>

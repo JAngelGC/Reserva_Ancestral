@@ -21,15 +21,20 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  /* object-fit: cover; */
   border-radius: 1.2rem;
+
   /* background-color: yellowgreen; */
 }
 
-.container-drink .container-img img {
-  height: 120%;
+.container-drink .container-img picture {
+  height: 100%;
 
   transition: all 0.2s ease-in-out;
+}
+
+.container-drink .container-img picture img {
+  height: 100%;
 }
 
 .container-drink h2 {

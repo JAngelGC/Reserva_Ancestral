@@ -55,8 +55,12 @@
   align-items: center;
 }
 
-.section-img img {
+.section-img picture {
   height: 90%;
+}
+
+.section-img picture img {
+  height: 100%;
 }
 
 /**************************/
