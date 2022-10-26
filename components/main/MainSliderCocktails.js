@@ -52,21 +52,6 @@ const MainSliderCocktails = (props) => {
                 key={cocktail.id}
               >
                 <div className={classes["container-img"]}>
-                  {/* <img
-                    src={`./static/images/drinks/${cocktail.imgPrev}.jpg`}
-                    alt=""
-                  /> */}
-                  {/* <img
-                    sizes="(max-width: 544px) 607px
-                    (max-width: 940px) 879px,
-                    (max-width: 1400px) 1400px,
-                    100vw"
-                    srcSet={`
-                ${`/static/images/drinks/${cocktail.imgPrev}_607.jpg`} 607w,
-                ${`/static/images/drinks/${cocktail.imgPrev}_879.jpg`} 879w,
-                ${`/static/images/drinks/${cocktail.imgPrev}_1400.jpg`} 1400w`}
-                    alt=""
-                  /> */}
                   <picture>
                     <source
                       srcSet={`./static/images/drinks/${cocktail.imgPrev}_607.jpg`}

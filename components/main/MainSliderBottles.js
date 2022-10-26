@@ -95,11 +95,30 @@ const MainSliderBottles = (props) => {
                       isActive ? classes.active : classes.noactive
                     }`}
                   >
-                    <img
+                    {/* <img
                       src={`./static/images/${bottle.nameImage}`}
                       alt=""
                       className={classes["img-bottle"]}
-                    />
+                    /> */}
+                    <picture className={classes["img-bottle"]}>
+                      <source
+                        srcSet={`./static/images/${bottle.nameImage}_607.png`}
+                        media="(max-width:544px)"
+                      />
+                      <source
+                        srcSet={`./static/images/${bottle.nameImage}_879.png`}
+                        media="(max-width:940px)"
+                      />
+                      <source
+                        srcSet={`./static/images/${bottle.nameImage}_1400.png`}
+                        media="(max-width:1400px)"
+                      />
+                      <img
+                        src={`./static/images/${bottle.nameImage}_1400.png`}
+                        alt="Gabrielle Perfume"
+                      />
+                    </picture>
+
                     <div className={classes["container-text"]}>
                       <h3>{bottle.title}</h3>
                       <h4>{bottle.subtitle}</h4>
