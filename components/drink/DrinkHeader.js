@@ -1,3 +1,4 @@
+import Image from "next/image";
 import classes from "./DrinkHeader.module.css";
 
 const DrinkHeader = (props) => {
@@ -22,7 +23,7 @@ const DrinkHeader = (props) => {
           alt=""
         /> */}
         <picture>
-          <source
+          {/* <source
             srcSet={`/static/images/drinks/${props.imgPrev}_607.jpg`}
             media="(max-width:544px)"
           />
@@ -37,6 +38,13 @@ const DrinkHeader = (props) => {
           <img
             src={`/static/images/drinks/${props.imgPrev}_1400.jpg`}
             alt="Gabrielle Perfume"
+          /> */}
+          <Image
+            src={`/static/images/drinks/${props.imgPrev}_1400.jpg`}
+            alt="Gabrielle Perfume"
+            className={classes["img-bottle"]}
+            layout="fill"
+            objectFit="contain"
           />
         </picture>
       </section>
