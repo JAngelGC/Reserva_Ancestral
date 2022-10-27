@@ -56,7 +56,9 @@
 }
 
 .section-img picture {
-  height: 90%;
+  height: 80%;
+  width: 100%;
+  position: relative;
 }
 
 .section-img picture img {
@@ -71,6 +73,15 @@
     height: auto;
 
     padding-bottom: 5vh;
+  }
+
+  .header .section-img {
+    height: 40vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .section-img img {
