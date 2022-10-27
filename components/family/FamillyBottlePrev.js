@@ -1,3 +1,4 @@
+import Image from "next/image";
 import classes from "./FamillyBottlePrev.module.css";
 
 const FamillyBottlePrev = (props) => {
@@ -11,7 +12,14 @@ const FamillyBottlePrev = (props) => {
       </div>
       <div className={classes["container-img"]}>
         {/* <img src={`./static/images/${props.nameImage}`} alt="" /> */}
-        <picture>
+        <Image
+          src={`./static/images/${props.nameImage}_1400.png`}
+          alt="Gabrielle Perfume"
+          className={classes.myImg}
+          layout="fill"
+          objectFit="contain"
+        />
+        {/* <picture>
           <source
             srcSet={`./static/images/${props.nameImage}_607.png`}
             media="(max-width:544px)"
@@ -24,11 +32,7 @@ const FamillyBottlePrev = (props) => {
             srcSet={`./static/images/${props.nameImage}_1400.png`}
             media="(max-width:1400px)"
           />
-          <img
-            src={`./static/images/${props.nameImage}_1400.png`}
-            alt="Gabrielle Perfume"
-          />
-        </picture>
+        </picture> */}
       </div>
     </section>
   );

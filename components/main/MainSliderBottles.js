@@ -1,4 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
+import Image from "next/image";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -100,24 +101,34 @@ const MainSliderBottles = (props) => {
                       alt=""
                       className={classes["img-bottle"]}
                     /> */}
-                    <picture className={classes["img-bottle"]}>
-                      <source
-                        srcSet={`./static/images/${bottle.nameImage}_607.png`}
-                        media="(max-width:544px)"
-                      />
-                      <source
-                        srcSet={`./static/images/${bottle.nameImage}_879.png`}
-                        media="(max-width:940px)"
-                      />
-                      <source
-                        srcSet={`./static/images/${bottle.nameImage}_1400.png`}
-                        media="(max-width:1400px)"
-                      />
-                      <img
+                    {/* <Image
+                      src={`./static/images/${bottle.nameImage}_1400.png`}
+                      alt="Gabrielle Perfume"
+                      layout="fill"
+                      className={classes["img-bottle"]}
+                      width="100%"
+                      height="100%"
+                      objectFit="contain"
+                    /> */}
+                    <picture>
+                      <Image
                         src={`./static/images/${bottle.nameImage}_1400.png`}
                         alt="Gabrielle Perfume"
+                        className={classes["img-bottle"]}
+                        layout="fill"
+                        objectFit="contain"
                       />
                     </picture>
+                    {/* <picture className={classes["img-bottle"]}>
+                      
+                      <Image
+                        src={`./static/images/${bottle.nameImage}_1400.png`}
+                        alt="Gabrielle Perfume"
+                        layout="fill"
+                        className={classes["myImg"]}
+                        objectFit="contain"
+                      />
+                    </picture> */}
 
                     <div className={classes["container-text"]}>
                       <h3>{bottle.title}</h3>
