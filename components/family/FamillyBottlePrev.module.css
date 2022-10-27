@@ -9,6 +9,8 @@
 
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .bottle-prev:nth-child(even) {
@@ -130,22 +132,27 @@
 
 .bottle-prev .container-img {
   width: 50%;
-  height: 100%;
+  height: 80%;
 
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 
   /* background-color: tomato; */
 }
 
-.bottle-prev .container-img picture {
+/* .bottle-prev .container-img span {
   height: 85%;
-  filter: drop-shadow(0px 40px 60px rgba(0, 0, 0, 0.15));
-}
+  width: 50%;
 
-.bottle-prev .container-img picture img {
+  filter: drop-shadow(0px 40px 60px rgba(0, 0, 0, 0.15));
+} */
+.bottle-prev .container-img span .myImg {
+  /* background-color: yellowgreen; */
   height: 100%;
+  width: 50%;
+  filter: drop-shadow(0px 40px 60px rgba(0, 0, 0, 0.05));
 }
 
 /**************************/

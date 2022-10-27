@@ -34,25 +34,31 @@
 
   background-color: var(--main-bg-color);
 
-  background-color: yellowgreen;
+  /* background-color: yellowgreen; */
 }
 
 .my-swiper--slide .container-img {
   width: 40%;
   height: 100%;
 
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  background-color: tomato;
 }
 
-.my-swiper--slide .container-img picture {
+.my-swiper--slide .container-img .img-bottle {
   height: 100%;
+  width: 100%;
+  position: absolute;
 }
 
-.my-swiper--slide .container-img img {
+/* .my-swiper--slide .container-img .img-bottle {
   height: 100%;
-}
+  position: relative;
+} */
 
 .my-swiper--slide .container-text {
   width: 60%;

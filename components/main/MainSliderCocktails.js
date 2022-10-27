@@ -1,3 +1,4 @@
+import Image from "next/image";
 import classes from "./MainSliderCocktails.module.css";
 import { useState, useEffect } from "react";
 
@@ -52,7 +53,14 @@ const MainSliderCocktails = (props) => {
                 key={cocktail.id}
               >
                 <div className={classes["container-img"]}>
-                  <picture>
+                  <Image
+                    src={`./static/images/drinks/${cocktail.imgPrev}_1400.jpg`}
+                    alt="Gabrielle Perfume"
+                    className={classes["img-bottle"]}
+                    layout="fill"
+                    objectFit="cover"
+                  />
+                  {/* <picture>
                     <source
                       srcSet={`./static/images/drinks/${cocktail.imgPrev}_607.jpg`}
                       media="(max-width:544px)"
@@ -69,7 +77,7 @@ const MainSliderCocktails = (props) => {
                       src={`./static/images/drinks/${cocktail.imgPrev}_1400.jpg`}
                       alt="Gabrielle Perfume"
                     />
-                  </picture>
+                  </picture> */}
                 </div>
                 <div className={classes["container-text"]}>
                   <h3>{cocktail.title}</h3>

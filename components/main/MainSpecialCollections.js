@@ -1,3 +1,4 @@
+import Image from "next/image";
 import classes from "./MainSpecialCollections.module.css";
 
 const MainSpecialCollections = () => {
@@ -8,8 +9,18 @@ const MainSpecialCollections = () => {
         <button>Ver más</button>
       </div>
       <div className={classes.right}>
-        {/* <img src="./static/images/photos/Colecciones_especiales.png" alt="" /> */}
         <picture>
+          <Image
+            src={`./static/images/photos/Colecciones_especiales_1400.png`}
+            alt="Gabrielle Perfume"
+            className={classes["img-bottle"]}
+            layout="fill"
+            objectFit="contain"
+          />
+        </picture>
+
+        {/* <img src="./static/images/photos/Colecciones_especiales.png" alt="" /> */}
+        {/* <picture>
           <source
             srcSet={`./static/images/photos/Colecciones_especiales_607.png`}
             media="(max-width:544px)"
@@ -26,7 +37,7 @@ const MainSpecialCollections = () => {
             src={`./static/images/photos/Colecciones_especiales_1400.png`}
             alt="Gabrielle Perfume"
           />
-        </picture>
+        </picture> */}
       </div>
     </section>
   );
