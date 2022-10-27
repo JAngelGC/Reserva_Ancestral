@@ -24,6 +24,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  position: relative;
 
   /* background-color: violet; */
 }
@@ -196,13 +197,12 @@
   }
 
   .logo {
-    width: auto;
-    /* background-color: yellowgreen; */
+    width: 40%;
   }
 
-  .logo img {
-    /* margin-left: 2rem; */
-    height: 80%;
+  .logo span img {
+    height: 70%;
+    width: 100%;
   }
 
   /* MOBILE NAVIGATION */

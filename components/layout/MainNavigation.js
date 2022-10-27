@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState } from "react";
@@ -32,9 +33,11 @@ const MainNavigation = () => {
     <header className={`${classes.header} ${classHeader}`}>
       <div className={classes.logo}>
         <Link href="/">
-          <img
+          <Image
             src="/static/images/logos/Reserva_Ancestral_Logo_01.png"
             alt=""
+            layout="fill"
+            objectFit="contain"
           />
         </Link>
       </div>
@@ -43,9 +46,11 @@ const MainNavigation = () => {
           <li className={classes["logo-link-container"]}>
             <div onClick={hiddeNavHandler} className={classes["logo-link"]}>
               <Link href="/">
-                <img
+                <Image
                   src="/static/images/logos/Reserva_Ancestral_Logo_01.png"
                   alt=""
+                  layout="fill"
+                  objectFit="contain"
                 />
               </Link>
             </div>
