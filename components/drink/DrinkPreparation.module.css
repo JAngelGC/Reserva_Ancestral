@@ -15,15 +15,7 @@
   width: 65%;
   height: 75%;
 
-  background-color: tomato;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-}
-
-.container-video .vid-cont {
-  background-color: yellowgreen;
-  /* height: 100%; */
+  /* background-color: tomato; */
   /* display: flex;
   justify-content: center;
   align-items: center; */
@@ -31,9 +23,9 @@
 
 .container-video iframe {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   align-self: stretch;
-  background-color: yellowgreen;
+  /* background-color: yellowgreen; */
 }
 
 .container-steps {
@@ -100,6 +92,14 @@
   .container-video {
     width: 100%;
     height: 45%;
+  }
+
+  .container-video iframe {
+    /* width: 100%; */
+
+    height: 250px;
+    align-self: stretch;
+    background-color: yellowgreen;
   }
 
   .container-steps {
