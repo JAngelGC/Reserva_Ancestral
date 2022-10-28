@@ -21,14 +21,14 @@ const DrinkPreparation = (props) => {
           allowFullScreen
           title="Embedded youtube"
         /> */}
-        <div className={classes["vid-cont"]}>
+        {/* <div className={classes["vid-cont"]}>
           <YouTube
             className={classes["video"]}
             videoId={props.embedId}
             opts={opts}
             onReady={YouTube.onReady}
           />
-        </div>
+        </div> */}
       </div>
 
       <div className={classes["container-steps"]}>
