@@ -1,3 +1,4 @@
+import Image from "next/image";
 import useInput from "../../hooks/use-input";
 import classes from "./ContactForm.module.css";
 
@@ -151,7 +152,15 @@ const ContactForm = () => {
         </div>
       </form>
       <div className={classes["container-img"]}>
-        <img src="/static/images/logos/Reserva_Ancestral_Logo_06.png" alt="" />
+        {/* <img src="/static/images/logos/Reserva_Ancestral_Logo_06.png" alt="" /> */}
+        <picture>
+          <Image
+            src="/static/images/logos/Reserva_Ancestral_Logo_06.png"
+            alt="Gabrielle Perfume"
+            layout="fill"
+            objectFit="cover"
+          />
+        </picture>
       </div>
     </main>
   );
