@@ -33,11 +33,11 @@ const MainNavigation = () => {
     <header className={`${classes.header} ${classHeader}`}>
       <div className={classes.logo}>
         <Link href="/">
-          <Image
+          <img
             src="/static/images/logos/Reserva_Ancestral_Logo_01.png"
             alt=""
             layout="fill"
-            objectFit="contain"
+            // objectFit="contain"
           />
         </Link>
       </div>
@@ -46,11 +46,11 @@ const MainNavigation = () => {
           <li className={classes["logo-link-container"]}>
             <div onClick={hiddeNavHandler} className={classes["logo-link"]}>
               <Link href="/">
-                <Image
+                <img
                   src="/static/images/logos/Reserva_Ancestral_Logo_01.png"
                   alt=""
                   layout="fill"
-                  objectFit="contain"
+                  // objectFit="contain"
                 />
               </Link>
             </div>
