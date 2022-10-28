@@ -49,10 +49,17 @@
   background-color: tomato;
 }
 
-.my-swiper--slide .container-img .img-bottle {
+.my-swiper--slide .container-img picture {
   height: 100%;
   width: 100%;
-  position: absolute;
+
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.my-swiper--slide .container-img picture img {
+  height: 100%;
 }
 
 /* .my-swiper--slide .container-img .img-bottle {

@@ -29,15 +29,13 @@
 
 .container-drink .container-img picture {
   height: 100%;
-  width: 100%;
-  position: relative;
 
   transition: all 0.2s ease-in-out;
 }
 
-/* .container-drink .container-img picture img {
+.container-drink .container-img picture img {
   height: 100%;
-} */
+}
 
 .container-drink h2 {
   position: absolute;

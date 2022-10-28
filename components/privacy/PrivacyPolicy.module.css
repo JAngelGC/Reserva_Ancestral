@@ -17,6 +17,7 @@
 }
 
 .section-privacy p {
+  font-family: var(--ff-sec);
   font-size: var(--fs-small-text);
   margin-bottom: 2rem;
   line-height: 1.8;

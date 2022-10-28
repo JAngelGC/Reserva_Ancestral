@@ -96,39 +96,31 @@ const MainSliderBottles = (props) => {
                       isActive ? classes.active : classes.noactive
                     }`}
                   >
-                    {/* <img
-                      src={`./static/images/${bottle.nameImage}`}
-                      alt=""
-                      className={classes["img-bottle"]}
-                    /> */}
-                    {/* <Image
-                      src={`./static/images/${bottle.nameImage}_1400.png`}
-                      alt="Gabrielle Perfume"
-                      layout="fill"
-                      className={classes["img-bottle"]}
-                      width="100%"
-                      height="100%"
-                      objectFit="contain"
-                    /> */}
                     <picture>
-                      <Image
+                      {/* <Image
                         src={`./static/images/${bottle.nameImage}_1400.png`}
                         alt="Gabrielle Perfume"
                         className={classes["img-bottle"]}
                         layout="fill"
                         objectFit="contain"
+                      /> */}
+                      <source
+                        srcSet={`./static/images/${bottle.nameImage}_607.png`}
+                        media="(max-width:544px)"
                       />
-                    </picture>
-                    {/* <picture className={classes["img-bottle"]}>
-                      
-                      <Image
+                      <source
+                        srcSet={`./static/images/${bottle.nameImage}_879.png`}
+                        media="(max-width:940px)"
+                      />
+                      <source
+                        srcSet={`./static/images/${bottle.nameImage}_1400.png`}
+                        media="(max-width:1400px)"
+                      />
+                      <img
                         src={`./static/images/${bottle.nameImage}_1400.png`}
                         alt="Gabrielle Perfume"
-                        layout="fill"
-                        className={classes["myImg"]}
-                        objectFit="contain"
                       />
-                    </picture> */}
+                    </picture>
 
                     <div className={classes["container-text"]}>
                       <h3>{bottle.title}</h3>
