@@ -45,10 +45,14 @@
   /* background-color: tomato; */
 }
 
-.footer img {
+.footer picture {
   height: 100%;
   position: absolute;
   right: 0;
+}
+
+.footer picture img {
+  height: 100%;
 }
 
 /**************************/
@@ -59,7 +63,7 @@
     height: 25vh;
   }
 
-  .footer img {
+  .footer picture {
     height: 80%;
     position: absolute;
     right: 0;

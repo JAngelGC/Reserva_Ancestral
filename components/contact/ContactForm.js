@@ -154,11 +154,23 @@ const ContactForm = () => {
       <div className={classes["container-img"]}>
         {/* <img src="/static/images/logos/Reserva_Ancestral_Logo_06.png" alt="" /> */}
         <picture>
-          <Image
+          {/* <Image
             src="/static/images/logos/Reserva_Ancestral_Logo_06.png"
             alt="Gabrielle Perfume"
             layout="fill"
             objectFit="cover"
+          /> */}
+          <source
+            srcSet={`/static/images/logos/Reserva_Ancestral_Logo_06_879.png`}
+            media="(max-width:544px)"
+          />
+          <source
+            srcSet={`/static/images/logos/Reserva_Ancestral_Logo_06_1400.png`}
+            media="(max-width:1400px)"
+          />
+          <img
+            src={`/static/images/logos/Reserva_Ancestral_Logo_06_1400.png`}
+            alt="Gabrielle Perfume"
           />
         </picture>
       </div>

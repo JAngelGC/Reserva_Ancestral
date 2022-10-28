@@ -28,7 +28,7 @@
   color: var(--main-brown-color);
   font-size: var(--fs-sub-title);
   font-weight: 500;
-  margin-bottom: 5%;
+  /* margin-bottom: 5%; */
 }
 
 .form-control {
@@ -160,8 +160,15 @@
 
 .container-img picture {
   width: 100%;
-  height: 45%;
-  position: relative;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-img picture img {
+  width: 100%;
 }
 
 /**************************/
@@ -193,7 +200,7 @@
     height: 100%;
     width: 100%;
 
-    background-color: yellowgreen;
+    /* background-color: yellowgreen; */
   }
 
   .container-img picture {
@@ -201,7 +208,7 @@
     height: 100%;
     position: relative;
 
-    background-color: wheat;
+    /* background-color: wheat; */
   }
 }
 
@@ -214,7 +221,7 @@
     height: 80%;
     position: relative;
 
-    background-color: wheat;
+    /* background-color: wheat; */
   }
 }
 

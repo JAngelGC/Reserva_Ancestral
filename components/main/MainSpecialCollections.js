@@ -9,7 +9,7 @@ const MainSpecialCollections = () => {
         <button>Ver más</button>
       </div>
       <div className={classes.right}>
-        <picture>
+        {/* <picture>
           <Image
             src={`./static/images/photos/Colecciones_especiales_1400.png`}
             alt="Gabrielle Perfume"
@@ -17,10 +17,10 @@ const MainSpecialCollections = () => {
             layout="fill"
             objectFit="contain"
           />
-        </picture>
+        </picture> */}
 
         {/* <img src="./static/images/photos/Colecciones_especiales.png" alt="" /> */}
-        {/* <picture>
+        <picture>
           <source
             srcSet={`./static/images/photos/Colecciones_especiales_607.png`}
             media="(max-width:544px)"
@@ -37,7 +37,7 @@ const MainSpecialCollections = () => {
             src={`./static/images/photos/Colecciones_especiales_1400.png`}
             alt="Gabrielle Perfume"
           />
-        </picture> */}
+        </picture>
       </div>
     </section>
   );
