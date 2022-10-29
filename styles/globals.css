@@ -47,6 +47,19 @@ html {
   box-sizing: border-box;
 }
 
+.cuixe-color {
+  color: var(--cuixe-color);
+}
+.arroqueno-color {
+  color: var(--arroqueno-color);
+}
+.espadin-color {
+  color: var(--espadin-color);
+}
+.tobala-color {
+  color: var(--tobala-color);
+}
+
 /**************************/
 /* BELOW 1344px /smaller desktops */
 /**************************/

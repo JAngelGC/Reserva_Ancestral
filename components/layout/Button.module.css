@@ -1,0 +1,48 @@
+.button {
+  font-family: Lora;
+  color: var(--black-color);
+  /* width: 15rem; */
+
+  margin-top: 2rem;
+  font-size: 1.6rem;
+  padding: 1rem 1.5rem;
+  border-radius: 1.2rem;
+  background-color: transparent;
+  cursor: pointer;
+
+  transition: all 0.3s ease-out;
+}
+
+.button.espadin {
+  border: 2px solid var(--espadin-color);
+}
+.button.arroqueno {
+  border: 2px solid var(--arroqueno-color);
+}
+.button.cuixe {
+  border: 2px solid var(--cuixe-color);
+}
+.button.tobala {
+  border: 2px solid var(--tobala-color);
+}
+
+.button.espadin:hover {
+  color: #fff;
+  background-color: var(--espadin-color);
+  border: 2px solid transparent;
+}
+.button.arroqueno:hover {
+  color: #fff;
+  background-color: var(--arroqueno-color);
+  border: 2px solid transparent;
+}
+.button.cuixe:hover {
+  color: #fff;
+  background-color: var(--cuixe-color);
+  border: 2px solid transparent;
+}
+.button.tobala:hover {
+  color: #fff;
+  background-color: var(--tobala-color);
+  border: 2px solid transparent;
+}

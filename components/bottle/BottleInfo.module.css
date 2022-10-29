@@ -1,0 +1,89 @@
+.section-info {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+
+  padding: 0 5%;
+}
+
+.title {
+  font-size: var(--fs-sub-title);
+  position: relative;
+}
+
+.title::after {
+  display: block;
+  content: "";
+  width: 80%;
+  height: 0.2rem;
+
+  position: absolute;
+  bottom: -15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* background-color: var(--cuixe-color); */
+}
+
+.title.espadin::after {
+  background-color: var(--espadin-color);
+}
+.title.arroqueno::after {
+  background-color: var(--arroqueno-color);
+}
+.title.cuixe::after {
+  background-color: var(--cuixe-color);
+}
+.title.tobala::after {
+  background-color: var(--tobala-color);
+}
+
+.description {
+  font-family: var(--ff-sec);
+  font-size: var(--fs-small-text);
+}
+
+.container-options {
+  width: 100%;
+  min-height: 30%;
+}
+
+.options {
+  display: flex;
+  justify-content: flex-start;
+  /* background-color: antiquewhite; */
+  width: 100%;
+  gap: 5%;
+  margin-bottom: 1%;
+
+  font-size: var(--fs-mid-small-text);
+}
+
+.options p {
+  font-family: var(--ff-sec);
+  cursor: pointer;
+  /* font-weight: 300; */
+}
+
+.option-active {
+  font-weight: 800;
+  text-decoration: underline;
+  /* background-color: yellowgreen; */
+}
+
+.info {
+  width: 100%;
+  font-family: var(--ff-sec);
+  font-size: var(--fs-small-text);
+  list-style: none;
+  /* background-color: teal; */
+}
+
+.info li {
+  line-height: 1.5;
+}
+
+.info li span {
+  font-weight: 600;
+  /* background-color: yellowgreen; */
+}

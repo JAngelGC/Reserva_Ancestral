@@ -1,0 +1,21 @@
+.part-both {
+  margin-top: 13vh;
+  height: 100vh;
+  /* background-color: yellowgreen; */
+
+  padding: 3% 5%;
+
+  display: flex;
+}
+
+.part-left {
+  width: 50%;
+  height: 100%;
+  /* background-color: violet; */
+}
+
+.part-right {
+  width: 50%;
+  height: 100%;
+  /* background-color: tomato; */
+}
