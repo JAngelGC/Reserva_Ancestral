@@ -97,40 +97,6 @@
   transition: all 0.3s ease-out;
 }
 
-.bottle-prev .container-text button.espadin {
-  border: 2px solid var(--espadin-color);
-}
-.bottle-prev .container-text button.arroqueno {
-  border: 2px solid var(--arroqueno-color);
-}
-.bottle-prev .container-text button.cuixe {
-  border: 2px solid var(--cuixe-color);
-}
-.bottle-prev .container-text button.tobala {
-  border: 2px solid var(--tobala-color);
-}
-
-.bottle-prev .container-text button.espadin:hover {
-  color: #fff;
-  background-color: var(--espadin-color);
-  border: 2px solid transparent;
-}
-.bottle-prev .container-text button.arroqueno:hover {
-  color: #fff;
-  background-color: var(--arroqueno-color);
-  border: 2px solid transparent;
-}
-.bottle-prev .container-text button.cuixe:hover {
-  color: #fff;
-  background-color: var(--cuixe-color);
-  border: 2px solid transparent;
-}
-.bottle-prev .container-text button.tobala:hover {
-  color: #fff;
-  background-color: var(--tobala-color);
-  border: 2px solid transparent;
-}
-
 .bottle-prev .container-img {
   width: 50%;
   height: 80%;

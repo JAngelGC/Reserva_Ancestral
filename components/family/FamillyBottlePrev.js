@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Button from "../layout/Button";
 import classes from "./FamillyBottlePrev.module.css";
 
 const FamillyBottlePrev = (props) => {
@@ -8,7 +8,8 @@ const FamillyBottlePrev = (props) => {
         <h2 className={classes[props.color]}>{props.title}</h2>
         <h3>{props.subtitle}</h3>
         <h4>{props.grades}</h4>
-        <button className={classes[props.color]}>Descúbrelo</button>
+        {/* <button className={classes[props.color]}>Descúbrelo</button> */}
+        <Button color={props.color} msg={"Descúbrelo"} />
       </div>
       <div className={classes["container-img"]}>
         {/* <img src={`./static/images/${props.nameImage}`} alt="" /> */}

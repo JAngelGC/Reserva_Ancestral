@@ -1,0 +1,34 @@
+/* .section-slider {
+  margin-top: 13vh;
+  height: 100vh;
+  width: 50%;
+  background-color: yellowgreen;
+} */
+
+.my-swiper {
+  width: 70%;
+  height: 100%;
+
+  border-radius: 3rem;
+}
+
+.my-swiper .my-swiper-slide {
+  width: 100%;
+  height: 100%;
+
+  position: relative;
+  background-color: yellow;
+}
+
+.my-swiper .my-swiper-slide {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  background-color: yellowgreen;
+}
+
+/* .my-swiper .my-swiper-slide picture img {
+  width: 100%;
+  height: 100%;
+} */

@@ -1,5 +1,6 @@
 import React, { useRef, useState, useEffect } from "react";
-import Image from "next/image";
+import Button from "../layout/Button";
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -125,9 +126,10 @@ const MainSliderBottles = (props) => {
                     <div className={classes["container-text"]}>
                       <h3>{bottle.title}</h3>
                       <h4>{bottle.subtitle}</h4>
-                      <button className={classes[bottle.color]}>
+                      {/* <button className={classes[bottle.color]}>
                         Descúbrelo
-                      </button>
+                      </button> */}
+                      <Button color={bottle.color} msg={"Descúbrelo"} />
                     </div>
                   </div>
                 )}
