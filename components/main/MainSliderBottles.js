@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React, { useRef, useState, useEffect } from "react";
 import Button from "../layout/Button";
 
@@ -129,7 +130,11 @@ const MainSliderBottles = (props) => {
                       {/* <button className={classes[bottle.color]}>
                         Descúbrelo
                       </button> */}
-                      <Button color={bottle.color} msg={"Descúbrelo"} />
+                      <Link href={`/family/${bottle.color}`}>
+                        <a>
+                          <Button color={bottle.color} msg={"Descúbrelo"} />
+                        </a>
+                      </Link>
                     </div>
                   </div>
                 )}
