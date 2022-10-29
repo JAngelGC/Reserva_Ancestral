@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Button from "../layout/Button";
 import classes from "./FamillyBottlePrev.module.css";
 
@@ -9,7 +10,11 @@ const FamillyBottlePrev = (props) => {
         <h3>{props.subtitle}</h3>
         <h4>{props.grades}</h4>
         {/* <button className={classes[props.color]}>Descúbrelo</button> */}
-        <Button color={props.color} msg={"Descúbrelo"} />
+        <Link href={`/family/${props.color}`}>
+          <a>
+            <Button color={props.color} msg={"Descúbrelo"} />
+          </a>
+        </Link>
       </div>
       <div className={classes["container-img"]}>
         {/* <img src={`./static/images/${props.nameImage}`} alt="" /> */}
