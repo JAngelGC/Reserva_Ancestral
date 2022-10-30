@@ -17,6 +17,7 @@ import { FreeMode, Navigation } from "swiper";
 import classes from "./BottleSlider.module.css";
 
 const BottleSlider = (props) => {
+  console.log(props);
   return (
     <section className={props.className}>
       <Swiper
@@ -30,38 +31,19 @@ const BottleSlider = (props) => {
         modules={[FreeMode, Navigation]}
         className={classes["my-swiper"]}
       >
-        <SwiperSlide className={classes["my-swiper-slide"]}>
-          <Image
-            src={`./static/images/bottles/Cuixe/Cuixe_1.jpg`}
-            layout="fill"
-            objectFit="cover"
-            alt=""
-          />
-        </SwiperSlide>
-        <SwiperSlide className={classes["my-swiper-slide"]}>
-          <Image
-            src={`./static/images/bottles/Cuixe/Cuixe_2.jpg`}
-            layout="fill"
-            objectFit="cover"
-            alt=""
-          />
-        </SwiperSlide>
-        <SwiperSlide className={classes["my-swiper-slide"]}>
-          <Image
-            src={`./static/images/bottles/Cuixe/Cuixe_3.jpg`}
-            layout="fill"
-            objectFit="cover"
-            alt=""
-          />
-        </SwiperSlide>
-        <SwiperSlide className={classes["my-swiper-slide"]}>
-          <Image
-            src={`./static/images/bottles/Cuixe/Cuixe_4.jpg`}
-            layout="fill"
-            objectFit="cover"
-            alt=""
-          />
-        </SwiperSlide>
+        {props.imgsBottles.numImgs.map((imgBottle, idx) => {
+          return (
+            <SwiperSlide className={classes["my-swiper-slide"]} key={imgBottle}>
+              <Image
+                src={`./static/images/bottles/${props.imgsBottles.pathImgs}_${imgBottle}.jpg`}
+                layout="fill"
+                objectFit="cover"
+                alt=""
+                priority={idx === 0 ? true : false}
+              />
+            </SwiperSlide>
+          );
+        })}
       </Swiper>
     </section>
   );

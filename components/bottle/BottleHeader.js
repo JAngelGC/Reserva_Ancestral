@@ -6,7 +6,10 @@ import classes from "./BottleHeader.module.css";
 const BottleHeader = (props) => {
   return (
     <div className={classes["part-both"]}>
-      <BottleSlider className={classes["part-left"]} />
+      <BottleSlider
+        className={classes["part-left"]}
+        imgsBottles={props.imgsBottles}
+      />
       <BottleInfo
         className={classes["part-right"]}
         color={props.color}

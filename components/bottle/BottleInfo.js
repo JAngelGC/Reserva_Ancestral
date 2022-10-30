@@ -15,7 +15,7 @@ const BottleInfo = (props) => {
 
   const colorVal = props.color;
 
-  console.log(props);
+  // console.log(props);
 
   return (
     <section className={`${props.className} ${classes["section-info"]}`}>
