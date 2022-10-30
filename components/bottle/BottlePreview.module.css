@@ -1,0 +1,120 @@
+.section-more-bottles {
+  height: 75vh;
+  background-color: var(--main-bg-color);
+  margin: 2.5% 0;
+}
+
+.title {
+  font-size: var(--fs-sub-sub-title);
+  text-align: center;
+  height: 20%;
+
+  color: var(--main-brown-color);
+  font-weight: 600;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.container-bottles {
+  margin: 0 auto;
+  height: 80%;
+  width: 90%;
+  /* background-color: yellowgreen; */
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.container-bottles .container-bottle {
+  height: 85%;
+  width: 20%;
+  cursor: pointer;
+
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  background-color: var(--main-bg-color);
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.container-bottles .container-bottle:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.container-bottles .container-bottle .title-bottle {
+  position: absolute;
+  width: 100%;
+  background-color: var(--main-bg-color);
+  text-align: center;
+  padding: 1rem 0;
+  font-size: var(--fs-mid-small-text);
+  bottom: 0;
+
+  /* overflow: hidden; */
+  /* border-radius: 0px 0px 1.5rem 1.5rem; */
+}
+
+/**************************/
+/* BELOW 1344px /smaller desktops */
+/**************************/
+@media (max-width: 84em) {
+  .container-bottles .container-bottle {
+    width: 25%;
+  }
+}
+
+/**************************/
+/* BELOW 1200px /landscape tablets */
+/**************************/
+@media (max-width: 75em) {
+  .container-bottles .container-bottle {
+    width: 30%;
+  }
+}
+
+/**************************/
+/* BELOW 940px /  tablets */
+/**************************/
+@media (max-width: 59em) {
+  .container-bottles .container-bottle {
+    width: 35%;
+  }
+}
+
+/**************************/
+/* BELOW 700px /  smaller tablets */
+/**************************/
+@media (max-width: 44em) {
+  .container-bottles .container-bottle {
+    width: 40%;
+  }
+}
+
+/**************************/
+/* BELOW 544px /  phones */
+/**************************/
+@media (max-width: 34em) {
+  .section-more-bottles {
+    height: 100vh;
+
+    margin: 2.5% 5%;
+  }
+
+  .title {
+    height: 10%;
+    align-items: center;
+  }
+
+  .container-bottles {
+    height: 90%;
+    width: 60%;
+    flex-direction: column;
+  }
+
+  .container-bottles .container-bottle {
+    width: 100%;
+  }
+}
