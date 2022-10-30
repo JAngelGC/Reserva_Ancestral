@@ -17,7 +17,7 @@ import { FreeMode, Navigation } from "swiper";
 import classes from "./BottleSlider.module.css";
 
 const BottleSlider = (props) => {
-  console.log(props);
+  // console.log(props);
   return (
     <section className={props.className}>
       <Swiper
