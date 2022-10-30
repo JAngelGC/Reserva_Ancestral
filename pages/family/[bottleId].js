@@ -17,6 +17,7 @@ const BottlePage = (props) => {
         description={props.bottle.description}
         features={props.bottle.features}
         tastings={props.bottle.tastings}
+        imgsBottles={props.bottle.imgsBottles}
       />
     </>
   );
@@ -57,6 +58,7 @@ export async function getStaticProps(context) {
         features: data.features,
         tastings: data.tastings,
         color: data.color,
+        imgsBottles: data.imgsBottles,
       },
     },
   };
