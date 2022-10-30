@@ -2,6 +2,7 @@ import { doc, getDoc, collection, getDocs } from "firebase/firestore";
 import db from "../../firebase/config";
 
 import BottleHeader from "../../components/bottle/BottleHeader";
+import BottlePreview from "../../components/bottle/BottlePreview";
 
 // title: data.title,
 // description: data.description,
@@ -19,6 +20,7 @@ const BottlePage = (props) => {
         tastings={props.bottle.tastings}
         imgsBottles={props.bottle.imgsBottles}
       />
+      <BottlePreview moreBottles={props.bottle.moreBottles} />
     </>
   );
 };
@@ -59,6 +61,7 @@ export async function getStaticProps(context) {
         tastings: data.tastings,
         color: data.color,
         imgsBottles: data.imgsBottles,
+        moreBottles: data.moreBottles,
       },
     },
   };
