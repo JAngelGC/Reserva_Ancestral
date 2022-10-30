@@ -17,7 +17,7 @@
   height: 100%;
 
   position: relative;
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 
 .my-swiper .my-swiper-slide {
@@ -25,10 +25,27 @@
   height: 100%;
   position: relative;
 
-  background-color: yellowgreen;
+  /* background-color: yellowgreen; */
 }
 
 /* .my-swiper .my-swiper-slide picture img {
   width: 100%;
   height: 100%;
 } */
+/**************************/
+/* BELOW 940px /  tablets */
+/**************************/
+@media (max-width: 59em) {
+  .my-swiper {
+    width: 90%;
+  }
+}
+
+/**************************/
+/* BELOW 700px /  smaller tablets */
+/**************************/
+@media (max-width: 44em) {
+  .my-swiper {
+    width: 100%;
+  }
+}
