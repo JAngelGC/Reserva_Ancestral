@@ -1,4 +1,6 @@
-import Image from "next/image";
+import Link from "next/link";
+import Button from "../layout/Button";
+
 import classes from "./MainSliderCocktails.module.css";
 import { useState, useEffect } from "react";
 
@@ -93,7 +95,12 @@ const MainSliderCocktails = (props) => {
                       return <li key={Math.random()}>{step}</li>;
                     })}
                   </ol>
-                  <button>Ver más</button>
+
+                  <Link href={`/cocktails/${cocktail.link}`}>
+                    <a>
+                      <Button color={"tobala"} msg={"Ver más"} />
+                    </a>
+                  </Link>
                 </div>
               </SwiperSlide>
             );
