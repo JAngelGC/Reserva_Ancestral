@@ -19,3 +19,39 @@
   height: 100%;
   /* background-color: tomato; */
 }
+
+/**************************/
+/* BELOW 1200px /landscape tablets */
+/**************************/
+@media (max-width: 75em) {
+  .part-left {
+    width: 60%;
+  }
+
+  .part-right {
+    width: 40%;
+  }
+}
+
+/**************************/
+/* BELOW 700px /  smaller tablets */
+/**************************/
+@media (max-width: 44em) {
+  .part-both {
+    height: auto;
+
+    /* padding: 3% 5%; */
+
+    display: flex;
+    flex-direction: column;
+  }
+  .part-left {
+    height: 75vh;
+    width: 100%;
+  }
+
+  .part-right {
+    height: 75vh;
+    width: 100%;
+  }
+}
