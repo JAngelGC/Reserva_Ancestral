@@ -36,7 +36,7 @@ const BottleSlider = (props) => {
           return (
             <SwiperSlide className={classes["my-swiper-slide"]} key={imgBottle}>
               <Image
-                src={`./static/images/bottles/${props.imgsBottles.pathImgs}_${imgBottle}.jpg`}
+                src={`./static/images/bottles/${props.imgsBottles.pathImgs}_${imgBottle}.JPG`}
                 layout="fill"
                 objectFit="cover"
                 alt=""
