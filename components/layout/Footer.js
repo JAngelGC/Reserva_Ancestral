@@ -6,10 +6,14 @@ const Footer = () => {
     <footer className={classes.footer}>
       <div className={classes["container-text"]}>
         <Link href="/contact">
-          <h3 className={classes.contacto}>Contacto</h3>
+          <a>
+            <h3 className={classes.contacto}>Contacto</h3>
+          </a>
         </Link>
         <Link href="/privacy_policy">
-          <h3 className={classes.aviso}>Aviso de privacidad</h3>
+          <a>
+            <h3 className={classes.aviso}>Aviso de privacidad</h3>
+          </a>
         </Link>
         <p className={classes.derechos}>
           © 2022 Reserva Ancestral, Derechos reservados.

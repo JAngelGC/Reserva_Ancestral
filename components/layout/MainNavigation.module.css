@@ -29,8 +29,18 @@
   /* background-color: violet; */
 }
 
+.logo a {
+  width: 100%;
+  height: 100%;
+  /* background-color: yellowgreen; */
+
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
 .logo img {
-  height: 90%;
+  height: 85%;
   cursor: pointer;
 }
 
@@ -307,6 +317,11 @@
 
   .logo-link-container {
     width: 45%;
+  }
+
+  .logo img {
+    height: 75%;
+    cursor: pointer;
   }
 }
 

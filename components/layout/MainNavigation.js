@@ -33,12 +33,13 @@ const MainNavigation = () => {
     <header className={`${classes.header} ${classHeader}`}>
       <div className={classes.logo}>
         <Link href="/">
-          <img
-            src="/static/images/logos/Reserva_Ancestral_Logo_01.png"
-            alt=""
-            layout="fill"
-            // objectFit="contain"
-          />
+          <a>
+            <img
+              src="/static/images/logos/Reserva_Ancestral_Logo_01.png"
+              alt=""
+              layout="fill"
+            />
+          </a>
         </Link>
       </div>
       <nav className={classes["main-nav"]}>

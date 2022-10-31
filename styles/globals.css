@@ -47,6 +47,10 @@ html {
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 .cuixe-color {
   color: var(--cuixe-color);
 }
