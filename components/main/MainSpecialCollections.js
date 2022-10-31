@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Button from "../layout/Button";
 import classes from "./MainSpecialCollections.module.css";
 
 const MainSpecialCollections = () => {
@@ -6,7 +6,7 @@ const MainSpecialCollections = () => {
     <section className={classes["section-special-collections"]}>
       <div className={classes.left}>
         <h2>Colecciones Especiales de la Familia Reserva</h2>
-        <button>Ver más</button>
+        <Button color={"tobala"} msg={"Próximamente"} />
       </div>
       <div className={classes.right}>
         {/* <picture>

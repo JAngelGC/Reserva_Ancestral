@@ -30,29 +30,6 @@
   font-weight: 500;
 }
 
-.section-special-collections .left button {
-  width: 12rem;
-
-  font-family: Lora;
-  color: var(--black-color);
-
-  margin-top: 3rem;
-  font-size: 1.6rem;
-  padding: 1rem 1.5rem;
-  border-radius: 1.2rem;
-  background-color: transparent;
-  cursor: pointer;
-  border: 2px solid var(--black-color);
-
-  transition: all 0.3s ease-out;
-}
-
-.section-special-collections .left button:hover {
-  color: var(--main-bg-color);
-  background-color: var(--black-color);
-  border: 2px solid var(--black-color);
-}
-
 .section-special-collections .right {
   width: 60%;
   height: 100%;
