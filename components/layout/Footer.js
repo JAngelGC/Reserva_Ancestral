@@ -20,7 +20,6 @@ const Footer = () => {
         </p>
       </div>
 
-      {/* <img src="/static/images/logos/Reserva_Ancestral_Sello.png" alt="" /> */}
       <picture>
         <source
           srcSet={`/static/images/logos/Reserva_Ancestral_Sello_607.png`}

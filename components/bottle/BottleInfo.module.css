@@ -23,6 +23,7 @@
   bottom: -15%;
   left: 50%;
   transform: translate(-50%, -50%);
+
   /* background-color: var(--cuixe-color); */
 }
 
@@ -54,23 +55,25 @@
 .options {
   display: flex;
   justify-content: flex-start;
-  /* background-color: antiquewhite; */
+
   width: 100%;
   gap: 5%;
   margin-bottom: 1%;
 
   font-size: var(--fs-mid-small-text);
+
+  /* background-color: antiquewhite; */
 }
 
 .options p {
   font-family: var(--ff-sec);
   cursor: pointer;
-  /* font-weight: 300; */
 }
 
 .option-active {
   font-weight: 800;
   text-decoration: underline;
+
   /* background-color: yellowgreen; */
 }
 
@@ -79,6 +82,7 @@
   font-family: var(--ff-sec);
   font-size: var(--fs-small-text);
   list-style: none;
+
   /* background-color: teal; */
 }
 
@@ -89,6 +93,7 @@
 .info li span {
   font-weight: 600;
   margin-right: 0.75rem;
+
   /* background-color: yellowgreen; */
 }
 

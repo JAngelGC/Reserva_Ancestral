@@ -19,27 +19,17 @@
 }
 
 .section-all-drinks {
-  margin: 0 auto;
   width: 85%;
+  margin: 0 auto;
+
   display: flex;
   justify-content: center;
-
-  /* padding: 0 10rem; */
-  margin-bottom: 5rem;
+  flex-wrap: wrap;
   gap: 5%;
 
-  flex-wrap: wrap;
+  margin-bottom: 5rem;
 
   /* background-color: violet; */
-}
-
-/**************************/
-/* BELOW 1200px /landscape tablets */
-/**************************/
-@media (max-width: 75em) {
-  /* .section-all-drinks {
-    width: 90%;
-  } */
 }
 
 /**************************/

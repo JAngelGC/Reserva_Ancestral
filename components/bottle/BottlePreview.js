@@ -4,9 +4,7 @@ import classes from "./BottlePreview.module.css";
 
 const BottlePreview = (props) => {
   const { bottle1, bottle2 } = props.moreBottles;
-  console.log(bottle2.link);
 
-  //   console.log(props.moreBottles);
   return (
     <section className={classes["section-more-bottles"]}>
       <h2 className={classes["title"]}>Conoce más de la familia</h2>

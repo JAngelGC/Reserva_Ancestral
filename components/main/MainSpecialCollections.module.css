@@ -1,6 +1,5 @@
 .section-special-collections {
   height: 70vh;
-  /* padding: 7.5rem 0; */
   padding: 0 5%;
 
   display: flex;
@@ -44,11 +43,13 @@
 .section-special-collections .right picture {
   width: 90%;
   height: 100%;
-  /* background-color: tan; */
+
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  /* background-color: tan; */
 }
 
 .section-special-collections .right picture img {
@@ -63,7 +64,6 @@
   .section-special-collections {
     flex-direction: column-reverse;
     gap: 5%;
-    /* height: 88vh; */
   }
 
   .section-special-collections .left {

@@ -1,7 +1,4 @@
 .section-ingredients {
-  /* height: 50vh; */
-  background-color: var(--main-bg-color);
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,31 +6,34 @@
 
   padding: 5rem 0;
 
-  /* background-color: yellowgreen; */
+  background-color: var(--main-bg-color);
 }
 
 .section-ingredients h2 {
+  width: 100%;
+  height: 20%;
+
   font-size: var(--fs-sub-sub-title);
   font-weight: 500;
   color: var(--main-brown-color);
-
-  width: 100%;
-  height: 20%;
   text-align: center;
-  /* background-color: yellowgreen; */
+
   display: flex;
   justify-content: center;
   align-items: flex-end;
+
+  /* background-color: yellowgreen; */
 }
 
 .container-ingredients {
+  width: 90%;
+  height: 80%;
+
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 0%;
-  width: 90%;
-  height: 80%;
 
   /* background-color: turquoise; */
 }
@@ -49,36 +49,31 @@
   gap: 10%;
   padding-top: 2%;
 
-  /* background-color: violet; */
   position: relative;
+  /* background-color: violet; */
 }
 
 .container-ingredient picture {
-  position: relative;
-  /* height: 200px;
-  width: 200px; */
-  /* height: 20rem;
-  width: 20rem; */
   width: 80%;
   height: 20rem;
+  position: relative;
 
   /* background-color: violet; */
 }
 
 .container-ingredient img {
-  /* height: 10%; */
-  /* background-color: chartreuse; */
   width: 80%;
 }
 
 .container-ingredient h3 {
+  height: 5rem;
+  width: 80%;
+
   font-family: var(--ff-sec);
   font-size: var(--fs-mid-small-text);
   font-weight: 500;
   text-align: center;
 
-  height: 5rem;
-  width: 80%;
   /* background-color: brown; */
 }
 
@@ -105,9 +100,6 @@
 /* BELOW 544px /  phones */
 /**************************/
 @media (max-width: 34em) {
-  /* .container-ingredients {
-    gap: 5%;
-  } */
   .container-ingredient {
     width: 50%;
     height: 100%;

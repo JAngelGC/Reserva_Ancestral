@@ -1,18 +1,14 @@
-import Link from "next/link";
-import Button from "../layout/Button";
-
-import classes from "./MainSliderCocktails.module.css";
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-
-// import required modules
 import { Pagination } from "swiper";
+
+import Button from "../layout/Button";
+import classes from "./MainSliderCocktails.module.css";
 
 const MainSliderCocktails = (props) => {
   const [domLoaded, setDomLoaded] = useState(false);
@@ -55,13 +51,6 @@ const MainSliderCocktails = (props) => {
                 key={cocktail.id}
               >
                 <div className={classes["container-img"]}>
-                  {/* <Image
-                    src={`./static/images/drinks/${cocktail.imgPrev}_1400.jpg`}
-                    alt="Gabrielle Perfume"
-                    className={classes["img-bottle"]}
-                    layout="fill"
-                    objectFit="cover"
-                  /> */}
                   <picture>
                     <source
                       srcSet={`./static/images/drinks/${cocktail.imgPrev}_607.jpg`}

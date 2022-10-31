@@ -1,7 +1,6 @@
 .button {
   font-family: Lora;
   color: var(--black-color);
-  /* width: 15rem; */
   width: auto;
 
   margin-top: 2rem;

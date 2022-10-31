@@ -26,15 +26,12 @@
 
 .my-swiper .my-swiper--slide {
   margin: auto 0;
-  /* height: 100%; */
 
   border-radius: 1.2rem;
   display: flex;
   overflow: hidden;
 
   background-color: var(--main-bg-color);
-
-  /* background-color: yellowgreen; */
 }
 
 .my-swiper--slide .container-img {
@@ -46,7 +43,7 @@
   justify-content: center;
   align-items: center;
 
-  background-color: tomato;
+  /* background-color: tomato; */
 }
 
 .my-swiper--slide .container-img picture {
@@ -62,15 +59,9 @@
   height: 100%;
 }
 
-/* .my-swiper--slide .container-img .img-bottle {
-  height: 100%;
-  position: relative;
-} */
-
 .my-swiper--slide .container-text {
   width: 60%;
   padding: 0 7%;
-  /* padding: 0 4rem; */
 
   display: flex;
   justify-content: center;
@@ -79,8 +70,8 @@
   gap: 1.5rem;
 
   background-color: var(--main-bg-color);
-  /* background-color: yellowgreen; */
 }
+
 .my-swiper--slide .container-text h3 {
   font-size: var(--fs-big-text);
   color: var(--main-brown-color);

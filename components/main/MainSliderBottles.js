@@ -1,21 +1,14 @@
 import Link from "next/link";
 import React, { useRef, useState, useEffect } from "react";
-import Button from "../layout/Button";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
-
-// import "./styles.css";
-
-// import required modules
 import { EffectCoverflow, Pagination } from "swiper";
 
-// import SlideBottle from "./SlideBottle";
+import Button from "../layout/Button";
 import classes from "./MainSliderBottles.module.css";
 
 const MainSliderBottles = (props) => {
@@ -99,13 +92,6 @@ const MainSliderBottles = (props) => {
                     }`}
                   >
                     <picture>
-                      {/* <Image
-                        src={`./static/images/${bottle.nameImage}_1400.png`}
-                        alt="Gabrielle Perfume"
-                        className={classes["img-bottle"]}
-                        layout="fill"
-                        objectFit="contain"
-                      /> */}
                       <source
                         srcSet={`./static/images/${bottle.nameImage}_607.png`}
                         media="(max-width:544px)"
@@ -127,9 +113,6 @@ const MainSliderBottles = (props) => {
                     <div className={classes["container-text"]}>
                       <h3>{bottle.title}</h3>
                       <h4>{bottle.subtitle}</h4>
-                      {/* <button className={classes[bottle.color]}>
-                        Descúbrelo
-                      </button> */}
                       <Link href={`/family/${bottle.color}`}>
                         <a>
                           <Button color={bottle.color} msg={"Descúbrelo"} />

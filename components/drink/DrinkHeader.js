@@ -1,4 +1,3 @@
-import Image from "next/image";
 import classes from "./DrinkHeader.module.css";
 
 const DrinkHeader = (props) => {
@@ -11,17 +10,6 @@ const DrinkHeader = (props) => {
         <hr />
       </section>
       <section className={classes["section-img"]}>
-        {/* <img src={`/static/images/drinks/${props.imgPrev}.jpg`} alt="" /> */}
-        {/* <img
-          sizes="(min-width: 1366px) 916px,
-            (min-width: 1536px) 1030px,
-            100vw"
-          srcSet={`
-          ${`/static/images/drinks/${props.imgPrev}_607.jpg`} 607w,
-          ${`/static/images/drinks/${props.imgPrev}_879.jpg`} 879w,
-          ${`/static/images/drinks/${props.imgPrev}_1400.jpg`} 1400w`}
-          alt=""
-        /> */}
         <picture>
           <source
             srcSet={`/static/images/drinks/${props.imgPrev}_607.jpg`}
@@ -39,13 +27,6 @@ const DrinkHeader = (props) => {
             src={`/static/images/drinks/${props.imgPrev}_1400.jpg`}
             alt="Gabrielle Perfume"
           />
-          {/* <Image
-            src={`/static/images/drinks/${props.imgPrev}_1400.jpg`}
-            alt="Gabrielle Perfume"
-            className={classes["img-bottle"]}
-            layout="fill"
-            objectFit="contain"
-          /> */}
         </picture>
       </section>
     </header>

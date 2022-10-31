@@ -1,24 +1,17 @@
 import Image from "next/image";
-import React, { useRef, useState } from "react";
+import React from "react";
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
-
-// import required modules
 import { FreeMode, Navigation } from "swiper";
 
-//
-//
 import classes from "./BottleSlider.module.css";
 
 const BottleSlider = (props) => {
-  // console.log(props);
-  //
   return (
     <section className={props.className}>
       <Swiper

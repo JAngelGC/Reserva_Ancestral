@@ -9,17 +9,6 @@ const MainSpecialCollections = () => {
         <Button color={"tobala"} msg={"Próximamente"} />
       </div>
       <div className={classes.right}>
-        {/* <picture>
-          <Image
-            src={`./static/images/photos/Colecciones_especiales_1400.png`}
-            alt="Gabrielle Perfume"
-            className={classes["img-bottle"]}
-            layout="fill"
-            objectFit="contain"
-          />
-        </picture> */}
-
-        {/* <img src="./static/images/photos/Colecciones_especiales.png" alt="" /> */}
         <picture>
           <source
             srcSet={`./static/images/photos/Colecciones_especiales_607.png`}
