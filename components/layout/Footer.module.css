@@ -13,6 +13,8 @@
   border-top: 1px solid var(--main-brown-color);
   background-color: var(--main-bg-color);
   /* background-color: yellowgreen; */
+
+  font-family: var(--ff-sec);
 }
 
 .container-text {
@@ -25,6 +27,8 @@
   font-size: var(--fs-mid-small-text);
   font-weight: 300;
   margin-right: 8%;
+  color: var(--black-color);
+
   /* background-color: aqua; */
 }
 
@@ -33,6 +37,7 @@
   font-size: var(--fs-mid-small-text);
   font-weight: 300;
   cursor: pointer;
+  color: var(--black-color);
 
   /* background-color: violet; */
 }
@@ -41,6 +46,7 @@
   margin-top: 1%;
   font-size: var(--fs-small-text);
   width: 100%;
+  color: var(--black-color);
 
   /* background-color: tomato; */
 }

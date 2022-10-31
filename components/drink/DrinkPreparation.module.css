@@ -40,11 +40,14 @@
   flex-direction: column;
   justify-content: center;
 
+  border-radius: 1.5rem;
+
   background-color: var(--main-bg-color);
 }
 
 .container-steps h2 {
   text-align: center;
+  font-family: var(--ff-main);
   font-size: var(--fs-sub-sub-title);
   font-weight: 500;
   color: var(--main-brown-color);
