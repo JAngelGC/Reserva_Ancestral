@@ -1,16 +1,10 @@
 import React from "react";
 import YouTube from "react-youtube";
+import LazyFrame from "../layout/LazyFrame";
+
 import classes from "./DrinkPreparation.module.css";
 
 const DrinkPreparation = (props) => {
-  const opts = {
-    height: "500",
-    width: "640",
-    playerVars: {
-      autoplay: 1,
-    },
-  };
-
   return (
     <section className={classes["section-preparation"]}>
       <div className={classes["container-video"]}>
@@ -29,6 +23,10 @@ const DrinkPreparation = (props) => {
             onReady={YouTube.onReady}
           />
         </div> */}
+        <LazyFrame
+          url={`https://www.youtube.com/embed/${props.embedId}`}
+          title={"My title"}
+        />
       </div>
 
       <div className={classes["container-steps"]}>
