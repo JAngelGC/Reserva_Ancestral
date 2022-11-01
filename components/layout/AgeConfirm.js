@@ -27,6 +27,7 @@ const AgeConfirm = () => {
             layout="fill"
             objectFit="contain"
             alt=""
+            priority={true}
           />
         </picture>
         <div className={classes["container-text"]}>
