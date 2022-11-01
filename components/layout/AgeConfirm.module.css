@@ -101,6 +101,7 @@
 @media (max-width: 59em) {
   .section-age {
     background-image: url("../../public/static/images/photos/Reserva_Ancestral_Agaves_tablet.jpg");
+    background-position: center;
   }
 
   .black-bg picture {
@@ -117,6 +118,7 @@
 @media (max-width: 34em) {
   .section-age {
     background-image: url("../../public/static/images/photos/Reserva_Ancestral_Agaves_phone.jpg");
+    background-position: center;
   }
 
   .black-bg picture {
