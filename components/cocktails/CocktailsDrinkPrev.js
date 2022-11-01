@@ -3,7 +3,7 @@ import Link from "next/link";
 import classes from "./CocktailsDrinkPrev.module.css";
 
 const CocktailsDrinkPrev = (props) => {
-  console.log(props.imgPrev);
+  // console.log(props.imgPrev);
 
   return (
     <Link href={`/cocktails/${props.id}`}>

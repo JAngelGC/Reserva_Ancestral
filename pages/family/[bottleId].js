@@ -4,6 +4,8 @@ import db from "../../firebase/config";
 import BottleHeader from "../../components/bottle/BottleHeader";
 import BottlePreview from "../../components/bottle/BottlePreview";
 
+import Head from "next/head";
+
 // title: data.title,
 // description: data.description,
 // features: data.features,
@@ -12,6 +14,19 @@ import BottlePreview from "../../components/bottle/BottlePreview";
 const BottlePage = (props) => {
   return (
     <>
+      <Head>
+        <title>Reserva Ancestral</title>
+        <meta
+          name="description"
+          content="Reserva Ancestral nace de la admiración, talento y honra a todos aquellos maestros artesanos que desde hace cientos de años, conservan la tradición de crear una bebida única a través del aprendizaje y dominio de un proceso milenario: el destilado ancestral."
+        />
+        <meta name="author" content="Jose Angel Gonzalez Carrera" />
+        <link
+          rel="icon"
+          href="/static/images/logos/Reserva_Ancestral_Icon.png"
+          type="image/x-icon"
+        />
+      </Head>
       <BottleHeader
         color={props.bottle.color}
         title={props.bottle.title}

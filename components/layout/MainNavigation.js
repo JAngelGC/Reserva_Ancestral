@@ -24,7 +24,6 @@ const MainNavigation = () => {
 
   const hiddeNavHandler = () => {
     setToggleNav(false);
-    console.log("CLICCCK");
   };
 
   const classHeader = toggleNav ? `${classes["nav-open"]}` : "";
