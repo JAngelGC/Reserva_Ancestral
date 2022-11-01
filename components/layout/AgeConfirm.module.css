@@ -12,7 +12,7 @@
 
   background-image: url("../../public/static/images/photos/Reserva_Ancestral_Agaves.JPG");
   background-repeat: no-repeat; /* Do not repeat the image */
-  background-position: right bottom; /* Center the image */
+  background-position: center; /* Center the image */
   background-size: cover;
 
   transition: all 0.3 ease-in;
