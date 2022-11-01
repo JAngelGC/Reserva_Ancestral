@@ -1,5 +1,14 @@
 .section-age {
+  /* height: 100%; */
   height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  /* overflow: hidden; */
+
+  z-index: 10000;
 
   background-image: url("../../public/static/images/photos/Background_Age.png");
   background-repeat: no-repeat; /* Do not repeat the image */

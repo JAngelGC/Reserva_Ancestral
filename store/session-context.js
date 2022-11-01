@@ -10,45 +10,24 @@ export const SessionContextProvider = (props) => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   useEffect(() => {
-    const storedUserLoggedInInformation = localStorage.getItem("isLoggedIn");
-
-    const hours = 1;
-
+    const hours = 0.0833333; // 5 minutes
     const setupTime = localStorage.getItem("setupTime");
-    console.log("TIMEEEEEEEEE", setupTime);
-
     const now = new Date().getTime();
 
     if (setupTime !== null) {
-      // clear storage afte hours
+      // clear storage after hours
       if (now - setupTime > hours * 60 * 60 * 1000) {
-        console.log("Second if");
         localStorage.clear();
-        localStorage.setItem("setupTime", now);
-
-        localStorage.removeItem("isLoggedIn");
+        setIsLoggedIn(false);
       } else {
         setIsLoggedIn(true);
       }
     }
-
-    // if (storedUserLoggedInInformation === "1") {
-    //   setIsLoggedIn(true);
-    // }
   }, [isLoggedIn]);
 
-  const logoutHandler = () => {
-    console.log("CLick NOOOOO");
-    setIsLoggedIn(false);
-  };
-
   const loginHandler = () => {
-    console.log("CLick YEEEES");
     const now = new Date().getTime();
     localStorage.setItem("setupTime", now);
-
-    localStorage.setItem("isLoggedIn", true);
-
     setIsLoggedIn(true);
   };
 
@@ -56,7 +35,6 @@ export const SessionContextProvider = (props) => {
     <SessionContext.Provider
       value={{
         isLoggedIn: isLoggedIn,
-        onLogout: logoutHandler,
         onLogin: loginHandler,
       }}
     >

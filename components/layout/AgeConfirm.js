@@ -15,7 +15,7 @@ const AgeConfirm = () => {
   }, []);
 
   return (
-    <section
+    <div
       className={`${classes["section-age"]} ${
         domLoaded ? classes["active"] : ""
       }`}
@@ -38,7 +38,7 @@ const AgeConfirm = () => {
           <Button msg={"No"} color={"tobala"} onClickHandler={ctx.onLogout} />
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
