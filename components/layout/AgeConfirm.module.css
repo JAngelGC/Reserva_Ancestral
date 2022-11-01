@@ -1,0 +1,104 @@
+.section-age {
+  height: 100vh;
+
+  background-image: url("../../public/static/images/photos/Background_Age.png");
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-position: right bottom; /* Center the image */
+  background-size: cover;
+}
+
+.black-bg {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* gap: 5%; */
+}
+
+.black-bg picture {
+  height: 50%;
+  width: 40%;
+
+  position: relative;
+  /* background-color: yellowgreen; */
+}
+
+.black-bg .container-text {
+  height: 20%;
+  color: #fff;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  /* background-color: turquoise; */
+}
+
+.black-bg .container-text h2 {
+  font-size: var(--fs-sub-title);
+}
+
+.black-bg .container-text p {
+  font-size: var(--fs-big-text);
+}
+
+.black-bg .buttons {
+  height: 10%;
+  width: 100%;
+  /* background-color: violet; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+
+  /* width: 100%; */
+}
+
+.black-bg .buttons button {
+  background-color: var(--main-bg-color);
+  min-width: 10rem;
+}
+
+/**************************/
+/* BELOW 1200px /landscape tablets */
+/**************************/
+@media (max-width: 75em) {
+  .black-bg picture {
+    height: 50%;
+    width: 50%;
+
+    position: relative;
+    /* background-color: yellowgreen; */
+  }
+}
+
+/**************************/
+/* BELOW 940px /  tablets */
+/**************************/
+@media (max-width: 59em) {
+  .black-bg picture {
+    height: 35%;
+    width: 70%;
+
+    /* background-color: tomato; */
+  }
+}
+
+/**************************/
+/* BELOW 544px /  phones */
+/**************************/
+@media (max-width: 34em) {
+  .black-bg picture {
+    height: 30%;
+    width: 95%;
+
+    /* background-color: springgreen; */
+  }
+}
