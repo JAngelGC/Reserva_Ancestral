@@ -5,6 +5,13 @@
   background-repeat: no-repeat; /* Do not repeat the image */
   background-position: right bottom; /* Center the image */
   background-size: cover;
+
+  transition: all 0.3 ease-in;
+  opacity: 0;
+}
+
+.active {
+  opacity: 1;
 }
 
 .black-bg {

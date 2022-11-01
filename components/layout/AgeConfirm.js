@@ -2,14 +2,24 @@ import classes from "./AgeConfirm.module.css";
 import Button from "./Button";
 import Image from "next/image";
 
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import SessionContext from "../../store/session-context";
 
 const AgeConfirm = () => {
   const ctx = useContext(SessionContext);
 
+  const [domLoaded, setdomLoaded] = useState(false);
+
+  useEffect(() => {
+    setdomLoaded(true);
+  }, []);
+
   return (
-    <section className={classes["section-age"]}>
+    <section
+      className={`${classes["section-age"]} ${
+        domLoaded ? classes["active"] : ""
+      }`}
+    >
       <div className={classes["black-bg"]}>
         <picture>
           <Image
