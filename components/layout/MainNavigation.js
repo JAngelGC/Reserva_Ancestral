@@ -58,27 +58,27 @@ const MainNavigation = () => {
 
           <li
             onClick={hiddeNavHandler}
-            className={linkSelected("/about") ? classes.active : ""}
+            className={linkSelected("/nosotros") ? classes.active : ""}
           >
-            <Link href="/about-us">Nosotros</Link>
+            <Link href="/nosotros">Nosotros</Link>
           </li>
           <li
             onClick={hiddeNavHandler}
-            className={linkSelected("/process") ? classes.active : ""}
+            className={linkSelected("/proceso") ? classes.active : ""}
           >
-            <Link href="/process">Proceso</Link>
+            <Link href="/proceso">Proceso</Link>
           </li>
           <li
             onClick={hiddeNavHandler}
-            className={linkSelected("/family") ? classes.active : ""}
+            className={linkSelected("/familia") ? classes.active : ""}
           >
-            <Link href="/family">Familia Reserva</Link>
+            <Link href="/familia">Familia Reserva</Link>
           </li>
           <li
             onClick={hiddeNavHandler}
-            className={linkSelected("/cocktails") ? classes.active : ""}
+            className={linkSelected("/cocteleria") ? classes.active : ""}
           >
-            <Link href="/cocktails">Coctelería</Link>
+            <Link href="/cocteleria">Coctelería</Link>
           </li>
         </ul>
         <ul className={classes["social-networks-subnav"]}>

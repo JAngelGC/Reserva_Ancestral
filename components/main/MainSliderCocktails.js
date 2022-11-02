@@ -85,7 +85,7 @@ const MainSliderCocktails = (props) => {
                     })}
                   </ol>
 
-                  <Link href={`/cocktails/${cocktail.link}`}>
+                  <Link href={`/cocteleria/${cocktail.link}`}>
                     <a>
                       <Button color={"tobala"} msg={"Ver más"} />
                     </a>

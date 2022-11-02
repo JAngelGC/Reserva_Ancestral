@@ -20,7 +20,7 @@ const BottlePreview = (props) => {
             <h3 className={classes["title-bottle"]}>{bottle1.name}</h3>
           </div>
         </Link>
-        <Link href={`/family/${bottle2.link}`}>
+        <Link href={`/familia/${bottle2.link}`}>
           <div className={classes["container-bottle"]}>
             <Image
               src={`./static/images/bottles/${bottle2.imgPath}.JPG`}

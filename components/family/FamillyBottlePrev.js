@@ -9,7 +9,7 @@ const FamillyBottlePrev = (props) => {
         <h2 className={classes[props.color]}>{props.title}</h2>
         <h3>{props.subtitle}</h3>
         <h4>{props.grades}</h4>
-        <Link href={`/family/${props.color}`}>
+        <Link href={`/familia/${props.color}`}>
           <a>
             <Button color={props.color} msg={"Descúbrelo"} />
           </a>

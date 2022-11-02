@@ -5,12 +5,12 @@ const Footer = () => {
   return (
     <footer className={classes.footer}>
       <div className={classes["container-text"]}>
-        <Link href="/contact">
+        <Link href="/contacto">
           <a>
             <h3 className={classes.contacto}>Contacto</h3>
           </a>
         </Link>
-        <Link href="/privacy_policy">
+        <Link href="/aviso-privacidad">
           <a>
             <h3 className={classes.aviso}>Aviso de privacidad</h3>
           </a>

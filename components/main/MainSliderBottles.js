@@ -113,7 +113,7 @@ const MainSliderBottles = (props) => {
                     <div className={classes["container-text"]}>
                       <h3>{bottle.title}</h3>
                       <h4>{bottle.subtitle}</h4>
-                      <Link href={`/family/${bottle.color}`}>
+                      <Link href={`/familia/${bottle.color}`}>
                         <a>
                           <Button color={bottle.color} msg={"Descúbrelo"} />
                         </a>

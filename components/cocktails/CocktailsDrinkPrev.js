@@ -6,7 +6,7 @@ const CocktailsDrinkPrev = (props) => {
   // console.log(props.imgPrev);
 
   return (
-    <Link href={`/cocktails/${props.id}`}>
+    <Link href={`/cocteleria/${props.id}`}>
       <section className={classes["container-drink"]}>
         <div className={classes["container-img"]}>
           <picture>
