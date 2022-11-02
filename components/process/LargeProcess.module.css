@@ -1,0 +1,47 @@
+.section-large {
+  /* height: 75vh; */
+  width: 100%;
+
+  padding: 3% 10%;
+  position: relative;
+
+  /* background-color: tomato; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section-large picture {
+  /* height: 70%; */
+  height: 45vh;
+
+  width: 100%;
+
+  /* display: block; */
+
+  position: relative;
+  border-radius: 1.5rem;
+
+  /* background-color: yellowgreen; */
+}
+
+.section-large picture img {
+  border-radius: 1.5rem;
+}
+
+.section-large .container-text {
+  /* background-color: violet; */
+  height: 30%;
+}
+
+.section-large .container-text h2 {
+  margin-top: 1rem;
+  font-size: var(--fs-big-text);
+}
+
+.section-large .container-text p {
+  font-size: var(--fs-small-text);
+  font-family: var(--ff-sec);
+  line-height: 1.8;
+}

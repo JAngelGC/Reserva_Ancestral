@@ -1,0 +1,41 @@
+.section-process {
+  /* height: 55vh; */
+  padding: 3% 10%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 5%;
+
+  /* background-color: wheat; */
+}
+
+.section-process .container-text {
+  width: 40%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section-process .container-text h2 {
+  font-size: var(--fs-big-text);
+}
+
+.section-process .container-text p {
+  font-size: var(--fs-small-text);
+  font-family: var(--ff-sec);
+  line-height: 1.8;
+}
+
+.section-process picture {
+  width: 55%;
+  /* height: 100%; */
+  height: 45vh;
+
+  position: relative;
+}
+
+.section-process picture img {
+  border-radius: 1.5rem;
+}

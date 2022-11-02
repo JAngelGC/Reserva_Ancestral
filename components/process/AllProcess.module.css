@@ -1,0 +1,14 @@
+.title-section {
+  margin-top: 13vh;
+  width: 100%;
+  /* padding: 3% 10%; */
+  padding-top: 3%;
+
+  text-align: center;
+
+  font-size: var(--fs-sub-title);
+  text-align: center;
+  font-weight: 500;
+  color: var(--main-brown-color);
+  /* background-color: yellowgreen; */
+}
