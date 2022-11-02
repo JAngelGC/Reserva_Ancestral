@@ -1,8 +1,14 @@
-import Image from "next/image";
+import { collection, addDoc } from "firebase/firestore";
+import { useState } from "react";
+import db from "../../firebase/config";
+
 import useInput from "../../hooks/use-input";
 import classes from "./ContactForm.module.css";
+import Button from "../layout/Button";
 
 const ContactForm = () => {
+  const [answerSent, setAnswerSent] = useState(false);
+
   const {
     value: enteredName,
     isValid: enteredNameIsValid,
@@ -66,6 +72,29 @@ const ContactForm = () => {
     // console.log(enteredName);
     // console.log(enteredEmail);
     // console.log(enteredMsg);
+    const options = {
+      weekday: "long",
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    };
+    const now = new Date();
+    const date = now.toLocaleDateString("es-Mx", options);
+
+    // Add a new document with a generated id.
+    const docRef = addDoc(collection(db, "contacto"), {
+      nombre: enteredName,
+      email: enteredEmail,
+      mensaje: enteredMsg,
+      fecha: date,
+    })
+      .then(() => {
+        console.log("Succes");
+        setAnswerSent(true);
+      })
+      .catch((err) => {
+        console.log("Error");
+      });
 
     resetNameInput();
     resetEmailInput();
@@ -89,7 +118,27 @@ const ContactForm = () => {
     : `${classes["btn-invalid"]}`;
 
   return (
-    <main className={classes["section-contact"]}>
+    <section className={classes["section-contact"]}>
+      {answerSent === true && (
+        <div className={classes["container-bg-thanks"]}>
+          <div className={classes["container-thanks"]}>
+            <h3>Muchas gracias</h3>
+            <p>
+              Hemos recibido tu respuesta y te responderemos lo más pronto
+              posible.
+            </p>
+            <Button
+              color={"tobala"}
+              msg={"Cerrar"}
+              onClickHandler={() => {
+                setAnswerSent(false);
+              }}
+              // onClickHandler={() => console.log("CLICK")}
+            />
+          </div>
+        </div>
+      )}
+
       <form
         action=""
         onSubmit={formSubmissionHandler}
@@ -152,14 +201,7 @@ const ContactForm = () => {
         </div>
       </form>
       <div className={classes["container-img"]}>
-        {/* <img src="/static/images/logos/Reserva_Ancestral_Logo_06.png" alt="" /> */}
         <picture>
-          {/* <Image
-            src="/static/images/logos/Reserva_Ancestral_Logo_06.png"
-            alt="Gabrielle Perfume"
-            layout="fill"
-            objectFit="cover"
-          /> */}
           <source
             srcSet={`/static/images/logos/Reserva_Ancestral_Logo_06_879.png`}
             media="(max-width:544px)"
@@ -174,7 +216,7 @@ const ContactForm = () => {
           />
         </picture>
       </div>
-    </main>
+    </section>
   );
 };
 
