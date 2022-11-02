@@ -70,28 +70,19 @@
 
 .bottle-prev .container-text h3 {
   font-size: var(--fs-mid-text);
+  font-family: var(--ff-sec);
   font-weight: 300;
   margin-bottom: 0.25rem;
 }
 
 .bottle-prev .container-text h4 {
   font-size: var(--fs-mid-small-text);
+  font-family: var(--ff-sec);
   font-weight: 300;
 }
 
 .bottle-prev .container-text button {
-  font-family: Lora;
-  color: var(--black-color);
   width: 15rem;
-
-  margin-top: 2rem;
-  font-size: 1.6rem;
-  padding: 1rem 1.5rem;
-  border-radius: 1.2rem;
-  background-color: transparent;
-  cursor: pointer;
-
-  transition: all 0.3s ease-out;
 }
 
 .bottle-prev .container-img {

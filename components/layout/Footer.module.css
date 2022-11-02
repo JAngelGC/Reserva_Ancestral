@@ -13,8 +13,6 @@
   border-top: 1px solid var(--main-brown-color);
   background-color: var(--main-bg-color);
   /* background-color: yellowgreen; */
-
-  font-family: var(--ff-sec);
 }
 
 .container-text {
@@ -47,6 +45,7 @@
   font-size: var(--fs-small-text);
   width: 100%;
   color: var(--black-color);
+  /* font-family: var(--ff-sec); */
 
   /* background-color: tomato; */
 }

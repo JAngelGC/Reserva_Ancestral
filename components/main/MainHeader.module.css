@@ -1,12 +1,12 @@
 .main-header {
   color: #fff;
-  text-transform: uppercase;
+
   padding-left: 6%;
 
   /* height: 88vh; */
   height: 100vh;
 
-  background-image: url("../../public/static/images/photos/Reserva_Ancestral_Botellas_01_resized.jpg");
+  background-image: url("../../public/static/images/photos/Reserva_Ancestral_Botellas_01.jpg");
   background-repeat: no-repeat; /* Do not repeat the image */
   background-position: right bottom; /* Center the image */
   background-size: cover;
@@ -15,6 +15,7 @@
 .main-header h2 {
   width: 35%;
 
+  text-transform: uppercase;
   font-size: var(--fs-title);
   font-weight: 600;
   line-height: 6rem;
@@ -28,6 +29,7 @@
 .main-header h3 {
   width: 25%;
   padding-top: 2%;
+  text-transform: capitalize;
 
   font-size: var(--fs-sub-sub-title);
   font-weight: 500;
@@ -83,17 +85,27 @@
   .main-header {
     background-position: center;
     background-image: url("../../public/static/images/photos/Reserva_Ancestral_Botellas_01_phone.jpg");
+
+    padding: 0 6%;
   }
 
   .main-header h2 {
-    width: 80%;
+    width: 100%;
+    /* text-align: center; */
 
     padding-top: 16vh;
+
+    /* background-color: yellowgreen; */
   }
 
   .main-header h3 {
-    width: 75%;
+    font-family: var(--ff-sec);
+
+    width: 70%;
     padding-top: 2%;
+    /* text-align: center; */
+
+    /* background-color: yellow; */
 
     letter-spacing: 0.1rem;
   }
