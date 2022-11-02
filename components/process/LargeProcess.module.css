@@ -38,10 +38,22 @@
 .section-large .container-text h2 {
   margin-top: 1rem;
   font-size: var(--fs-big-text);
+  /* font-weight: 600; */
 }
 
 .section-large .container-text p {
   font-size: var(--fs-small-text);
   font-family: var(--ff-sec);
   line-height: 1.8;
+}
+
+/**************************/
+/* BELOW 700px /  smaller tablets */
+/**************************/
+@media (max-width: 44em) {
+  .section-large {
+    padding: 10% 10%;
+
+    /* background-color: yellowgreen; */
+  }
 }

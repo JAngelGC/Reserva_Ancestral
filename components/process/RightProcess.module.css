@@ -39,3 +39,27 @@
 .section-process picture img {
   border-radius: 1.5rem;
 }
+
+/**************************/
+/* BELOW 700px /  smaller tablets */
+/**************************/
+@media (max-width: 44em) {
+  .section-process {
+    padding: 10% 10%;
+    flex-direction: column-reverse;
+
+    /* background-color: yellowgreen; */
+  }
+
+  .section-process .container-text {
+    width: 100%;
+  }
+
+  .section-process .container-text h2 {
+    margin-top: 1rem;
+  }
+
+  .section-process picture {
+    width: 100%;
+  }
+}

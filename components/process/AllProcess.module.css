@@ -12,3 +12,12 @@
   color: var(--main-brown-color);
   /* background-color: yellowgreen; */
 }
+
+/**************************/
+/* BELOW 700px /  smaller tablets */
+/**************************/
+@media (max-width: 44em) {
+  .title-section {
+    padding-top: 10%;
+  }
+}
