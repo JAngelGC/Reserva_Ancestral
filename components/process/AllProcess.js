@@ -3,8 +3,6 @@ import LargeProcess from "./LargeProcess";
 import LeftProcess from "./LeftProcess";
 import RightProcess from "./RightProcess";
 
-// Reserva_Ancestral_Cultivo.jpg
-
 const infoProcess = [
   {
     title: "Cultivo y cosecha",

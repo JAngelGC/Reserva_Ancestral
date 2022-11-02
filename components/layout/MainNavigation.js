@@ -62,8 +62,11 @@ const MainNavigation = () => {
           >
             <Link href="/about-us">Nosotros</Link>
           </li>
-          <li>
-            <p>Proceso</p>
+          <li
+            onClick={hiddeNavHandler}
+            className={linkSelected("/process") ? classes.active : ""}
+          >
+            <Link href="/process">Proceso</Link>
           </li>
           <li
             onClick={hiddeNavHandler}
