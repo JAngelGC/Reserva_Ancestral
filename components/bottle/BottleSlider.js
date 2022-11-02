@@ -30,10 +30,13 @@ const BottleSlider = (props) => {
             <SwiperSlide className={classes["my-swiper-slide"]} key={imgBottle}>
               <Image
                 src={`./static/images/bottles/${props.imgsBottles.pathImgs}_${imgBottle}.JPG`}
+                blurDataURL={`./static/images/bottles/${props.imgsBottles.pathImgs}_${imgBottle}_blur.JPG`}
+                placeholder="blur"
                 layout="fill"
                 objectFit="cover"
                 alt=""
                 priority={idx === 0 ? true : false}
+                // placeholder={"blur"}
               />
             </SwiperSlide>
           );
