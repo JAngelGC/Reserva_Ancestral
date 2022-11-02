@@ -19,6 +19,10 @@
   position: relative;
 
   /* background-color: yellowgreen; */
+  background-image: url("../../public/static/images/logos/Reserva_Ancestral_Logo_Blur.png");
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-position: center; /* Center the image */
+  background-size: contain;
 }
 
 /**************************/
