@@ -24,7 +24,7 @@ const MainSpecialCollections = () => {
           />
           <img
             src={`./static/images/photos/Colecciones_especiales_1400.png`}
-            alt="Gabrielle Perfume"
+            alt="Reserva Ancestral Colecciones Especiales"
           />
         </picture>
       </div>

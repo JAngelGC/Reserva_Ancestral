@@ -53,6 +53,7 @@ export async function getStaticProps() {
       nameImage: data.nameImage,
       subtitle: data.subtitle,
       title: data.title,
+      altDescription: data.altDescription,
     };
 
     return newData;

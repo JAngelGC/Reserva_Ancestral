@@ -11,6 +11,7 @@ import Button from "../layout/Button";
 import classes from "./MainSliderCocktails.module.css";
 
 const MainSliderCocktails = (props) => {
+  console.log(props);
   const [domLoaded, setDomLoaded] = useState(false);
 
   useEffect(() => {
@@ -66,7 +67,7 @@ const MainSliderCocktails = (props) => {
                     />
                     <img
                       src={`./static/images/drinks/${cocktail.imgPrev}_1400.jpg`}
-                      alt="Gabrielle Perfume"
+                      alt={cocktail.altDescription}
                     />
                   </picture>
                 </div>

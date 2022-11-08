@@ -106,7 +106,7 @@ const MainSliderBottles = (props) => {
                       />
                       <img
                         src={`./static/images/${bottle.nameImage}_1400.png`}
-                        alt="Gabrielle Perfume"
+                        alt={bottle.altDescription}
                       />
                     </picture>
 
