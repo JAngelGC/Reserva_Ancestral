@@ -26,7 +26,7 @@ const AgeConfirm = () => {
             src={`./static/images/logos/Reserva_Ancestral_Logo_03.png`}
             layout="fill"
             objectFit="contain"
-            alt=""
+            alt="Reserva Ancestral Logo 03"
             priority={true}
           />
         </picture>

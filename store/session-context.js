@@ -10,7 +10,7 @@ export const SessionContextProvider = (props) => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   useEffect(() => {
-    const hours = 0.0833333; // 5 minutes
+    const hours = 24 * 3; // 5 minutes
     const setupTime = localStorage.getItem("setupTime");
     const now = new Date().getTime();
 
