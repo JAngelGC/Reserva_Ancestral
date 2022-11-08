@@ -9,7 +9,7 @@ const LargeProcess = (props) => {
           src={`./static/images/process/${props.img}`}
           layout="fill"
           objectFit="cover"
-          alt=""
+          alt={props.altImg}
           //   priority={idx === 0 ? true : false}
         />
       </picture>
