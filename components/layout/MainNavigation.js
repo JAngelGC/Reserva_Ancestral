@@ -35,7 +35,7 @@ const MainNavigation = () => {
           <a>
             <img
               src="/static/images/logos/Reserva_Ancestral_Logo_01.png"
-              alt=""
+              alt="Reserva Ancestral Logo 01"
               layout="fill"
             />
           </a>
@@ -48,7 +48,7 @@ const MainNavigation = () => {
               <Link href="/">
                 <img
                   src="/static/images/logos/Reserva_Ancestral_Logo_01.png"
-                  alt=""
+                  alt="Reserva Ancestral Logo 01"
                   layout="fill"
                   // objectFit="contain"
                 />

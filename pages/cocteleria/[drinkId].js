@@ -31,6 +31,7 @@ const DrinkPage = (props) => {
         title={props.drink.title}
         subtitle={props.drink.subtitle}
         imgPrev={props.drink.imgPrev}
+        altDescription={props.drink.altDescription}
       />
       <DrinkIngredients ingredients={props.drink.ingredients} />
       <DrinkPreparation

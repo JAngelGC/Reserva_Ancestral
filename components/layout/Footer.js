@@ -31,7 +31,7 @@ const Footer = () => {
         />
         <img
           src={`/static/images/logos/Reserva_Ancestral_Sello_1400.png`}
-          alt="Gabrielle Perfume"
+          alt="Reserva Ancestral Sello"
         />
       </picture>
     </footer>

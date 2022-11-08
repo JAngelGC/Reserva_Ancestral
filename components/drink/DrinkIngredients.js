@@ -8,11 +8,14 @@ const DrinkIngredients = (props) => {
       <div className={classes["container-ingredients"]}>
         {props.ingredients.map((ing) => {
           return (
-            <div className={classes["container-ingredient"]} key={ing.imgP}>
+            <div
+              className={classes["container-ingredient"]}
+              key={`${ing.ing} ${ing.imgP}`}
+            >
               <picture>
                 <Image
                   src={`/static/images/drinks/${ing.imgP}`}
-                  alt="Gabrielle Perfume"
+                  alt={`Reserva Ancestral ${ing.ing}`}
                   className={classes["img-bottle"]}
                   layout="fill"
                   objectFit="contain"

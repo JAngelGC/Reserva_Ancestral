@@ -1,7 +1,7 @@
 import classes from "./DrinkHeader.module.css";
 
 const DrinkHeader = (props) => {
-  console.log(props.imgPrev);
+  console.log(props);
   return (
     <header className={classes.header}>
       <section className={classes["section-title"]}>
@@ -25,7 +25,7 @@ const DrinkHeader = (props) => {
           />
           <img
             src={`/static/images/drinks/${props.imgPrev}_1400.jpg`}
-            alt="Gabrielle Perfume"
+            alt={props.altDescription}
           />
         </picture>
       </section>

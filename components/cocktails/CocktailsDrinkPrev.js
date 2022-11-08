@@ -3,7 +3,7 @@ import Link from "next/link";
 import classes from "./CocktailsDrinkPrev.module.css";
 
 const CocktailsDrinkPrev = (props) => {
-  // console.log(props.imgPrev);
+  console.log(props);
 
   return (
     <Link href={`/cocteleria/${props.id}`}>
@@ -24,7 +24,7 @@ const CocktailsDrinkPrev = (props) => {
             />
             <img
               src={`./static/images/drinks/${props.imgPrev}_1400.jpg`}
-              alt="Gabrielle Perfume"
+              alt={props.altDescription}
             />
           </picture>
         </div>

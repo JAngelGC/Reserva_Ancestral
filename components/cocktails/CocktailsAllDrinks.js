@@ -16,6 +16,7 @@ const CocktailsAllDrinks = (props) => {
               imgPrevPhone={drink.imgPrevPhone}
               id={drink.id}
               key={drink.id}
+              altDescription={drink.altDescription}
             />
           );
         })}

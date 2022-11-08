@@ -212,7 +212,7 @@ const ContactForm = () => {
           />
           <img
             src={`/static/images/logos/Reserva_Ancestral_Logo_06_1400.png`}
-            alt="Gabrielle Perfume"
+            alt="Reserva Ancestral Logo 06"
           />
         </picture>
       </div>
