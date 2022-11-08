@@ -30,9 +30,9 @@ const LazyIframe = ({ url, title }) => {
             width: "100%",
           }}
           src={url}
-          frameborder="0"
+          frameBorder="0"
           allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen="allowfullscreen"
+          allowFullScreen="allowfullscreen"
         ></iframe>
       )}
     </div>

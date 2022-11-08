@@ -3,8 +3,6 @@ import Link from "next/link";
 import classes from "./CocktailsDrinkPrev.module.css";
 
 const CocktailsDrinkPrev = (props) => {
-  console.log(props);
-
   return (
     <Link href={`/cocteleria/${props.id}`}>
       <section className={classes["container-drink"]}>

@@ -11,7 +11,6 @@ import Button from "../layout/Button";
 import classes from "./MainSliderCocktails.module.css";
 
 const MainSliderCocktails = (props) => {
-  console.log(props);
   const [domLoaded, setDomLoaded] = useState(false);
 
   useEffect(() => {

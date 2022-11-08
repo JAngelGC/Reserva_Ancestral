@@ -1,7 +1,6 @@
 import classes from "./DrinkHeader.module.css";
 
 const DrinkHeader = (props) => {
-  console.log(props);
   return (
     <header className={classes.header}>
       <section className={classes["section-title"]}>

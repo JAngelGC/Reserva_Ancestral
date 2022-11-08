@@ -5,8 +5,6 @@ import db from "../../firebase/config";
 import FamilyAllBottles from "../../components/family/FamilyAllBottles";
 
 const Family = (props) => {
-  console.log(props.allBottles);
-
   const keyWordBottles = props.allBottles
     .map((bottle) => bottle.altDescription)
     .join(", ");

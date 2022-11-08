@@ -7,7 +7,6 @@ import DrinkIngredients from "../../components/drink/DrinkIngredients";
 import DrinkPreparation from "../../components/drink/DrinkPreparation";
 
 const DrinkPage = (props) => {
-  console.log(props);
   return (
     <>
       <Head>

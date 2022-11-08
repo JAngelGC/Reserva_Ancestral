@@ -10,7 +10,7 @@ const DrinkIngredients = (props) => {
           return (
             <div
               className={classes["container-ingredient"]}
-              key={`${ing.ing} ${ing.imgP}`}
+              key={`${ing.ing} ${ing.imgP} ${Math.random()}`}
             >
               <picture>
                 <Image
