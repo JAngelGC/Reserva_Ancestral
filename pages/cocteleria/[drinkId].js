@@ -7,13 +7,18 @@ import DrinkIngredients from "../../components/drink/DrinkIngredients";
 import DrinkPreparation from "../../components/drink/DrinkPreparation";
 
 const DrinkPage = (props) => {
+  console.log(props);
   return (
     <>
       <Head>
         <title>Reserva Ancestral</title>
         <meta
           name="description"
-          content="Reserva Ancestral nace de la admiración, talento y honra a todos aquellos maestros artesanos que desde hace cientos de años, conservan la tradición de crear una bebida única a través del aprendizaje y dominio de un proceso milenario: el destilado ancestral."
+          content={`${props.drink.title}. ${props.drink.steps.join(" ")}`}
+        />
+        <meta
+          name="keywords"
+          content={`Mezcal, Reserva Ancestral, Familia Reserva, ${props.drink.altDescription}, Coctelería, Bebidas`}
         />
         <meta name="author" content="Jose Angel Gonzalez Carrera" />
         <link
@@ -72,6 +77,7 @@ export async function getStaticProps(context) {
         ingredients: data.ingredients,
         steps: data.steps,
         embedId: data.video_id,
+        altDescription: data.altDescription,
       },
     },
   };

@@ -14,7 +14,10 @@ const AboutUsPage = () => {
           name="description"
           content="Reserva Ancestral nace de la admiración, talento y honra a todos aquellos maestros artesanos que desde hace cientos de años, conservan la tradición de crear una bebida única a través del aprendizaje y dominio de un proceso milenario: el destilado ancestral."
         />
-        <meta name="keywords" content="Mezcal, Reserva Ancestral" />
+        <meta
+          name="keywords"
+          content="Mezcal, Reserva Ancestral, Familia Reserva, Nosotros, Maestros Artesanos, Homenaje, Historia, Voz, Vida"
+        />
 
         <meta name="author" content="Jose Angel Gonzalez Carrera" />
         <link

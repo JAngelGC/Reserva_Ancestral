@@ -8,7 +8,11 @@ const PrivacyPolicyPage = () => {
         <title>Reserva Ancestral</title>
         <meta
           name="description"
-          content="Reserva Ancestral nace de la admiración, talento y honra a todos aquellos maestros artesanos que desde hace cientos de años, conservan la tradición de crear una bebida única a través del aprendizaje y dominio de un proceso milenario: el destilado ancestral."
+          content="El aviso de privacidad de Reserva Ancestral tiene como objeto informar al titular sobre los alcances y condiciones generales del tratamiento de sus datos personales, a fin de que esté en posibilidad de tomar decisiones informadas sobre el uso de su información personal y, en consecuencia, mantener el control y disposición sobre ella."
+        />
+        <meta
+          name="keywords"
+          content="Mezcal, Reserva Ancestral, Familia Reserva, Aviso de Privacidad, Política de Privacidad"
         />
         <meta name="author" content="Jose Angel Gonzalez Carrera" />
         <link

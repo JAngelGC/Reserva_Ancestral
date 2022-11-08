@@ -5,13 +5,21 @@ import db from "../../firebase/config";
 import CocktailsAllDrinks from "../../components/cocktails/CocktailsAllDrinks";
 
 const CocktailsPage = (props) => {
+  const keyWordsCocktails = props.allDrinks
+    .map((drink) => drink.altDescription)
+    .join(", ");
+
   return (
     <>
       <Head>
         <title>Reserva Ancestral</title>
         <meta
           name="description"
-          content="Reserva Ancestral nace de la admiración, talento y honra a todos aquellos maestros artesanos que desde hace cientos de años, conservan la tradición de crear una bebida única a través del aprendizaje y dominio de un proceso milenario: el destilado ancestral."
+          content={`Reserva Ancestral cuenta con una amplia gama de coctelería para todos los gustos. Dentro de su coctelería se encuentran: ${keyWordsCocktails}`}
+        />
+        <meta
+          name="keywords"
+          content={`Mezcal, Reserva Ancestral, Familia Reserva, ${keyWordsCocktails}, Coctelería, Bebidas`}
         />
         <meta name="author" content="Jose Angel Gonzalez Carrera" />
         <link
@@ -38,6 +46,7 @@ export async function getStaticProps() {
       imgPrev: data.imgPrev,
       title: data.title,
       imgPrevPhone: data.imgPrevPhone,
+      altDescription: data.altDescription,
     };
 
     return newData;

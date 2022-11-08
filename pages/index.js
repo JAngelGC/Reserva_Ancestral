@@ -10,6 +10,7 @@ import MainSpecialCollections from "../components/main/MainSpecialCollections";
 import MainSliderCocktails from "../components/main/MainSliderCocktails";
 
 const HomePage = (props) => {
+  console.log(props.allBottles);
   return (
     <>
       <Head>
@@ -17,6 +18,10 @@ const HomePage = (props) => {
         <meta
           name="description"
           content="Reserva Ancestral nace de la admiración, talento y honra a todos aquellos maestros artesanos que desde hace cientos de años, conservan la tradición de crear una bebida única a través del aprendizaje y dominio de un proceso milenario: el destilado ancestral."
+        />
+        <meta
+          name="keywords"
+          content="Mezcal, Reserva Ancestral, Familia Reserva, Agave Arroqueño, Agave Cuixe, Agave Espadín, Agave Tobalá"
         />
         <meta name="author" content="Jose Angel Gonzalez Carrera" />
         <link

@@ -12,13 +12,15 @@ import Head from "next/head";
 // tastings: data.tastings,
 // color: data.color,
 const BottlePage = (props) => {
+  console.log(props);
   return (
     <>
       <Head>
         <title>Reserva Ancestral</title>
+        <meta name="description" content={`${props.bottle.description}`} />
         <meta
-          name="description"
-          content="Reserva Ancestral nace de la admiración, talento y honra a todos aquellos maestros artesanos que desde hace cientos de años, conservan la tradición de crear una bebida única a través del aprendizaje y dominio de un proceso milenario: el destilado ancestral."
+          name="keywords"
+          content={`Mezcal, Reserva Ancestral, Familia Reserva, ${props.bottle.altDescription}, ${props.bottle.features.category}, ${props.bottle.features.made}, ${props.bottle.features.agave}`}
         />
         <meta name="author" content="Jose Angel Gonzalez Carrera" />
         <link
@@ -77,6 +79,7 @@ export async function getStaticProps(context) {
         color: data.color,
         imgsBottles: data.imgsBottles,
         moreBottles: data.moreBottles,
+        altDescription: data.altDescription,
       },
     },
   };

@@ -8,7 +8,11 @@ const ContactPage = () => {
         <title>Reserva Ancestral</title>
         <meta
           name="description"
-          content="Reserva Ancestral nace de la admiración, talento y honra a todos aquellos maestros artesanos que desde hace cientos de años, conservan la tradición de crear una bebida única a través del aprendizaje y dominio de un proceso milenario: el destilado ancestral."
+          content="Reserva Ancestral puede resolver cualquier duda que un cliente pueda tener. Además, se puede proporcionar información sobre mayoreo para la compra de botellas y demás productos."
+        />
+        <meta
+          name="keywords"
+          content={`Mezcal, Reserva Ancestral, Familia Reserva, Contacto `}
         />
         <meta name="author" content="Jose Angel Gonzalez Carrera" />
         <link

@@ -5,13 +5,23 @@ import db from "../../firebase/config";
 import FamilyAllBottles from "../../components/family/FamilyAllBottles";
 
 const Family = (props) => {
+  console.log(props.allBottles);
+
+  const keyWordBottles = props.allBottles
+    .map((bottle) => bottle.altDescription)
+    .join(", ");
+
   return (
     <>
       <Head>
         <title>Reserva Ancestral</title>
         <meta
           name="description"
-          content="Reserva Ancestral nace de la admiración, talento y honra a todos aquellos maestros artesanos que desde hace cientos de años, conservan la tradición de crear una bebida única a través del aprendizaje y dominio de un proceso milenario: el destilado ancestral."
+          content={`Reserva Ancestral cuenta con distintas botellas para todos los públicos, sus botellas son: ${keyWordBottles}`}
+        />
+        <meta
+          name="keywords"
+          content={`Mezcal, Reserva Ancestral, Familia Reserva, ${keyWordBottles}`}
         />
         <meta name="author" content="Jose Angel Gonzalez Carrera" />
         <link
@@ -40,6 +50,7 @@ export async function getStaticProps() {
       subtitle: data.subtitle,
       title: data.title,
       grades: data.grades,
+      altDescription: data.altDescription,
     };
 
     return newData;
