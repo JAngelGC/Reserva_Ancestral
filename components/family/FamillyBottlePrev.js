@@ -31,7 +31,7 @@ const FamillyBottlePrev = (props) => {
           />
           <img
             src={`./static/images/${props.nameImage}_1400.png`}
-            alt="Gabrielle Perfume"
+            alt={props.altImg}
           />
         </picture>
       </div>

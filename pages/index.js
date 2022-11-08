@@ -10,7 +10,6 @@ import MainSpecialCollections from "../components/main/MainSpecialCollections";
 import MainSliderCocktails from "../components/main/MainSliderCocktails";
 
 const HomePage = (props) => {
-  console.log(props.allBottles);
   return (
     <>
       <Head>

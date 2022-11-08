@@ -9,6 +9,7 @@ const BottleHeader = (props) => {
       <BottleSlider
         className={classes["part-left"]}
         imgsBottles={props.imgsBottles}
+        altDescription={props.altDescription}
       />
       <BottleInfo
         className={classes["part-right"]}

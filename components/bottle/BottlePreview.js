@@ -9,13 +9,13 @@ const BottlePreview = (props) => {
     <section className={classes["section-more-bottles"]}>
       <h2 className={classes["title"]}>Conoce más de la familia</h2>
       <div className={classes["container-bottles"]}>
-        <Link href={`/family/${bottle1.link}`}>
+        <Link href={`/familia/${bottle1.link}`}>
           <div className={classes["container-bottle"]}>
             <Image
               src={`./static/images/bottles/${bottle1.imgPath}.JPG`}
               layout="fill"
               objectFit="cover"
-              alt=""
+              alt={bottle1.altDescription}
             />
             <h3 className={classes["title-bottle"]}>{bottle1.name}</h3>
           </div>
@@ -26,7 +26,7 @@ const BottlePreview = (props) => {
               src={`./static/images/bottles/${bottle2.imgPath}.JPG`}
               layout="fill"
               objectFit="cover"
-              alt=""
+              alt={bottle2.altDescription}
             />
             <h3 className={classes["title-bottle"]}>{bottle2.name}</h3>
           </div>

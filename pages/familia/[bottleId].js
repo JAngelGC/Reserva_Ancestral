@@ -6,13 +6,7 @@ import BottlePreview from "../../components/bottle/BottlePreview";
 
 import Head from "next/head";
 
-// title: data.title,
-// description: data.description,
-// features: data.features,
-// tastings: data.tastings,
-// color: data.color,
 const BottlePage = (props) => {
-  console.log(props);
   return (
     <>
       <Head>
@@ -36,6 +30,7 @@ const BottlePage = (props) => {
         features={props.bottle.features}
         tastings={props.bottle.tastings}
         imgsBottles={props.bottle.imgsBottles}
+        altDescription={props.bottle.altDescription}
       />
       <BottlePreview moreBottles={props.bottle.moreBottles} />
     </>

@@ -32,7 +32,7 @@ const BottleSlider = (props) => {
                 src={`./static/images/bottles/${props.imgsBottles.pathImgs}_${imgBottle}.JPG`}
                 layout="fill"
                 objectFit="cover"
-                alt=""
+                alt={`${props.altDescription} ${idx + 1}`}
                 priority={idx === 0 ? true : false}
                 // placeholder={"blur"}
               />

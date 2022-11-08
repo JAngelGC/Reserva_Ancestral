@@ -13,6 +13,7 @@ const FamilyAllBottles = (props) => {
             grades={bottle.grades}
             nameImage={bottle.nameImage}
             color={bottle.color}
+            altImg={bottle.altDescription}
           />
         );
       })}
